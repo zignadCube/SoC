@@ -1,13 +1,6 @@
-# Compile of siso_gen_ent.vhd was successful.
-# Compile of siso_gen_gcd_arch.vhd was successful.
-# Compile of tvc_siso_gen_ent.vhd was successful.
-# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
-# Compile of tb_siso_gen.vhd was successful.
-# Compile of conf_tb_siso_gen_gcd.vhd was successful.
-# 6 compiles, 0 failed with no errors.
 vsim -voptargs=+acc +notimingchecks -noglitch work.conf_tb_siso_gen_gcd
 # vsim -voptargs="+acc" "+notimingchecks" -noglitch work.conf_tb_siso_gen_gcd 
-# Start time: 12:17:51 on Sep 05,2023
+# Start time: 21:10:28 on Sep 08,2023
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading std.textio(body)
@@ -17,7 +10,40 @@ vsim -voptargs=+acc +notimingchecks -noglitch work.conf_tb_siso_gen_gcd
 # Loading work.conf_tb_siso_gen_gcd#1
 # Loading work.tb_siso_gen_top(top)#1
 # Loading work.tb_siso_gen(structure)#1
-# Loading work.siso_gen(gcd)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_gcd_16_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#1
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#1
+# Loading umcl18u250t2.dffspq1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi31m10d1(level1pintopindelay)#1
+# Loading umcl18u250t2.invd1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai211d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#1
+# Loading umcl18u250t2.ao32d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi32d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#1
 # Loading work.tvc_siso_gen(file_io)#1
 # ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/duv/scan_out has no driver.
 # This port will contribute value (U) to the signal network.
@@ -29,9 +55,7 @@ add wave -position end  sim:/tb_siso_gen_top/tg/clk
 add wave -position end  sim:/tb_siso_gen_top/tg/reset
 add wave -position end  sim:/tb_siso_gen_top/tg/req
 add wave -position end  sim:/tb_siso_gen_top/tg/ready
-# Load canceled
 run -all
 # ** Failure: OK! Simulation stopped at end of input file.
 #    Time: 13500 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd
 # Break in Process stimuli at /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd line 87
-# Causality operation skipped due to absence of debug database file

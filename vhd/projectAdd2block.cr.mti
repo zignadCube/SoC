@@ -5,6 +5,15 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package std_logic_1164
 -- Compiling entity siso8
 
+} {} {}} /home/s3310914/Documents/vhd/siso8_add2block_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/vhd/siso8_add2block_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture add2block of siso8
+-- Loading entity siso8
+
 } {} {}} /home/s3310914/Documents/vhd/conf_tb_siso8_add2block.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/vhd/conf_tb_siso8_add2block.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD

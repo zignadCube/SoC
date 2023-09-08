@@ -22,8 +22,9 @@
 # comment the line above and uncomment those below for the synthesis
 # of the other designs.
 
-SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_copy_arch.vhd"
+# SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_copy_arch.vhd"
 # SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_gcd_arch.vhd"
+SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_gcd_arch_own.vhd"
 # SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_swap_arch.vhd"
 # SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_dpctrl_arch.vhd\
 #                   cmp_add_dp.vhd \
@@ -39,8 +40,8 @@ TOP_ENTITY="siso_gen"
 # to a read VHDL architecture name and is only used to give the
 # synthesized result a unique name.
 
-TOP_ARCH="copy"
-# TOP_ARCH="gcd"
+# TOP_ARCH="copy"
+TOP_ARCH="gcd"
 # TOP_ARCH="swap"
 # TOP_ARCH="sec"
 # TOP_ARCH="clever"

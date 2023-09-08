@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version R-2020.09-SP2 for linux64 -- Dec 03, 2020
-#@ # Date:   Tue Sep  5 11:02:41 2023
+#@ # Date:   Fri Sep  8 21:11:30 2023
 #@ # Run by: s3310914@xoc2.ewi.utwente.nl
 #@ 
 
@@ -6738,15 +6738,15 @@ source /home/s3310914/Documents/syn/.synopsys_dc.setup
 #@ # -- End source /home/s3310914/Documents/syn/.synopsys_dc.setup
 
 # copy the sh variables into TCL variables
-set source_file_list "siso_gen_ent.vhd siso_gen_copy_arch.vhd"
+set source_file_list "siso_gen_ent.vhd siso_gen_gcd_arch_own.vhd"
 set top_entity siso_gen
 set clock clk
 set word_length 16
 set clock_period 5
-set instance siso_gen_copy_16_5
+set instance siso_gen_gcd_16_5
 set insert_scan n
 set gate_clock n
-set arch_instance copy_16_5
+set arch_instance gcd_16_5
 # set hdlin_enable_presto_for_vhdl true
 # read all VHDL files
 foreach vhdl_file $source_file_list {
