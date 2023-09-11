@@ -60,39 +60,26 @@ begin
     variable t1, t2, sub_res: unsigned(word_length-1 downto 0);
     variable gt_flag: std_logic;
   begin
-    if (num1 > num2)
+    sub_res := num1 - num2;
+    gt_flag := sub_res(word_length-1);
+    
+    if (sub_res = (sub_res'range => '0'))
     then
-      t1 := num1;
-      t2 := num2;
-      gt_flag := '1';
-      ready_next <= '0';
-      req_i_next <= '0';
-    elsif (num1 < num2)
-    then
-      t1 := num2;
-      t2 := num1;
-      gt_flag := '0';
-      ready_next <= '0';
-      req_i_next <= '0';
-    else
-      t1 := num2;
-      t2 := num1;
-      gt_flag := '0';
+      num1_next <= num1;
+      num2_next <= num2;
       ready_next <= '1';
       req_i_next <= '1';
-    end if;
-
-    sub_res := t1 - t2;
-    num3 <= sub_res;
-    if (gt_flag = '1')
+    elsif (gt_flag = '0')
     then
       num1_next <= sub_res;
       num2_next <= num2;
-      num3 <= (others => '1');
+      ready_next <= '0';
+      req_i_next <= '0';
     else
       num1_next <= num1;
-      num2_next <= sub_res;
-      num3 <= (others => '0');
+      num2_next <= unsigned(not std_logic_vector(sub_res))+1;
+      ready_next <= '0';
+      req_i_next <= '0';
     end if;
   end process next_val;
 

@@ -500,3 +500,206 @@ run -all
 # ** Failure: OK! Simulation stopped at end of input file.
 #    Time: 13500 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd
 # Break in Process stimuli at /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd line 87
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 4 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 4 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 4 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 1 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_gcd#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(gcd)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/duv/scan_out has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/tvc/scan_in has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 13500 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd line 87
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_gcd#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(gcd)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/duv/scan_out has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/tvc/scan_in has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 13500 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd line 87
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 1 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 1 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 1 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 1 error.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 3 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 2 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd failed with 3 errors.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 1 failed with 3 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_arch_own.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_own.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_gcd#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(gcd)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/duv/scan_out has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/tvc/scan_in has no driver.
+# This port will contribute value (U) to the signal network.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 13500 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/syn/tvc_siso_gen_file_io_arch.vhd line 87
