@@ -17,11 +17,11 @@ use ieee.numeric_std.all;
 
 architecture gcd of siso_gen is
   -- registers
-  signal num1, num2: unsigned(word_length-1 downto 0);
+  signal num1, num2, num3: unsigned(word_length-1 downto 0);
   signal odd, req_i: std_logic;
   -- wires
   signal num1_next, num2_next: unsigned(word_length-1 downto 0);
-  signal odd_next, req_i_next, ready_next, gt_flag, eq_flag: std_logic;
+  signal odd_next, req_i_next, ready_next: std_logic;
 begin
   -- the next process is sequential and only sensitive to clk and reset
   seq: process(clk, reset)
@@ -58,45 +58,41 @@ begin
   -- combinational process
   next_val: process(num1, num2)
     variable t1, t2, sub_res: unsigned(word_length-1 downto 0);
+    variable gt_flag: std_logic;
   begin
     if (num1 > num2)
     then
       t1 := num1;
       t2 := num2;
-      gt_flag <= '1';
-      eq_flag <= '0';
-    elsif (num2 > num1)
+      gt_flag := '1';
+      ready_next <= '0';
+      req_i_next <= '0';
+    elsif (num1 < num2)
     then
       t1 := num2;
       t2 := num1;
-      gt_flag <= '0';
-      eq_flag <= '0';
-    else
-      t1 := num1;
-      t2 := num2;
-      gt_flag <= '0';
-      eq_flag <= '1';
-    end if;
-
-    if (eq_flag = '1')
-    then
-      num1_next <= num1;
-      num2_next <= num2;
-      ready_next <= '1';
-      req_i_next <= '1';
-    else
-      sub_res := t1 - t2;
+      gt_flag := '0';
       ready_next <= '0';
       req_i_next <= '0';
+    else
+      t1 := num2;
+      t2 := num1;
+      gt_flag := '0';
+      ready_next <= '1';
+      req_i_next <= '1';
+    end if;
 
-      if (gt_flag = '1')
-      then
-        num1_next <= sub_res;
-        num2_next <= num2;
-      else
-        num1_next <= num1;
-        num2_next <= sub_res;
-      end if;      
+    sub_res := t1 - t2;
+    num3 <= sub_res;
+    if (gt_flag = '1')
+    then
+      num1_next <= sub_res;
+      num2_next <= num2;
+      num3 <= (others => '1');
+    else
+      num1_next <= num1;
+      num2_next <= sub_res;
+      num3 <= (others => '0');
     end if;
   end process next_val;
 
