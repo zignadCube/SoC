@@ -16,7 +16,7 @@ configuration conf_tb_siso_gen_gcd of tb_siso_gen_top is
     for tg: tb_siso_gen use entity work.tb_siso_gen(structure)
             generic map (word_length => 16);
       for structure
-        for duv: siso_gen use entity work.siso_gen(improved_gcd);
+        for duv: siso_gen use entity work.siso_gen(gcd);
         end for;
         for tvc: tvc_siso_gen use entity work.tvc_siso_gen(file_io)
             generic map (word_length => 16,

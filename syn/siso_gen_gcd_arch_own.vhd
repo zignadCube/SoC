@@ -90,4 +90,4 @@ begin
 
   -- req wires to req_i
   req <= req_i;
-end gcd;
+end improved_gcd;
