@@ -77,7 +77,7 @@ begin
       req_i_next <= '0';
     else
       num1_next <= num1;
-      num2_next <= unsigned(not std_logic_vector(sub_res))=1;
+      num2_next <= unsigned(not std_logic_vector(sub_res))+1;
       ready_next <= '0';
       req_i_next <= '0';
     end if;
