@@ -1,15 +1,4 @@
-/home/s3310914/Documents/syn/siso_gen_gcd_arch_own.vhd {0 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/syn/siso_gen_gcd_arch_own.vhd
-QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling architecture improved_gcd of siso_gen
--- Loading entity siso_gen
-** Error: /home/s3310914/Documents/syn/siso_gen_gcd_arch_own.vhd(93): Labels do not match: 'improved_gcd' and 'gcd'.
-** Note: /home/s3310914/Documents/syn/siso_gen_gcd_arch_own.vhd(93): VHDL Compiler exiting
-
-} {9.0 10.0} {}} /home/s3310914/Documents/syn/tb_siso_gen.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/syn/tb_siso_gen.vhd
+/home/s3310914/Documents/syn/tb_siso_gen.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/syn/tb_siso_gen.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -18,6 +7,21 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling architecture structure of tb_siso_gen
 -- Compiling entity tb_siso_gen_top
 -- Compiling architecture top of tb_siso_gen_top
+
+} {} {}} /home/s3310914/Documents/syn/conf_tb_siso_gen_gcd_own.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/syn/conf_tb_siso_gen_gcd_own.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_gcd
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
 
 } {} {}} /home/s3310914/Documents/syn/tvc_siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/syn/tvc_siso_gen_ent.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020

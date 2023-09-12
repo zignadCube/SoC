@@ -1,17 +1,16 @@
 -------------------------------------------------------------------------------
 -- File: siso_gen_gcd_arch.vhd
 -- Description: siso_gen architecture for computing greatest common divider
--- Author: Sabih Gerez, University of Twente
--- Creation date: Sun Jul 11 00:37:33 CEST 2004
+-- Author: José Martins and Zen Gondal
+-- Creation date: Thu Sep 7 CEST 2023
 -------------------------------------------------------------------------------
 -- $Rev: 1$
--- $Author: gerezsh$
--- $Date: Thu Aug 25 21:23:33 CEST 2022$
+-- $Author: José and Zen$
+-- $Date: Tue Sep 12 CEST 2023$
 -- $Log$
 -------------------------------------------------------------------------------
 
 
--- this architecture needs arithmetic functions
 library ieee;
 use ieee.numeric_std.all;
 
@@ -21,7 +20,7 @@ architecture improved_gcd of siso_gen is
   signal odd, req_i: std_logic;
   -- wires
   signal num1_next, num2_next, sub_res: unsigned(word_length-1 downto 0);
-  signal odd_next, req_i_next, ready_next: std_logic;
+  signal req_i_next, ready_next: std_logic;
 begin
   -- the next process is sequential and only sensitive to clk and reset
   seq: process(clk, reset)
@@ -51,16 +50,17 @@ begin
         num2 <= num2_next;
         req_i <= req_i_next;
         ready <= ready_next;
-      end if; -- ((req_i = '1') and (odd = '0'))
-    end if; -- (reset = '1')
+      end if;
+    end if;
   end process seq; 
 
-  -- combinational process
+  -- combinational process for subtracting num2 from num1
   sub: process(num1, num2)
   begin
     sub_res <= num1 - num2;
   end process sub;
 
+  -- combinational process for finding next values
   next_val: process(sub_res)
   variable sub_res_twos_comp: unsigned(word_length-1 downto 0);
   begin
@@ -90,4 +90,8 @@ begin
 
   -- req wires to req_i
   req <= req_i;
+<<<<<<< HEAD
 end improved_gcd;
+=======
+end gcd;
+>>>>>>> d67b3e1bf4781675a797d35d1c38a8c8c99c0dee
