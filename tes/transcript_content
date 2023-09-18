@@ -1,0 +1,5 @@
+run -all
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 150 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc

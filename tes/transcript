@@ -1,0 +1,229 @@
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_scan_16_5_flat.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd.vhd was successful.
+# Compile of tvc_siso_gen_scan_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_scan.vhd was successful.
+# Compile of siso_gen_swap_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_swap.vhd was successful.
+# Compile of siso_gen_swap_scan_2_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_swap_post.vhd was successful.
+# Compile of tvc_siso_gen_tester_arch.vhd was successful.
+# Compile of tvc_forcer_ent.vhd was successful.
+# Compile of tvc_forcer_swap_2_arch.vhd was successful.
+# 15 compiles, 0 failed with no errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_scan_16_5_flat.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd.vhd was successful.
+# Compile of tvc_siso_gen_scan_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_scan.vhd was successful.
+# Compile of siso_gen_swap_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_swap.vhd was successful.
+# Compile of siso_gen_swap_scan_2_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_swap_post.vhd was successful.
+# Compile of tvc_siso_gen_tester_arch.vhd was successful.
+# Compile of tvc_forcer_ent.vhd was successful.
+# Compile of tvc_forcer_swap_2_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_swap_tester.vhd was successful.
+# 16 compiles, 0 failed with no errors.
+vsim -voptargs=+acc +notimingchecks -noglitch work.conf_tb_siso_gen_swap_tester
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch work.conf_tb_siso_gen_swap_tester 
+# Start time: 12:14:03 on Sep 18,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_swap_tester#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_swap_scan_2_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.invd1(level1pintopindelay)#1
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.sdfrpql(level1pintopindelay)#1
+# Loading umcl18u250t2.sderpql(level1pintopindelay)#1
+# Loading work.tvc_siso_gen(tester)#1
+# Loading work.tvc_forcer(swap_2)#1
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_in
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/clk
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reset
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/req
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_out
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/ready
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/scan_in
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/scan_shift
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/scan_out
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_out_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_out_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/ready_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/state_cur_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/state_cur_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reg_keep_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reg_keep_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/state_nxt_1
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/ready_nxt
+run -all
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 320 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 320 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reg_out_reg_1/Q
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reg_out_reg_0/Q
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 320 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_gcd_scan_16_5_flat.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd.vhd was successful.
+# Compile of tvc_siso_gen_scan_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_scan.vhd was successful.
+# Compile of siso_gen_swap_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_swap.vhd was successful.
+# Compile of siso_gen_swap_scan_2_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_swap_post.vhd was successful.
+# Compile of tvc_siso_gen_tester_arch.vhd was successful.
+# Compile of tvc_forcer_ent.vhd was successful.
+# Compile of tvc_forcer_swap_2_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_swap_tester.vhd was successful.
+# 16 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 320 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 9; expected: 1; read: 0
+#    Time: 89900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 10; expected: 0; read: 1
+#    Time: 99900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 11; expected: 0; read: 1
+#    Time: 109900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 13; expected: 1; read: 0
+#    Time: 129900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 14; expected: 0; read: 1
+#    Time: 139900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Failure: Input error while reading signal reset at line nr. 16
+#    Time: 150 ns  Iteration: 0  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd
+# Break in Subprogram check_read at /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd line 65
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 10; expected: 0; read: 1
+#    Time: 99900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 14; expected: 0; read: 1
+#    Time: 139900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 15; expected: 1; read: 0
+#    Time: 149900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Failure: Input error while reading signal reset at line nr. 16
+#    Time: 150 ns  Iteration: 0  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd
+# Break in Subprogram check_read at /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd line 65
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 10; expected: 0; read: 1
+#    Time: 99900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 11; expected: 0; read: 1
+#    Time: 109900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 14; expected: 0; read: 1
+#    Time: 139900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 15; expected: 1; read: 0
+#    Time: 149900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Failure: Input error while reading signal reset at line nr. 16
+#    Time: 150 ns  Iteration: 0  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd
+# Break in Subprogram check_read at /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd line 65
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 10; expected: 0; read: 1
+#    Time: 99900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 11; expected: 0; read: 1
+#    Time: 109900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 14; expected: 0; read: 1
+#    Time: 139900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 15; expected: 1; read: 0
+#    Time: 149900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Failure: Input error while reading signal reset at line nr. 16
+#    Time: 150 ns  Iteration: 0  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd
+# Break in Subprogram check_read at /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd line 65
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 10; expected: 0; read: 1
+#    Time: 99900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 11; expected: 0; read: 1
+#    Time: 109900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 14; expected: 0; read: 1
+#    Time: 139900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Note: Output error for signal scan_out at line nr. 15; expected: 1; read: 0
+#    Time: 149900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Failure: Input error while reading signal reset at line nr. 16
+#    Time: 150 ns  Iteration: 0  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd
+# Break in Subprogram check_read at /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd line 65
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 150 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+run -all
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 150 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+run -all
+# ** Note: Output error for signal scan_out at line nr. 12; expected: 1; read: 0
+#    Time: 119900 ps  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc
+# ** Error: OK! Simulation stopped at end of input file.
+#    Time: 150 ns  Iteration: 0  Instance: /tb_siso_gen_top/tg/tvc

@@ -41,7 +41,8 @@ TOP_ENTITY="siso_gen"
 # synthesized result a unique name.
 
 # TOP_ARCH="copy"
-TOP_ARCH="gcd"
+# TOP_ARCH="gcd"
+TOP_ARCH="improved_gcd"
 # TOP_ARCH="swap"
 # TOP_ARCH="sec"
 # TOP_ARCH="clever"
@@ -68,8 +69,8 @@ WORD_LENGTHS="16"
 # should be synthesized. Use a list of values if you want to
 # repetititvely synthesize your design for each value in the list.
 
-# CLOCK_PERIODS="5"
-CLOCK_PERIODS="5 4 3.5 3 2.5 2 1.5"
+CLOCK_PERIODS="5"
+# CLOCK_PERIODS="5 4 3.5 3 2.5 2 1.5"
 
 # indicate whether you want a scan chain "n" -> No; "y" -> Yes
 INSERT_SCAN="n"

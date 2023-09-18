@@ -1,0 +1,128 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+dc_shell> dc_shell> siso_gen_ent.vhd siso_gen_gcd_arch_own.vhd
+dc_shell> siso_gen
+dc_shell> clk
+dc_shell> 16
+dc_shell> 5
+dc_shell> siso_gen_improved_gcd_16_5
+dc_shell> n
+dc_shell> n
+dc_shell> improved_gcd_16_5
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Running PRESTO HDLC
+Compiling Entity Declaration SISO_GEN
+Presto compilation completed successfully.
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/dw_foundation.sldb'
+Running PRESTO HDLC
+Compiling Architecture IMPROVED_GCD of SISO_GEN
+
+-------------------
+    93: <<<<<<< HEAD
+        ^^
+[Failure] Syntax error : received '<'
+          while expecting 'end'
+ 
+*** Presto compilation was unsuccessful. ***
+dc_shell> dc_shell> dc_shell> dc_shell> Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/standard.sldb'
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+  Loading link library 'umcl18u250t2_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Error: failed to load TEMP_WORK_91438715.GCD/SISO_GEN
+Error: failed to load WORK.GCD/SISO_GEN
+Cannot find architecture "gcd" of entity "siso_gen" in library "WORK"
+*** Presto compilation was unsuccessful. ***
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+Error: Can't find object 'clk'. (UID-109)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+Error: Value for list 'design_list' must have 1 elements. (CMD-036)
+0
+dc_shell> dc_shell> dc_shell> dc_shell> FALSE
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> NMA-16 VHDL-286 UCN-4
+dc_shell> 1
+dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> hier_improved_gcd_16_5
+dc_shell> dc_shell> dc_shell> Error: No files or designs were specified. (UID-22)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> TRUE
+dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+Error: Value for list '-from' must have 1 elements. (CMD-036)
+Error: Value for list '-to' must have 1 elements. (CMD-036)
+0
+dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> dc_shell> dc_shell> flat_improved_gcd_16_5
+dc_shell> dc_shell> dc_shell> Error: No files or designs were specified. (UID-22)
+0
+dc_shell> dc_shell> dc_shell> Error: No files or designs were specified. (UID-22)
+0
+dc_shell> dc_shell> dc_shell> dc_shell> Error: Current design is not defined. (UID-4)
+0
+dc_shell> 
+Memory usage for this session 149 Mbytes.
+Memory usage for this session including child processes 149 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 4 seconds ( 0.00 hours ).
+
+Thank you...
