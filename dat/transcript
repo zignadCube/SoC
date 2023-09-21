@@ -1,0 +1,112 @@
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_dpctrl_arch.vhd was successful.
+# Compile of cmp_add_dp.vhd was successful.
+# Compile of cmp_add_ctrl_ent.vhd was successful.
+# Compile of cmp_add_ctrl_gcd_arch.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of conf_tb_siso_gen_dpctrl.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_large.vhd was successful.
+# Compile of cmp_add_ctrl_gcd_arch_own.vhd was successful.
+# Compile of conf_tb_siso_gen_dpctrl_own.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_large_own.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_large_own_flat.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_dpctrl_arch.vhd was successful.
+# Compile of cmp_add_dp.vhd was successful.
+# Compile of cmp_add_ctrl_ent.vhd was successful.
+# Compile of cmp_add_ctrl_gcd_arch.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of conf_tb_siso_gen_dpctrl.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_large.vhd was successful.
+# Compile of cmp_add_ctrl_gcd_arch_own.vhd was successful.
+# Compile of conf_tb_siso_gen_dpctrl_own.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_large_own.vhd was successful.
+# Compile of conf_tb_siso_gen_gcd_large_own_flat.vhd was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -voptargs=+acc +notimingchecks -noglitch work.conf_tb_siso_gen_gcd_large_own_flat
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch work.conf_tb_siso_gen_gcd_large_own_flat 
+# Start time: 11:59:30 on Sep 21,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_gcd_large_own_flat#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_dpctrl_gcd_16_10)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai211d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi32d1(level1pintopindelay)#1
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#1
+# Loading umcl18u250t2.ao32d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.bufd1(level1pintopindelay)#1
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan3m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.ao211d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#1
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#1
+# Loading umcl18u250t2.dffspq1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi211d1(level1pintopindelay)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/duv/scan_out has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_siso_gen_top/tg/tvc/scan_in has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/tb_siso_gen_top/tg/data_in
+add wave -position end  sim:/tb_siso_gen_top/tg/data_out
+add wave -position end  sim:/tb_siso_gen_top/tg/clk
+add wave -position end  sim:/tb_siso_gen_top/tg/reset
+add wave -position end  sim:/tb_siso_gen_top/tg/req
+add wave -position end  sim:/tb_siso_gen_top/tg/ready
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: s3310914  Hostname: xoc2.ewi.utwente.nl  ProcessID: 112154
+#           Attempting to use alternate WLF file "./wlftFqHlDG".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftFqHlDG
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 345700 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/dat/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/dat/tvc_siso_gen_file_io_arch.vhd line 87

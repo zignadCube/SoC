@@ -1,4 +1,14 @@
-/home/s3310914/Documents/tes/conf_tb_siso_gen_gcd.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/conf_tb_siso_gen_gcd.vhd
+/home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/tvc_siso_gen_tester_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling architecture tester of tvc_siso_gen
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/tes/conf_tb_siso_gen_gcd.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/conf_tb_siso_gen_gcd.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
 -- Compiling configuration conf_tb_siso_gen_gcd
@@ -33,6 +43,23 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling architecture flat_swap_scan_2_5 of siso_gen
 -- Loading entity siso_gen
 
+} {} {}} /home/s3310914/Documents/tes/conf_tb_siso_gen_swap_tester.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/conf_tb_siso_gen_swap_tester.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_swap_tester
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+-- Loading architecture tester of tvc_siso_gen
+-- Loading entity tvc_forcer
+
 } {} {}} /home/s3310914/Documents/tes/conf_tb_siso_gen_gcd_scan.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/conf_tb_siso_gen_gcd_scan.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
@@ -62,6 +89,14 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package NUMERIC_STD
 -- Loading package std_logic_textio
 -- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/tes/tvc_forcer_swap_2_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/tvc_forcer_swap_2_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling architecture swap_2 of tvc_forcer
+-- Loading entity tvc_forcer
 
 } {} {}} /home/s3310914/Documents/tes/siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/siso_gen_ent.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
@@ -115,6 +150,11 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package NUMERIC_STD
 -- Loading package std_logic_textio
 -- Compiling entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/tes/tvc_forcer_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/tvc_forcer_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling entity tvc_forcer
 
 } {} {}} /home/s3310914/Documents/tes/tb_siso_gen.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/tes/tb_siso_gen.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020

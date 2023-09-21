@@ -1,0 +1,570 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/s3310914/Documents/dat
+T_opt
+!s110 1695287954
+V[]S][iUQ3dch4COaiWJ[e3
+04 32 0 work conf_tb_siso_gen_dpctrl_own_flat 1
+=2-b026282075c9-650c0a92-730b-121c8
+o-quiet -auto_acc_if_foreign -work work -sdftyp /tg/duv=/home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.sdf -suppress 1948 +acc
+Z1 tCvgOpt 0
+n@_opt
+Z2 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1695290371
+V0i>no<[P_fWT_WAXzJU:_3
+04 35 0 work conf_tb_siso_gen_gcd_large_own_flat 1
+=1-b026282075c9-650c1402-9077e-40f55
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+R1
+n@_opt1
+R2
+T_opt2
+!s110 1695283817
+V<:I;Iinj58gOgzYcVTVSB1
+04 27 0 work conf_tb_siso_gen_dpctrl_own 1
+=15-b026282075c9-650bfa69-6a3e-1b61a
+R3
+R1
+n@_opt2
+R2
+R0
+Ecmp_add_ctrl
+Z4 w1695113049
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 267
+R0
+8/home/s3310914/Documents/dat/cmp_add_ctrl_ent.vhd
+F/home/s3310914/Documents/dat/cmp_add_ctrl_ent.vhd
+l0
+L17 1
+V2dM4WiIPXU7DkRH8d30n80
+!s100 =7D@M9^GcACCVO^_U@n>o2
+Z7 OL;C;2020.4;71
+33
+Z8 !s110 1695290353
+!i10b 1
+Z9 !s108 1695290353.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/cmp_add_ctrl_ent.vhd|
+!s107 /home/s3310914/Documents/dat/cmp_add_ctrl_ent.vhd|
+!i113 0
+Z10 o-work work -2008
+R1
+Amy_gcd
+w1695283803
+R5
+R6
+Z11 DEx4 work 12 cmp_add_ctrl 0 22 2dM4WiIPXU7DkRH8d30n80
+!i122 272
+8/home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch_own.vhd
+F/home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch_own.vhd
+l9
+L1 144
+VAbefbMUX9bFb;fgdfPjOl3
+!s100 7I^GGKcW7alGjDl;9QdmO2
+R7
+33
+Z12 !s110 1695290355
+!i10b 1
+Z13 !s108 1695290355.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch_own.vhd|
+!s107 /home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch_own.vhd|
+!i113 0
+R10
+R1
+Agcd
+R5
+R6
+R11
+!i122 268
+8/home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch.vhd
+F/home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch.vhd
+l21
+L13 147
+V<lFUCDU`f14MFG58HT1bX1
+!s100 4N0eCXS?=;a?FfY8LVnN60
+R7
+33
+Z14 !s110 1695290354
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch.vhd|
+!s107 /home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch.vhd|
+!i113 0
+R10
+R1
+Ecmp_add_dp
+R4
+Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R5
+R6
+!i122 266
+R0
+Z16 8/home/s3310914/Documents/dat/cmp_add_dp.vhd
+Z17 F/home/s3310914/Documents/dat/cmp_add_dp.vhd
+l0
+L19 1
+VzIcJ@1Z;@09?z33gk<T[B3
+!s100 GJlUfF0Q>JmgFOCFXmQOZ3
+R7
+33
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/cmp_add_dp.vhd|
+Z19 !s107 /home/s3310914/Documents/dat/cmp_add_dp.vhd|
+!i113 0
+R10
+R1
+Abehavioral
+R15
+R5
+R6
+Z20 DEx4 work 10 cmp_add_dp 0 22 zIcJ@1Z;@09?z33gk<T[B3
+!i122 266
+l53
+L42 100
+VO5j=gcJE`=HzH8Z=37Inj3
+!s100 ^CKTYO0HCL=@1BjZ:k9m32
+R7
+33
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 0
+R10
+R1
+Cconf_tb_siso_gen_dpctrl
+Z21 etb_siso_gen_top
+atop
+Z22 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z23 DEx4 work 12 tvc_siso_gen 0 22 9bPPAm_78^98R4aPmFZF=3
+R11
+R15
+R20
+Z24 DAx4 work 8 siso_gen 6 dpctrl 22 V1F<UoLoGAM6UNXcFlSSi2
+Z25 DEx4 work 8 siso_gen 0 22 66_W1cnn]X0[iBVNQoY>J1
+Z26 DAx4 work 11 tb_siso_gen 9 structure 22 ka@ol`:G[ziL4=T8[NVO_1
+R5
+R6
+Z27 DEx4 work 11 tb_siso_gen 0 22 EY^U3:F`RcmfCIDczY4@60
+Z28 DAx4 work 15 tb_siso_gen_top 3 top 22 Pe<Dn9AHzMn?7fX1Df4=N0
+Z29 DEx4 work 15 tb_siso_gen_top 0 22 C<B:gzcnf=XX`e`3XH<X[2
+!i122 270
+R4
+R0
+8/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl.vhd
+F/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl.vhd
+l0
+Z30 L15 1
+V6XSKTKNKW^nD]`obI=ISO1
+!s100 9KSUS75KPiN3W<>jcMF]n2
+R7
+33
+R14
+!i10b 1
+Z31 !s108 1695290354.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl.vhd|
+!s107 /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl.vhd|
+!i113 0
+R10
+R1
+Cconf_tb_siso_gen_dpctrl_own
+R21
+atop
+R22
+R23
+R11
+R15
+R20
+R24
+R25
+R26
+R5
+R6
+R27
+R28
+R29
+!i122 272
+w1695117558
+R0
+8/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd
+F/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd
+l0
+R30
+V::0bTS1N>kA@;S1Zb<OCY2
+!s100 BGEIRcoKgbD;S8Egn^>Ao1
+R7
+33
+R12
+!i10b 1
+R13
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd|
+!s107 /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd|
+!i113 0
+R10
+R1
+Cconf_tb_siso_gen_dpctrl_own_flat
+R21
+atop
+R22
+R15
+R23
+R25
+R26
+R5
+R6
+R27
+R28
+R29
+!i122 236
+w1695260461
+R0
+8/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own_flat.vhd
+F/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own_flat.vhd
+l0
+R30
+Vd[[61mmYJ2[he93<R^1K[0
+!s100 XVhRhDZBG4DEPWI2@Pzkj0
+R7
+33
+Z32 !s110 1695260469
+!i10b 1
+Z33 !s108 1695260469.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own_flat.vhd|
+!s107 /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own_flat.vhd|
+!i113 0
+R10
+R1
+Cconf_tb_siso_gen_gcd_large
+R21
+atop
+R22
+R23
+R11
+R15
+R20
+R24
+R25
+R26
+R5
+R6
+R27
+R28
+R29
+!i122 271
+R4
+R0
+8/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large.vhd
+F/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large.vhd
+l0
+Z34 L13 1
+VBeZ452GMJd`X:JHiA[?W[2
+!s100 aG?=;JbkSGXO]P13KJPCn1
+R7
+33
+R12
+!i10b 1
+R31
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large.vhd|
+!s107 /home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large.vhd|
+!i113 0
+R10
+R1
+Cconf_tb_siso_gen_gcd_large_own
+R21
+atop
+R22
+R23
+R11
+R15
+R20
+R24
+R25
+R26
+R5
+R6
+R27
+R28
+R29
+!i122 273
+w1695118045
+R0
+8/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own.vhd
+F/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own.vhd
+l0
+R34
+V:6@?523I?oaHK2=mJ7h]:1
+!s100 eWL_EUPbhZ1kn7k6jlO5V0
+R7
+33
+R12
+!i10b 1
+R13
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own.vhd|
+!s107 /home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own.vhd|
+!i113 0
+R10
+R1
+Cconf_tb_siso_gen_gcd_large_own_flat
+R21
+atop
+R22
+R15
+R23
+R25
+R26
+R5
+R6
+R27
+R28
+R29
+!i122 274
+w1695290344
+R0
+8/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own_flat.vhd
+F/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own_flat.vhd
+l0
+R34
+Vj4^GXb7`LQzbEm5iK=<WN2
+!s100 1UAgSe;eV`HEVoI3VjDm:1
+R7
+33
+R12
+!i10b 1
+R13
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own_flat.vhd|
+!s107 /home/s3310914/Documents/dat/conf_tb_siso_gen_gcd_large_own_flat.vhd|
+!i113 0
+R10
+R1
+Pconv_pack_siso_gen
+Z35 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z36 DPx12 umcl18u250t2 24 umcl18u250t2_vcomponents 0 22 Cd7]=4S_<O3<ofVJOVXg<3
+R5
+R6
+!i122 235
+Z37 w1695260025
+R0
+Z38 8/home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.vhd
+Z39 F/home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.vhd
+l0
+L7 1
+V`4k9SmB06:c:_Q[[1j]<n0
+!s100 1U@jPPJYU:>Y5DaJC98Wb3
+R7
+33
+R32
+!i10b 1
+R33
+Z40 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.vhd|
+Z41 !s107 /home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.vhd|
+!i113 0
+R10
+R1
+Esiso_gen
+Z42 w1695113028
+R5
+R6
+!i122 265
+R0
+8/home/s3310914/Documents/dat/siso_gen_ent.vhd
+F/home/s3310914/Documents/dat/siso_gen_ent.vhd
+l0
+L18 1
+V66_W1cnn]X0[iBVNQoY>J1
+!s100 dZ7;mBT4UeBBC1AcNXA7Z0
+R7
+33
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/siso_gen_ent.vhd|
+!s107 /home/s3310914/Documents/dat/siso_gen_ent.vhd|
+!i113 0
+R10
+R1
+Adpctrl
+R4
+R5
+R6
+R25
+!i122 266
+8/home/s3310914/Documents/dat/siso_gen_dpctrl_arch.vhd
+F/home/s3310914/Documents/dat/siso_gen_dpctrl_arch.vhd
+l53
+L14 62
+VV1F<UoLoGAM6UNXcFlSSi2
+!s100 gRQNC[18VX]jhQ]PizcFz2
+R7
+33
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/siso_gen_dpctrl_arch.vhd|
+!s107 /home/s3310914/Documents/dat/siso_gen_dpctrl_arch.vhd|
+!i113 0
+R10
+R1
+Aflat_dpctrl_gcd_16_10
+R37
+R25
+DPx4 work 18 conv_pack_siso_gen 0 22 `4k9SmB06:c:_Q[[1j]<n0
+R35
+R36
+R5
+R6
+!i122 235
+R38
+R39
+l270
+L21 1201
+V6dQUC@zC0YjCi@:5E5`B23
+!s100 H]UKV]QJ>VGKMO9:hG18h1
+R7
+33
+R32
+!i10b 1
+R33
+R40
+R41
+!i113 0
+R10
+R1
+Etb_siso_gen
+R42
+R5
+R6
+!i122 269
+R0
+Z43 8/home/s3310914/Documents/dat/tb_siso_gen.vhd
+Z44 F/home/s3310914/Documents/dat/tb_siso_gen.vhd
+l0
+L23 1
+VEY^U3:F`RcmfCIDczY4@60
+!s100 Nh2bf8LjQk5BC=Z^aZVnK3
+R7
+33
+R14
+!i10b 1
+R31
+Z45 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/tb_siso_gen.vhd|
+Z46 !s107 /home/s3310914/Documents/dat/tb_siso_gen.vhd|
+!i113 0
+R10
+R1
+Astructure
+R5
+R6
+R27
+!i122 269
+l63
+L27 52
+Vka@ol`:G[ziL4=T8[NVO_1
+!s100 <3a_>J=W:_GLPNc7DSn5z3
+R7
+33
+R14
+!i10b 1
+R31
+R45
+R46
+!i113 0
+R10
+R1
+Etb_siso_gen_top
+R42
+!i122 269
+R0
+R43
+R44
+l0
+L84 1
+VC<B:gzcnf=XX`e`3XH<X[2
+!s100 =FdFI@R6fd=ZGEA<z709@0
+R7
+33
+R14
+!i10b 1
+R31
+R45
+R46
+!i113 0
+R10
+R1
+Atop
+R29
+!i122 269
+l91
+L87 7
+VPe<Dn9AHzMn?7fX1Df4=N0
+!s100 c5]?0`]Y@h@GJcZTSeZP;3
+R7
+33
+R14
+!i10b 1
+R31
+R45
+R46
+!i113 0
+R10
+R1
+Etvc_siso_gen
+R42
+R22
+R15
+R5
+R6
+!i122 268
+R0
+8/home/s3310914/Documents/dat/tvc_siso_gen_ent.vhd
+F/home/s3310914/Documents/dat/tvc_siso_gen_ent.vhd
+l0
+L22 1
+V9bPPAm_78^98R4aPmFZF=3
+!s100 ieiN7Gff]kK<Bh=S><NJN3
+R7
+33
+R14
+!i10b 1
+R31
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/tvc_siso_gen_ent.vhd|
+!s107 /home/s3310914/Documents/dat/tvc_siso_gen_ent.vhd|
+!i113 0
+R10
+R1
+Afile_io
+R22
+R15
+R5
+R6
+R23
+!i122 269
+8/home/s3310914/Documents/dat/tvc_siso_gen_file_io_arch.vhd
+F/home/s3310914/Documents/dat/tvc_siso_gen_file_io_arch.vhd
+l32
+L21 91
+V[QCml[_>2K19MAACffP^b2
+!s100 :]1WlQ=FUTG<C?4i_R7KP0
+R7
+33
+R14
+!i10b 1
+R31
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/dat/tvc_siso_gen_file_io_arch.vhd|
+!s107 /home/s3310914/Documents/dat/tvc_siso_gen_file_io_arch.vhd|
+!i113 0
+R10
+R1
