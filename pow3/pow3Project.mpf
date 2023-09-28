@@ -1,0 +1,118 @@
+; -----------------------------------------------------------------------------
+; File         : modelsim.ini
+; Description  : Local modelsim.ini file for SISO exercises
+; Author       : Sabih Gerez, University of Twente
+; Creation date: July 3, 2022
+; -----------------------------------------------------------------------------
+; $Rev: 1$
+; $Author: gerezsh$
+; $Date: Fri Sep 16 23:54:45 CEST 2022$
+; $Log$
+; -----------------------------------------------------------------------------
+
+
+; SG: refer to central file for all libraries
+
+[Library]
+others = $SOC_ROOT/defaults/modelsim-2022.ini
+
+work = work
+[vcom]
+VHDL93 = 2008
+
+[vsim]
+
+; SG: optimizations off
+; VoptFlow = 0
+
+; SG: set to ps
+Resolution = 1ps
+
+; Turn off warnings from the std_logic_arith, std_logic_unsigned
+; and std_logic_signed packages.
+; SG: activate
+StdArithNoWarnings = 1
+
+; Turn off warnings from the IEEE numeric_std and numeric_bit packages.
+; SG: activate
+NumericStdNoWarnings = 1
+DefaultRadix = hexadecimal
+IterationLimit = 10000000
+RunLength = 100 ps
+[Project]
+** Warning: ; Warning -- Do not edit the project properties directly.
+;            Property names are dynamic in nature and property
+;            values have special syntax.  Changing property data directly
+;            can result in a corrupt MPF file.  All project properties
+;            can be modified through project window dialogs.
+Project_Version = 6
+Project_DefaultLib = work
+Project_SortMethod = unused
+Project_Files_Count = 9
+Project_File_0 = /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.vhd
+Project_File_P_0 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695892809 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 6 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_1 = /home/s3310914/Documents/pow3/tvc_siso_gen_ent.vhd
+Project_File_P_1 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695886642 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 3 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_2 = /home/s3310914/Documents/pow3/siso_gen_ent.vhd
+Project_File_P_2 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695886642 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 0 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_3 = /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+Project_File_P_3 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695886642 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 4 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_4 = /home/s3310914/Documents/pow3/siso_gen_calc_arch.vhd
+Project_File_P_4 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695889552 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 1 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_5 = /home/s3310914/Documents/pow3/conf_tb_siso_gen_calc_8.vhd
+Project_File_P_5 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695886642 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 7 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_6 = /home/s3310914/Documents/pow3/conf_tb_siso_gen_calc_8_post.vhd
+Project_File_P_6 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695886642 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 8 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_7 = /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.vhd
+Project_File_P_7 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695889573 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 5 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_8 = /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+Project_File_P_8 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1695886642 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 0 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 2 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_Sim_Count = 0
+Project_Folder_Count = 0
+Echo_Compile_Output = 0
+Save_Compile_Report = 1
+Project_Opt_Count = 0
+ForceSoftPaths = 0
+ProjectStatusDelay = 5000
+VERILOG_DoubleClick = Edit
+VERILOG_CustomDoubleClick = 
+SYSTEMVERILOG_DoubleClick = Edit
+SYSTEMVERILOG_CustomDoubleClick = 
+VHDL_DoubleClick = Edit
+VHDL_CustomDoubleClick = 
+PSL_DoubleClick = Edit
+PSL_CustomDoubleClick = 
+TEXT_DoubleClick = Edit
+TEXT_CustomDoubleClick = 
+SYSTEMC_DoubleClick = Edit
+SYSTEMC_CustomDoubleClick = 
+TCL_DoubleClick = Edit
+TCL_CustomDoubleClick = 
+MACRO_DoubleClick = Edit
+MACRO_CustomDoubleClick = 
+VCD_DoubleClick = Edit
+VCD_CustomDoubleClick = 
+SDF_DoubleClick = Edit
+SDF_CustomDoubleClick = 
+XML_DoubleClick = Edit
+XML_CustomDoubleClick = 
+LOGFILE_DoubleClick = Edit
+LOGFILE_CustomDoubleClick = 
+UCDB_DoubleClick = Edit
+UCDB_CustomDoubleClick = 
+TDB_DoubleClick = Edit
+TDB_CustomDoubleClick = 
+UPF_DoubleClick = Edit
+UPF_CustomDoubleClick = 
+PCF_DoubleClick = Edit
+PCF_CustomDoubleClick = 
+PROJECT_DoubleClick = Edit
+PROJECT_CustomDoubleClick = 
+VRM_DoubleClick = Edit
+VRM_CustomDoubleClick = 
+DEBUGDATABASE_DoubleClick = Edit
+DEBUGDATABASE_CustomDoubleClick = 
+DEBUGARCHIVE_DoubleClick = Edit
+DEBUGARCHIVE_CustomDoubleClick = 
+Project_Major_Version = 2020
+Project_Minor_Version = 4

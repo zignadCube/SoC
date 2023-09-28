@@ -7,21 +7,6 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package std_logic_textio
 -- Compiling entity tvc_siso_gen
 
-} {} {}} /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own_flat.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own_flat.vhd
-QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Compiling configuration conf_tb_siso_gen_dpctrl_own_flat
--- Loading entity tb_siso_gen_top
--- Loading architecture top of tb_siso_gen_top
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading entity tb_siso_gen
--- Loading architecture structure of tb_siso_gen
--- Loading entity siso_gen
--- Loading package NUMERIC_STD
--- Loading package std_logic_textio
--- Loading entity tvc_siso_gen
-
 } {} {}} /home/s3310914/Documents/dat/cmp_add_dp.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/cmp_add_dp.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
@@ -30,18 +15,6 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package NUMERIC_STD
 -- Compiling entity cmp_add_dp
 -- Compiling architecture behavioral of cmp_add_dp
-
-} {} {}} /home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/synopsys_out/siso_gen_dpctrl_gcd_16_10_flat.vhd
-QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package VITAL_Timing
--- Loading package umcl18u250t2_VCOMPONENTS
--- Compiling package CONV_PACK_siso_gen
--- Loading package CONV_PACK_siso_gen
--- Compiling architecture flat_dpctrl_gcd_16_10 of siso_gen
--- Loading entity siso_gen
 
 } {} {}} /home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/cmp_add_ctrl_gcd_arch.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
@@ -130,24 +103,6 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading entity cmp_add_dp
 -- Loading entity cmp_add_ctrl
 
-} {} {}} /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd
-QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
--- Loading package STANDARD
--- Compiling configuration conf_tb_siso_gen_dpctrl_own
--- Loading entity tb_siso_gen_top
--- Loading architecture top of tb_siso_gen_top
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading entity tb_siso_gen
--- Loading architecture structure of tb_siso_gen
--- Loading entity siso_gen
--- Loading package NUMERIC_STD
--- Loading package std_logic_textio
--- Loading entity tvc_siso_gen
--- Loading architecture dpctrl of siso_gen
--- Loading entity cmp_add_dp
--- Loading entity cmp_add_ctrl
-
 } {} {}} /home/s3310914/Documents/dat/siso_gen_dpctrl_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/siso_gen_dpctrl_arch.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD
@@ -165,6 +120,24 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling architecture structure of tb_siso_gen
 -- Compiling entity tb_siso_gen_top
 -- Compiling architecture top of tb_siso_gen_top
+
+} {} {}} /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/conf_tb_siso_gen_dpctrl_own.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_dpctrl_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+-- Loading architecture dpctrl of siso_gen
+-- Loading entity cmp_add_dp
+-- Loading entity cmp_add_ctrl
 
 } {} {}} /home/s3310914/Documents/dat/siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/dat/siso_gen_ent.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020

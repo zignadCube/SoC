@@ -1,0 +1,1300 @@
+# Compile of conf_tb_siso_gen_calc_8.vhd failed with 1 errors.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd failed with 1 errors.
+# Compile of siso_gen_calc_arch.vhd failed with 1 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# 8 compiles, 3 failed with 3 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -voptargs=+acc +notimingchecks -noglitch work.conf_tb_siso_gen_calc_8_mix_post -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch work.conf_tb_siso_gen_calc_8_mix_post -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf" 
+# Start time: 09:44:03 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor3m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+add wave -position end  sim:/tb_siso_gen_top/tg/data_in
+add wave -position end  sim:/tb_siso_gen_top/tg/data_out
+add wave -position end  sim:/tb_siso_gen_top/tg/clk
+add wave -position end  sim:/tb_siso_gen_top/tg/reset
+add wave -position end  sim:/tb_siso_gen_top/tg/req
+add wave -position end  sim:/tb_siso_gen_top/tg/ready
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mix8.saif
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_7_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_6_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_5_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_4_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_add_reg_0_port
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_7_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_6_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_5_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_4_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_add_reg_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_7_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_6_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_5_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_4_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_7_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_6_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_5_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_4_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/opcode_reg_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/opcode_reg_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/opcode_reg_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/opcode_reg_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/cur_state_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/cur_state_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/cur_state_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/nxt_state_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/nxt_state_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/nxt_state_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_7_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_6_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_5_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_4_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out_0_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_15_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_14_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_13_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_12_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_11_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_10_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_9_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_8_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_7_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_6_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_5_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_4_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_3_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_2_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_1_port
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out_0_port
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(546): Failed to find INSTANCE 'U41'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(550): Failed to find INSTANCE 'U42'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(498): Failed to find INSTANCE 'U43'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(380): Failed to find INSTANCE 'U45'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(420): Failed to find INSTANCE 'U46'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(423): Failed to find INSTANCE 'U47'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(426): Failed to find INSTANCE 'U48'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(429): Failed to find INSTANCE 'U49'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(432): Failed to find INSTANCE 'U50'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(435): Failed to find INSTANCE 'U51'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(383): Failed to find INSTANCE 'U52'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(385): Failed to find INSTANCE 'U53'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(370): Failed to find INSTANCE 'add_170_U1'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(367): Failed to find INSTANCE 'add_170_U1_1'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(364): Failed to find INSTANCE 'add_170_U1_2'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(361): Failed to find INSTANCE 'add_170_U1_3'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(358): Failed to find INSTANCE 'add_170_U1_4'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(355): Failed to find INSTANCE 'add_170_U1_5'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(353): Failed to find INSTANCE 'add_170_U1_6'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(371): Failed to find INSTANCE 'add_170_U1_7'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(376): Failed to find INSTANCE 'add_170_U2'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(41): Failed to find INSTANCE 'mult_173_U10'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(44): Failed to find INSTANCE 'mult_173_U11'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(47): Failed to find INSTANCE 'mult_173_U12'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(50): Failed to find INSTANCE 'mult_173_U13'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(53): Failed to find INSTANCE 'mult_173_U14'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(22): Failed to find INSTANCE 'mult_173_U145'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(76): Failed to find INSTANCE 'mult_173_U146'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(62): Failed to find INSTANCE 'mult_173_U147'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(110): Failed to find INSTANCE 'mult_173_U148'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(112): Failed to find INSTANCE 'mult_173_U149'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(56): Failed to find INSTANCE 'mult_173_U15'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(114): Failed to find INSTANCE 'mult_173_U150'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(116): Failed to find INSTANCE 'mult_173_U151'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(110): Failed to find INSTANCE 'mult_173_U152'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(112): Failed to find INSTANCE 'mult_173_U153'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(114): Failed to find INSTANCE 'mult_173_U154'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(119): Failed to find INSTANCE 'mult_173_U155'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(121): Failed to find INSTANCE 'mult_173_U156'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(123): Failed to find INSTANCE 'mult_173_U157'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(117): Failed to find INSTANCE 'mult_173_U158'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(128): Failed to find INSTANCE 'mult_173_U159'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(129): Failed to find INSTANCE 'mult_173_U160'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(130): Failed to find INSTANCE 'mult_173_U161'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(131): Failed to find INSTANCE 'mult_173_U162'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(57): Failed to find INSTANCE 'mult_173_U163'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(54): Failed to find INSTANCE 'mult_173_U164'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(133): Failed to find INSTANCE 'mult_173_U165'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(106): Failed to find INSTANCE 'mult_173_U166'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(137): Failed to find INSTANCE 'mult_173_U167'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(102): Failed to find INSTANCE 'mult_173_U168'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(143): Failed to find INSTANCE 'mult_173_U169'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(21): Failed to find INSTANCE 'mult_173_U17'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(101): Failed to find INSTANCE 'mult_173_U170'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(149): Failed to find INSTANCE 'mult_173_U171'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(94): Failed to find INSTANCE 'mult_173_U172'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(155): Failed to find INSTANCE 'mult_173_U173'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(90): Failed to find INSTANCE 'mult_173_U174'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(161): Failed to find INSTANCE 'mult_173_U175'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(80): Failed to find INSTANCE 'mult_173_U176'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(167): Failed to find INSTANCE 'mult_173_U177'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(55): Failed to find INSTANCE 'mult_173_U178'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(105): Failed to find INSTANCE 'mult_173_U179'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(24): Failed to find INSTANCE 'mult_173_U18'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(182): Failed to find INSTANCE 'mult_173_U180'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(104): Failed to find INSTANCE 'mult_173_U181'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(181): Failed to find INSTANCE 'mult_173_U182'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(98): Failed to find INSTANCE 'mult_173_U183'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(187): Failed to find INSTANCE 'mult_173_U184'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(96): Failed to find INSTANCE 'mult_173_U185'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(193): Failed to find INSTANCE 'mult_173_U186'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(87): Failed to find INSTANCE 'mult_173_U187'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(199): Failed to find INSTANCE 'mult_173_U188'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(66): Failed to find INSTANCE 'mult_173_U189'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(103): Failed to find INSTANCE 'mult_173_U190'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(97): Failed to find INSTANCE 'mult_173_U191'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(217): Failed to find INSTANCE 'mult_173_U192'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(92): Failed to find INSTANCE 'mult_173_U193'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(216): Failed to find INSTANCE 'mult_173_U194'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(88): Failed to find INSTANCE 'mult_173_U195'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(222): Failed to find INSTANCE 'mult_173_U196'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(81): Failed to find INSTANCE 'mult_173_U197'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(228): Failed to find INSTANCE 'mult_173_U198'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(75): Failed to find INSTANCE 'mult_173_U199'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(18): Failed to find INSTANCE 'mult_173_U2'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(28): Failed to find INSTANCE 'mult_173_U20'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(234): Failed to find INSTANCE 'mult_173_U200'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(68): Failed to find INSTANCE 'mult_173_U201'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(240): Failed to find INSTANCE 'mult_173_U202'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(61): Failed to find INSTANCE 'mult_173_U203'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(95): Failed to find INSTANCE 'mult_173_U204'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(86): Failed to find INSTANCE 'mult_173_U205'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(258): Failed to find INSTANCE 'mult_173_U206'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(74): Failed to find INSTANCE 'mult_173_U207'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(70): Failed to find INSTANCE 'mult_173_U208'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(263): Failed to find INSTANCE 'mult_173_U209'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(64): Failed to find INSTANCE 'mult_173_U21'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(63): Failed to find INSTANCE 'mult_173_U210'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(267): Failed to find INSTANCE 'mult_173_U211'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(59): Failed to find INSTANCE 'mult_173_U212'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(273): Failed to find INSTANCE 'mult_173_U213'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(18): Failed to find INSTANCE 'mult_173_U214'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(58): Failed to find INSTANCE 'mult_173_U215'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(52): Failed to find INSTANCE 'mult_173_U216'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(100): Failed to find INSTANCE 'mult_173_U217'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(89): Failed to find INSTANCE 'mult_173_U218'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(78): Failed to find INSTANCE 'mult_173_U219'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(31): Failed to find INSTANCE 'mult_173_U22'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(72): Failed to find INSTANCE 'mult_173_U220'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(306): Failed to find INSTANCE 'mult_173_U221'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(205): Failed to find INSTANCE 'mult_173_U222'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(305): Failed to find INSTANCE 'mult_173_U223'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(257): Failed to find INSTANCE 'mult_173_U224'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(264): Failed to find INSTANCE 'mult_173_U225'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(69): Failed to find INSTANCE 'mult_173_U226'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(111): Failed to find INSTANCE 'mult_173_U227'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(310): Failed to find INSTANCE 'mult_173_U228'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(212): Failed to find INSTANCE 'mult_173_U229'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(65): Failed to find INSTANCE 'mult_173_U23'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(60): Failed to find INSTANCE 'mult_173_U230'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(113): Failed to find INSTANCE 'mult_173_U231'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(246): Failed to find INSTANCE 'mult_173_U232'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(253): Failed to find INSTANCE 'mult_173_U233'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(19): Failed to find INSTANCE 'mult_173_U234'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(115): Failed to find INSTANCE 'mult_173_U235'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(279): Failed to find INSTANCE 'mult_173_U236'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(286): Failed to find INSTANCE 'mult_173_U237'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(34): Failed to find INSTANCE 'mult_173_U25'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(71): Failed to find INSTANCE 'mult_173_U26'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(37): Failed to find INSTANCE 'mult_173_U29'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(20): Failed to find INSTANCE 'mult_173_U3'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(77): Failed to find INSTANCE 'mult_173_U30'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(82): Failed to find INSTANCE 'mult_173_U31'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(40): Failed to find INSTANCE 'mult_173_U32'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(83): Failed to find INSTANCE 'mult_173_U33'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(43): Failed to find INSTANCE 'mult_173_U34'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(91): Failed to find INSTANCE 'mult_173_U35'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(46): Failed to find INSTANCE 'mult_173_U36'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(49): Failed to find INSTANCE 'mult_173_U37'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(23): Failed to find INSTANCE 'mult_173_U4'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(26): Failed to find INSTANCE 'mult_173_U5'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(29): Failed to find INSTANCE 'mult_173_U6'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(32): Failed to find INSTANCE 'mult_173_U7'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(35): Failed to find INSTANCE 'mult_173_U8'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(38): Failed to find INSTANCE 'mult_173_U9'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(666): Failed to find INSTANCE 'result_reg_0'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(668): Failed to find INSTANCE 'result_reg_1'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(670): Failed to find INSTANCE 'result_reg_2'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(672): Failed to find INSTANCE 'result_reg_3'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(674): Failed to find INSTANCE 'result_reg_4'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(676): Failed to find INSTANCE 'result_reg_5'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(678): Failed to find INSTANCE 'result_reg_6'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf(680): Failed to find INSTANCE 'result_reg_7'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf work.conf_tb_siso_gen_calc_8_mix_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_8_mix_post 
+# Start time: 09:44:03 on Sep 28,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf work.conf_tb_siso_gen_calc_8_nul_post
+# End time: 11:06:24 on Sep 28,2023, Elapsed time: 1:22:21
+# Errors: 155, Warnings: 1
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_8_nul_post 
+# Start time: 11:06:24 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_nul_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+-------------------------------------------------------------------------------
+# invalid command name "-------------------------------------------------------------------------------"
+-- File         : siso_gen_calc_arch.vhd
+# invalid command name "--"
+-- Description  : "calculator" architecture for SISO
+# invalid command name "--"
+-- Author       : Sabih Gerez, University of Twente
+# invalid command name "--"
+-- Creation date: September 11, 2018
+# invalid command name "--"
+-------------------------------------------------------------------------------
+# invalid command name "-------------------------------------------------------------------------------"
+-- $Rev: 1$
+# can't read "Rev": no such variable
+-- $Author: gerezsh$
+# can't read "Author": no such variable
+-- $Date: Sat Sep 17 16:32:33 CEST 2022$
+# can't read "Date": no such variable
+-- $Log$
+# can't read "Log": no such variable
+-------------------------------------------------------------------------------
+# invalid command name "-------------------------------------------------------------------------------"
+
+
+-- this architecture needs arithmetic functions
+# invalid command name "--"
+library ieee;
+# bad option "ieee": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+use ieee.numeric_std.all;
+# invalid command name "use"
+
+architecture calc of siso_gen is
+# bad option "calc": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+  -- state for ALU
+# invalid command name "--"
+  -- two "read opcode (opc)" states, the first does not raise "ready"
+# invalid command name "--"
+  type state is (read_opc_init, read_opc_ready1, read_opc_ready2, 
+# ambiguous command name "type": type_name type_name_from_num typespec
+                 read_left1,    read_left2,      read_right);
+# invalid command name "read_left1,"
+  signal cur_state: state;
+# expected boolean value but got "cur_state:"
+  signal nxt_state: state;
+# expected boolean value but got "nxt_state:"
+
+  -- internal registers for left and right ALU input and ALU
+# invalid command name "--"
+  -- output, all having the same width
+# invalid command name "--"
+  signal left_in_add_reg:  signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal right_in_add_reg: signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal left_in_mul_reg:  signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal right_in_mul_reg: signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  -- at most 16 different operations are supported by this ALU
+# invalid command name "--"
+  signal opcode_reg:   std_logic_vector(3 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  
+  -- and their next values
+# invalid command name "--"
+  signal left_in_add_nxt:  signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal right_in_add_nxt: signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal left_in_mul_nxt:  signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal right_in_mul_nxt: signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  signal opcode_nxt:   std_logic_vector(3 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+
+  -- output of adder
+# invalid command name "--"
+  signal adder_out: signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+  
+  -- output of multiplier
+# invalid command name "--"
+  signal mult_out: signed(2*word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+
+  signal result:           signed(word_length-1 downto 0);
+# wrong # args: should be "signals_subelement_split isvhdl selected_name ?raw_idx?"
+
+begin
+# invalid command name "begin"
+  -- the next process is sequential and only sensitive to clk and reset
+# invalid command name "--"
+  seq: process(clk, reset)
+# invalid command name "seq:"
+  begin
+# invalid command name "begin"
+    if (reset = '1')
+# invalid bareword "reset"
+# in expression "(reset";
+# should be "$reset" or "{reset}" or "reset(...)" or ...
+    then
+# invalid command name "then"
+      left_in_add_reg  <= (others => '0');
+# invalid command name "left_in_add_reg"
+      right_in_add_reg <= (others => '0');
+# invalid command name "right_in_add_reg"
+      left_in_mul_reg  <= (others => '0');
+# invalid command name "left_in_mul_reg"
+      right_in_mul_reg <= (others => '0');
+# invalid command name "right_in_mul_reg"
+      opcode_reg   <= (others => '0');
+# invalid command name "opcode_reg"
+      cur_state    <= read_opc_init;
+# invalid command name "cur_state"
+    elsif rising_edge(clk)
+# invalid command name "elsif"
+    then
+# invalid command name "then"
+      left_in_add_reg  <= left_in_add_nxt;
+# invalid command name "left_in_add_reg"
+      right_in_add_reg <= right_in_add_nxt;
+# invalid command name "right_in_add_reg"
+      left_in_mul_reg  <= left_in_mul_nxt;
+# invalid command name "left_in_mul_reg"
+      right_in_mul_reg <= right_in_mul_nxt;
+# invalid command name "right_in_mul_reg"
+      opcode_reg   <= opcode_nxt;
+# invalid command name "opcode_reg"
+      cur_state    <= nxt_state;
+# invalid command name "cur_state"
+    end if;
+# bad option "if": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+  end process seq; 
+# bad option "process": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+
+  -- combinational next-value process
+# invalid command name "--"
+  nxt: process(data_in, cur_state, left_in_add_reg, right_in_add_reg, left_in_mul_reg, right_in_mul_reg,
+# invalid command name "nxt:"
+               opcode_reg, adder_out, mult_out)
+# invalid command name "opcode_reg,"
+  begin
+# invalid command name "begin"
+    case cur_state is
+# extra case pattern with no body
+      when read_opc_init =>
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'read_opc_init'.
+        nxt_state    <= read_left1;
+# invalid command name "nxt_state"
+        left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+        right_in_add_nxt <= right_in_add_reg;
+# invalid command name "right_in_add_nxt"
+	left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+        right_in_mul_nxt <= right_in_mul_reg;
+# invalid command name "right_in_mul_nxt"
+        opcode_nxt   <= data_in(3 downto 0);
+# invalid command name "opcode_nxt"
+        ready    <= '0'; 
+# invalid command name "ready"
+	result <= (others => '0');
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+      when read_left1 =>
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'read_left1'.
+        nxt_state    <= read_right;
+# invalid command name "nxt_state"
+	case opcode_reg is
+# extra case pattern with no body
+          when "0001" => -- addition
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0001'.
+            left_in_add_nxt  <= signed(data_in);
+# invalid command name "left_in_add_nxt"
+	    left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+          when "0010" => -- multiplication
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0010'.
+            left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+	    left_in_mul_nxt  <= signed(data_in);
+# invalid command name "left_in_mul_nxt"
+          when others => -- non-implemented codes behave like null command
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'others'.
+            left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+	    left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+        end case;
+# bad option "case": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+	right_in_add_nxt <= right_in_add_reg;
+# invalid command name "right_in_add_nxt"
+	right_in_mul_nxt <= right_in_mul_reg;
+# invalid command name "right_in_mul_nxt"
+        opcode_nxt   <= opcode_reg;
+# invalid command name "opcode_nxt"
+        ready    <= '0'; 
+# invalid command name "ready"
+	result <= (others => '0');
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+      -- read_left2 is identical to read_left1 except for ready_nxt
+# invalid command name "--"
+      when read_left2 =>
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'read_left2'.
+        nxt_state    <= read_right;
+# invalid command name "nxt_state"
+        case opcode_reg is
+# extra case pattern with no body
+          when "0001" => -- addition
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0001'.
+            left_in_add_nxt  <= signed(data_in);
+# invalid command name "left_in_add_nxt"
+	    left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+          when "0010" => -- multiplication
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0010'.
+            left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+	    left_in_mul_nxt  <= signed(data_in);
+# invalid command name "left_in_mul_nxt"
+          when others => -- non-implemented codes behave like null command
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'others'.
+            left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+	    left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+        end case;
+# bad option "case": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+	right_in_add_nxt <= right_in_add_reg;
+# invalid command name "right_in_add_nxt"
+	right_in_mul_nxt <= right_in_mul_reg;
+# invalid command name "right_in_mul_nxt"
+        opcode_nxt   <= opcode_reg;
+# invalid command name "opcode_nxt"
+	result <= mult_out(word_length - 1 downto 0);
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+        ready    <= '1'; 
+# invalid command name "ready"
+      when read_right =>
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'read_right'.
+        -- multiplication needs two cycles to output result
+# invalid command name "--"
+        left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+	left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+	case opcode_reg is
+# extra case pattern with no body
+          when "0001" => -- addition
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0001'.
+           nxt_state    <= read_opc_ready1;
+# invalid command name "nxt_state"
+            right_in_add_nxt <= signed(data_in);
+# invalid command name "right_in_add_nxt"
+            right_in_mul_nxt <= right_in_mul_reg;
+# invalid command name "right_in_mul_nxt"
+          when "0010" => -- multiplication
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0010'.
+	    nxt_state    <= read_opc_ready2;
+# invalid command name "nxt_state"
+            right_in_add_nxt <= right_in_add_reg;
+# invalid command name "right_in_add_nxt"
+            right_in_mul_nxt <= signed(data_in);
+# invalid command name "right_in_mul_nxt"
+          when others => -- non-implemented codes behave like null command
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'others'.
+           nxt_state    <= read_opc_ready1;
+# invalid command name "nxt_state"
+            right_in_add_nxt <= right_in_add_reg;
+# invalid command name "right_in_add_nxt"
+            right_in_mul_nxt <= right_in_mul_reg;
+# invalid command name "right_in_mul_nxt"
+        end case;
+# bad option "case": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+        opcode_nxt   <= opcode_reg;
+# invalid command name "opcode_nxt"
+        ready    <= '0'; 
+# invalid command name "ready"
+	result <= (others => '0');
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+      when read_opc_ready1 | read_opc_ready2 =>
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'read_opc_ready1'.
+        -- multiplication needs two cycles to output result
+# invalid command name "--"
+        if (cur_state = read_opc_ready2)
+# invalid bareword "cur_state"
+# in expression "(cur_state";
+# should be "$cur_state" or "{cur_state}" or "cur_state(...)" or ...
+        then
+# invalid command name "then"
+           nxt_state    <= read_left2;
+# invalid command name "nxt_state"
+        else
+# invalid command name "else"
+           nxt_state    <= read_left1;
+# invalid command name "nxt_state"
+        end if;
+# bad option "if": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+            left_in_add_nxt  <= left_in_add_reg;
+# invalid command name "left_in_add_nxt"
+            right_in_add_nxt <= right_in_add_reg;
+# invalid command name "right_in_add_nxt"
+	    left_in_mul_nxt  <= left_in_mul_reg;
+# invalid command name "left_in_mul_nxt"
+            right_in_mul_nxt <= right_in_mul_reg;
+# invalid command name "right_in_mul_nxt"
+        case opcode_reg is
+# extra case pattern with no body
+          when "0000" => -- the null result
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0000'.
+            result <= (others => '0');
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+          when "0001" => -- addition
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0001'.
+            result <= adder_out;
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+          when "0010" => -- multiplication
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching '0010'.
+            result <= mult_out(2*word_length - 1 downto word_length);
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+          when others => -- non-implemented codes behave like null command
+# ** UI-Msg (suppressible): (vsim-3561) No objects found matching 'others'.
+            result <= (others => '0');
+# ambiguous command name "result": results_image resultsdir_image resultsdirne_image resultsfile_image
+        end case;
+# bad option "case": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+        opcode_nxt   <= data_in(3 downto 0);
+# invalid command name "opcode_nxt"
+        ready    <= '1'; 
+# invalid command name "ready"
+    end case;
+# bad option "case": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+  end process nxt;
+# bad option "process": must be blank, cget, configure, copy, data, get, put, read, redither, transparency, or write
+
+  -- adder, wrap around in case of overflow, so discard carry
+# invalid command name "--"
+  adder_out <= left_in_add_reg + right_in_add_reg;
+# invalid command name "adder_out"
+
+  -- multiplier
+# invalid command name "--"
+  mult_out <= left_in_mul_reg * right_in_mul_reg;
+# invalid command name "mult_out"
+
+  -- output register is lowest half of result_reg, except when second
+# invalid command name "--"
+  -- part of multiplication result needs to be output
+# invalid command name "--"
+  data_out <= std_logic_vector(result);
+# invalid command name "data_out"
+
+  -- this block should receive data in 
+# invalid command name "--"
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif nul8.saif
+quit -sim
+# End time: 11:09:11 on Sep 28,2023, Elapsed time: 0:02:47
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf work.conf_tb_siso_gen_calc_8_add_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_8_add_post 
+# Start time: 11:09:42 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_add_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif add8.saif
+quit -sim
+# End time: 11:12:27 on Sep 28,2023, Elapsed time: 0:02:45
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf work.conf_tb_siso_gen_calc_8_mul_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_8_mul_post 
+# Start time: 11:13:21 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mul_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mul8.saif
+quit -sim
+# End time: 11:16:51 on Sep 28,2023, Elapsed time: 0:03:30
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf work.conf_tb_siso_gen_calc_8_mix_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_8_mix_post 
+# Start time: 11:17:12 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mix8.saif
+quit -sim
+# End time: 11:20:20 on Sep 28,2023, Elapsed time: 0:03:08
+# Errors: 1, Warnings: 1
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of siso_gen_calc_gc_8_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_nul_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_nul_post 
+# Start time: 11:21:48 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_nul_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif nul8_gc.saif
+add wave -position end  sim:/tb_siso_gen_top/tg/tvc/clk
+quit -sim
+# End time: 11:25:48 on Sep 28,2023, Elapsed time: 0:04:00
+# Errors: 1, Warnings: 4
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_add_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_add_post 
+# Start time: 11:26:53 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_add_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif add8_gc.saif
+add wave -position end  sim:/tb_siso_gen_top/tg/tvc/clk
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+quit -sim
+# End time: 11:31:19 on Sep 28,2023, Elapsed time: 0:04:26
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_mul_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_mul_post 
+# Start time: 11:33:22 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_mul_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mul8_gc.saif
+quit -sim
+# End time: 11:42:28 on Sep 28,2023, Elapsed time: 0:09:06
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_mix_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_mix_post 
+# Start time: 11:42:50 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_mix_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow3/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mix8_gc.saif

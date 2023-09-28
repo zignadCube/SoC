@@ -1,0 +1,261 @@
+/home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8_own.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8_own.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_calc_8_mix_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/siso_gen_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/tvc_siso_gen_file_io_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/tvc_siso_gen_file_io_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling architecture file_io of tvc_siso_gen
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_8_5_flat.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_8_5_flat.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package umcl18u250t2_VCOMPONENTS
+-- Compiling package CONV_PACK_siso_gen
+-- Loading package CONV_PACK_siso_gen
+-- Compiling architecture flat_calc_8_5 of siso_gen
+-- Loading entity siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_gc_8_5_flat.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_gc_8_5_flat.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package umcl18u250t2_VCOMPONENTS
+-- Compiling package CONV_PACK_siso_gen
+-- Loading package CONV_PACK_siso_gen
+-- Compiling architecture flat_calc_gc_8_5 of siso_gen
+-- Loading entity siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/tvc_siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/tvc_siso_gen_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_gc_8_5_flat.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_gc_8_5_flat.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package umcl18u250t2_VCOMPONENTS
+-- Compiling package CONV_PACK_siso_gen
+-- Loading package CONV_PACK_siso_gen
+-- Compiling architecture flat_calc_own_gc_8_5 of siso_gen
+-- Loading entity siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/tb_siso_gen.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/tb_siso_gen.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_siso_gen
+-- Compiling architecture structure of tb_siso_gen
+-- Compiling entity tb_siso_gen_top
+-- Compiling architecture top of tb_siso_gen_top
+
+} {} {}} /home/s3310914/Documents/pow/siso_gen_calc_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/siso_gen_calc_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture calc of siso_gen
+-- Loading entity siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8_post.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8_post.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_calc_8_mix_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_8_nul_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_8_add_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_8_mul_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_mix_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_nul_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_add_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_mul_post
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/siso_gen_calc_arch_own.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/siso_gen_calc_arch_own.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling architecture calc_own of siso_gen
+-- Loading entity siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8_post_own.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8_post_own.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_calc_8_mix_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_8_nul_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_8_add_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_8_mul_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_mix_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_nul_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_add_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+-- Compiling configuration conf_tb_siso_gen_calc_gc_8_mul_post_own
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/conf_tb_siso_gen_calc_8.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_calc_8_mix
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_8_5_flat.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_8_5_flat.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package VITAL_Timing
+-- Loading package umcl18u250t2_VCOMPONENTS
+-- Compiling package CONV_PACK_siso_gen
+-- Loading package CONV_PACK_siso_gen
+-- Compiling architecture flat_calc_own_8_5 of siso_gen
+-- Loading entity siso_gen
+
+} {} {}}

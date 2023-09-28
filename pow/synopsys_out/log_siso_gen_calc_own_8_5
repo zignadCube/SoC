@@ -1,0 +1,572 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+dc_shell> dc_shell> siso_gen_ent.vhd siso_gen_calc_arch_own.vhd
+dc_shell> siso_gen
+dc_shell> clk
+dc_shell> 8
+dc_shell> 5
+dc_shell> siso_gen_calc_own_8_5
+dc_shell> n
+dc_shell> n
+dc_shell> calc_own_8_5
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Running PRESTO HDLC
+Compiling Entity Declaration SISO_GEN
+Presto compilation completed successfully.
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/dw_foundation.sldb'
+Running PRESTO HDLC
+Compiling Architecture CALC_OWN of SISO_GEN
+Warning:  ./siso_gen_calc_arch_own.vhd:18: The architecture calc_own has already been analyzed. It is being replaced. (VHD-4)
+Warning:  The entity 'siso_gen' has multiple architectures defined. The last defined architecture 'calc_own' will be used to build the design by default. (VHD-6)
+Presto compilation completed successfully.
+dc_shell> dc_shell> dc_shell> dc_shell> Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/standard.sldb'
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+  Loading link library 'umcl18u250t2_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 81 in file
+	'./siso_gen_calc_arch_own.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            84            |    auto/auto     |
+|           193            |    auto/auto     |
+|            96            |    auto/auto     |
+|           124            |    auto/auto     |
+|           151            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine siso_gen_word_length8 line 55 in file
+		'./siso_gen_calc_arch_own.vhd'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|    cur_state_reg     | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+| left_in_add_reg_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| right_in_add_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| left_in_mul_reg_reg  | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+| right_in_mul_reg_reg | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    opcode_reg_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    result_reg_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ready_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully. (siso_gen_word_length8)
+Elaborated 1 design.
+Current design is now 'siso_gen_word_length8'.
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> Current design is 'siso_gen_word_length8'.
+Information: Renaming design /home/s3310914/Documents/pow/siso_gen_word_length8.db:siso_gen_word_length8 to /home/s3310914/Documents/pow/siso_gen_word_length8.db:siso_gen. (UIMG-45)
+Current design is 'siso_gen'.
+1
+dc_shell> dc_shell> dc_shell> dc_shell> FALSE
+dc_shell> dc_shell> dc_shell> Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.2 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.2 |     *     |
+============================================================================
+
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'siso_gen'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'siso_gen_DW01_add_0'
+  Mapping 'siso_gen_DW_mult_tc_0'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02   13904.3      0.00       0.0       0.0                          
+    0:00:02   13904.3      0.00       0.0       0.0                          
+    0:00:02   13904.3      0.00       0.0       0.0                          
+    0:00:02   13904.3      0.00       0.0       0.0                          
+    0:00:02   13904.3      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11562.4      0.00       0.0       0.0                          
+    0:00:02   11554.2      0.00       0.0       0.0                          
+    0:00:02   11538.0      0.00       0.0       0.0                          
+    0:00:02   11529.8      0.00       0.0       0.0                          
+    0:00:02   11521.7      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+    0:00:02   11513.6      0.00       0.0       0.0                          
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+check_design summary:
+Version:     R-2020.09-SP2
+Date:        Tue Sep 26 09:15:15 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      3
+    Unconnected ports (LINT-28)                                     2
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'siso_gen_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen', output port 'req' is connected directly to 'logic 1'. (LINT-52)
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> NMA-16 VHDL-286 UCN-4
+dc_shell> 1
+dc_shell> 1
+dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> hier_calc_own_8_5
+dc_shell> dc_shell> dc_shell> Writing vhdl file '/home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_8_5_hier.vhd'.
+Warning: A dummy net 'n_1000' is created to connect open pin 'CI'. (VHDL-290)
+Warning: A dummy net 'n_1001' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1002' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1003' is created to connect open pin 'CO'. (VHDL-290)
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : hierarchy
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Tue Sep 26 09:15:15 2023
+****************************************
+
+Attributes:
+    r - licensed design
+
+siso_gen
+    AOI21D1                       umcl18u250t2_typ
+    AOI21M20D1                    umcl18u250t2_typ
+    AOI22D1                       umcl18u250t2_typ
+    AOI211D1                      umcl18u250t2_typ
+    DFERPQ1                       umcl18u250t2_typ
+    DFFRPQ1                       umcl18u250t2_typ
+    INVD1                         umcl18u250t2_typ
+    NAN2D1                        umcl18u250t2_typ
+    NAN3D1                        umcl18u250t2_typ
+    NAN4D1                        umcl18u250t2_typ
+    NAN4M1D1                      umcl18u250t2_typ
+    NOR2D1                        umcl18u250t2_typ
+    NOR2M1D1                      umcl18u250t2_typ
+    NOR3D1                        umcl18u250t2_typ
+    NOR4D1                        umcl18u250t2_typ
+    OAI21D1                       umcl18u250t2_typ
+    OAI22D1                       umcl18u250t2_typ
+    OAI22M10D1                    umcl18u250t2_typ
+    OR3D1                         umcl18u250t2_typ
+    TIEHI                         umcl18u250t2_typ
+    TIELO                         umcl18u250t2_typ
+    siso_gen_DW01_add_0
+        ADFULD1                   umcl18u250t2_typ
+        AND2D1                    umcl18u250t2_typ
+        EXOR2D1                   umcl18u250t2_typ
+    siso_gen_DW_mult_tc_0                   r
+        ADFULD1                   umcl18u250t2_typ
+        ADHALFDL                  umcl18u250t2_typ
+        AO21D1                    umcl18u250t2_typ
+        EXNOR2D1                  umcl18u250t2_typ
+        EXOR2D1                   umcl18u250t2_typ
+        INVD1                     umcl18u250t2_typ
+        NAN2D1                    umcl18u250t2_typ
+        NOR2D1                    umcl18u250t2_typ
+        OAI21D1                   umcl18u250t2_typ
+        OAI22D1                   umcl18u250t2_typ
+        OAI32D1                   umcl18u250t2_typ
+        OR2D1                     umcl18u250t2_typ
+1
+dc_shell> Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : reference
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Tue Sep 26 09:15:15 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI21D1            umcl18u250t2_typ
+                                 20.330000       4     81.320000  
+AOI21M20D1         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+AOI22D1            umcl18u250t2_typ
+                                 24.389999       9    219.509995  
+AOI211D1           umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+DFERPQ1            umcl18u250t2_typ
+                                101.639999      36   3659.039978  n
+DFFRPQ1            umcl18u250t2_typ
+                                 81.309998      20   1626.199951  n
+INVD1              umcl18u250t2_typ
+                                  8.130000      32    260.160004  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000       3     36.599999  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+NAN4D1             umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+NAN4M1D1           umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000       2     24.400000  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+NOR3D1             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+NOR4D1             umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000       9    182.969999  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999       8    195.119995  
+OAI22M10D1         umcl18u250t2_typ
+                                 32.520000       8    260.160004  
+OR3D1              umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+TIEHI              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+TIELO              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+siso_gen_DW01_add_0             500.070021       1    500.070021  h
+siso_gen_DW_mult_tc_0          4098.100023       1   4098.100023  h
+-----------------------------------------------------------------------------
+Total 23 references                                 11513.589969
+
+****************************************
+Design: siso_gen_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003       7    455.350021  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+-----------------------------------------------------------------------------
+Total 3 references                                    500.070021
+
+****************************************
+Design: siso_gen_DW_mult_tc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      27   1756.350082  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000       4    162.639999  r
+AO21D1             umcl18u250t2_typ
+                                 28.459999       4    113.839996  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      33    939.179970  
+INVD1              umcl18u250t2_typ
+                                  8.130000      10     81.300001  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999      28    682.919983  
+OAI32D1            umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 12 references                                  4098.100023
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : resources
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Tue Sep 26 09:15:15 2023
+****************************************
+
+Resource Sharing Report for design siso_gen in file
+        ./siso_gen_calc_arch_own.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r369     | DW01_add     | width=8    |               | add_210              |
+| r1087    | DW_mult_tc   | a_width=8  |               | mult_213             |
+|          |              | b_width=8  |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_213           | DW_mult_tc       | apparch (area)     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| add_210            | DW01_add         | rpl                |                |
+===============================================================================
+
+1
+dc_shell> dc_shell> dc_shell> TRUE
+dc_shell> Warning: Design 'siso_gen' inherited license information from design 'siso_gen_DW_mult_tc_0'. (DDB-74)
+Information: Added key list 'DesignWare' to design 'siso_gen'. (DDB-72)
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : reference
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Tue Sep 26 09:15:15 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      34   2211.700104  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000       4    162.639999  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AO21D1             umcl18u250t2_typ
+                                 28.459999       4    113.839996  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000       4     81.320000  
+AOI21M20D1         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+AOI22D1            umcl18u250t2_typ
+                                 24.389999       9    219.509995  
+AOI211D1           umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+DFERPQ1            umcl18u250t2_typ
+                                101.639999      36   3659.039978  n
+DFFRPQ1            umcl18u250t2_typ
+                                 81.309998      20   1626.199951  n
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      34    967.639969  
+INVD1              umcl18u250t2_typ
+                                  8.130000      42    341.460005  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000       7     85.399999  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+NAN4D1             umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+NAN4M1D1           umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000       6     73.199999  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+NOR3D1             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+NOR4D1             umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      10    203.299999  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999      36    878.039978  
+OAI22M10D1         umcl18u250t2_typ
+                                 32.520000       8    260.160004  
+OAI32D1            umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OR3D1              umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+TIEHI              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+TIELO              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+-----------------------------------------------------------------------------
+Total 29 references                                 11513.589969
+1
+dc_shell> dc_shell> Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Tue Sep 26 09:15:15 2023
+****************************************
+
+Operating Conditions: nom_pvt   Library: umcl18u250t2_typ
+Wire Load Model Mode: top
+
+  Startpoint: left_in_mul_reg_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result_reg_reg_14_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  left_in_mul_reg_reg_1_/CK (DFERPQ1)      0.00       0.00 r
+  left_in_mul_reg_reg_1_/Q (DFERPQ1)       0.21       0.21 f
+  mult_213/U151/Z (INVD1)                  0.15       0.37 r
+  mult_213/U150/Z (EXOR2D1)                0.29       0.66 f
+  mult_213/U149/Z (NAN2D1)                 0.21       0.87 r
+  mult_213/U179/Z (OAI22D1)                0.07       0.94 f
+  mult_213/U37/S (ADHALFDL)                0.22       1.16 f
+  mult_213/U13/CO (ADFULD1)                0.18       1.34 f
+  mult_213/U12/CO (ADFULD1)                0.16       1.50 f
+  mult_213/U11/CO (ADFULD1)                0.16       1.66 f
+  mult_213/U10/CO (ADFULD1)                0.16       1.82 f
+  mult_213/U9/CO (ADFULD1)                 0.16       1.99 f
+  mult_213/U8/CO (ADFULD1)                 0.16       2.15 f
+  mult_213/U7/CO (ADFULD1)                 0.16       2.31 f
+  mult_213/U6/CO (ADFULD1)                 0.16       2.47 f
+  mult_213/U5/CO (ADFULD1)                 0.16       2.63 f
+  mult_213/U4/CO (ADFULD1)                 0.16       2.79 f
+  mult_213/U3/CO (ADFULD1)                 0.16       2.95 f
+  mult_213/U2/S (ADFULD1)                  0.22       3.17 r
+  U81/Z (OAI22M10D1)                       0.10       3.28 r
+  result_reg_reg_14_/D (DFFRPQ1)           0.00       3.28 r
+  data arrival time                                   3.28
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  result_reg_reg_14_/CK (DFFRPQ1)          0.00       5.00 r
+  library setup time                      -0.06       4.94
+  data required time                                  4.94
+  -----------------------------------------------------------
+  data required time                                  4.94
+  data arrival time                                  -3.28
+  -----------------------------------------------------------
+  slack (MET)                                         1.66
+
+
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> flat_calc_own_8_5
+dc_shell> dc_shell> dc_shell> Writing vhdl file '/home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_8_5_flat.vhd'.
+1
+dc_shell> dc_shell> dc_shell> Writing ddc file 'synopsys_out/siso_gen_calc_own_8_5_flat.ddc'.
+1
+dc_shell> dc_shell> dc_shell> dc_shell> Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/s3310914/Documents/pow/synopsys_out/siso_gen_calc_own_8_5_flat.sdf'. (WT-3)
+1
+dc_shell> 
+Memory usage for this session 153 Mbytes.
+Memory usage for this session including child processes 153 Mbytes.
+CPU usage for this session 6 seconds ( 0.00 hours ).
+Elapsed time for this session 7 seconds ( 0.00 hours ).
+
+Thank you...

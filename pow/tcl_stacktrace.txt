@@ -1,0 +1,10 @@
+Tue Sep 26 10:32:19 CEST 2023
+Trace back: invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"
+    while executing
+"$widget index @$x,$y"
+    (procedure "WaveABar::mouseMotionUpdate" line 19)
+    invoked from within
+"WaveABar::mouseMotionUpdate .main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data .main_pane.wave.interior.cs.body.pw.wf 49 400"
+    ("after" script)
+  <2:/remote/labware/packages/siemens/questasim/2020.4/questasim/linux_x86_64/tk8.6/bgerror.tcl:106: ::tkerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}
+  <1:proc:24: ::tk::dialog::error::bgerror {invalid command name ".main_pane.wave.interior.cs.body.pw.wf.grid.row0,wave.data"}

@@ -1,0 +1,578 @@
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -voptargs=+acc +notimingchecks -noglitch work.conf_tb_siso_gen_calc_8_mix_post -sdftyp /tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch work.conf_tb_siso_gen_calc_8_mix_post -sdftyp "/tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_8_5_flat.sdf" 
+# Start time: 09:16:04 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor3m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow2/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mix8.saif
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_in
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/clk
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reset
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/req
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_out
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/ready
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: s3310914  Hostname: xoc2.ewi.utwente.nl  ProcessID: 108858
+#           Attempting to use alternate WLF file "./wlftQFOno5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftQFOno5
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading instances from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow2/tb_siso_gen.vhd
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+quit -sim
+# End time: 11:58:04 on Sep 28,2023, Elapsed time: 2:42:00
+# Errors: 1, Warnings: 1
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of siso_gen_calc_gc_8_5_flat.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_nul_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_nul_post 
+# Start time: 12:02:26 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_nul_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow2/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif nul8_gc.saif
+quit -sim
+# End time: 12:04:57 on Sep 28,2023, Elapsed time: 0:02:31
+# Errors: 1, Warnings: 4
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_8_add_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_8_add_post 
+# Start time: 12:05:24 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_add_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#1
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(803): Failed to find INSTANCE 'U35'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(531): Failed to find INSTANCE 'U46'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(536): Failed to find INSTANCE 'U47'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(792): Failed to find INSTANCE 'U48'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(612): Failed to find INSTANCE 'U49'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(663): Failed to find INSTANCE 'U51'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(643): Failed to find INSTANCE 'U52'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(611): Failed to find INSTANCE 'U53'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(547): Failed to find INSTANCE 'clk_gate_left_in_add_reg_reg_latch'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(549): Failed to find INSTANCE 'clk_gate_left_in_add_reg_reg_main_gate'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(546): Failed to find INSTANCE 'clk_gate_left_in_add_reg_reg_test_or'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(537): Failed to find INSTANCE 'clk_gate_left_in_mul_reg_reg_latch'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(539): Failed to find INSTANCE 'clk_gate_left_in_mul_reg_reg_main_gate'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(536): Failed to find INSTANCE 'clk_gate_left_in_mul_reg_reg_test_or'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(527): Failed to find INSTANCE 'clk_gate_opcode_reg_reg_latch'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(529): Failed to find INSTANCE 'clk_gate_opcode_reg_reg_main_gate'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(526): Failed to find INSTANCE 'clk_gate_opcode_reg_reg_test_or'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(542): Failed to find INSTANCE 'clk_gate_right_in_add_reg_reg_latch'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(544): Failed to find INSTANCE 'clk_gate_right_in_add_reg_reg_main_gate'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(541): Failed to find INSTANCE 'clk_gate_right_in_add_reg_reg_test_or'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(532): Failed to find INSTANCE 'clk_gate_right_in_mul_reg_reg_latch'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(534): Failed to find INSTANCE 'clk_gate_right_in_mul_reg_reg_main_gate'.
+# ** Error (suppressible): (vsim-SDF-3250) /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf(531): Failed to find INSTANCE 'clk_gate_right_in_mul_reg_reg_test_or'.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# Error loading design
+# End time: 12:05:27 on Sep 28,2023, Elapsed time: 0:00:03
+# Errors: 24, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_add_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_add_post 
+# Start time: 12:05:46 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_add_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow2/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif add8_gc.saif
+quit -sim
+# End time: 12:07:14 on Sep 28,2023, Elapsed time: 0:01:28
+# Errors: 1, Warnings: 1
+vsim -voptargs=+acc +notimingchecks -noglitch -sdftyp /tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf work.conf_tb_siso_gen_calc_gc_8_mul_post
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -sdftyp "/tg/duv=/home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf" work.conf_tb_siso_gen_calc_gc_8_mul_post 
+# Start time: 12:07:48 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_gc_8_mul_post#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_siso_gen
+# Loading work.siso_gen(flat_calc_gc_8_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi31d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and4d1(level1pintopindelay)#1
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor4m1d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#1
+# Loading umcl18u250t2.tiehi(level1procedural)#1
+# Loading umcl18u250t2.tielo(level1procedural)#1
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.latpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai22m10d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading work.tvc_siso_gen(file_io)#1
+# Loading instances from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# Loading timing data from /home/s3310914/Documents/pow2/synopsys_out/siso_gen_calc_gc_8_5_flat.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_siso_gen_top File: /home/s3310914/Documents/pow2/tb_siso_gen.vhd
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mul8_gc.saif
+so_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 1 failed with 3 errors.
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "siso_gen(calc)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(calc)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "siso_gen(calc)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(calc)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "siso_gen(calc)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(calc)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+add schematic \
+sim:/tb_siso_gen_top/tg/duv/data_in \
+sim:/tb_siso_gen_top/tg/duv/data_out \
+sim:/tb_siso_gen_top/tg/duv/clk \
+sim:/tb_siso_gen_top/tg/duv/reset \
+sim:/tb_siso_gen_top/tg/duv/req \
+sim:/tb_siso_gen_top/tg/duv/ready \
+sim:/tb_siso_gen_top/tg/duv/cur_state \
+sim:/tb_siso_gen_top/tg/duv/nxt_state \
+sim:/tb_siso_gen_top/tg/duv/left_in_add_reg \
+sim:/tb_siso_gen_top/tg/duv/right_in_add_reg \
+sim:/tb_siso_gen_top/tg/duv/left_in_mul_reg \
+sim:/tb_siso_gen_top/tg/duv/right_in_mul_reg \
+sim:/tb_siso_gen_top/tg/duv/opcode_reg \
+sim:/tb_siso_gen_top/tg/duv/left_in_add_nxt \
+sim:/tb_siso_gen_top/tg/duv/right_in_add_nxt \
+sim:/tb_siso_gen_top/tg/duv/left_in_mul_nxt \
+sim:/tb_siso_gen_top/tg/duv/right_in_mul_nxt \
+sim:/tb_siso_gen_top/tg/duv/opcode_nxt \
+sim:/tb_siso_gen_top/tg/duv/adder_out \
+sim:/tb_siso_gen_top/tg/duv/mult_out \
+sim:/tb_siso_gen_top/tg/duv/result 
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "siso_gen(calc)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(calc)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+run -all
+# ** Fatal: (vsim-3551) TEXTIO : Read past end of file "mix8.in".
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Fatal error in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 92
+# 
+# HDL call sequence:
+# Stopped at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd 92 Process stimuli
+# 
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mix8.saif
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-8716) Reusing existing debug database vsim.dbg.
+power add -ports -internal -r tg/duv/*
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+power report -bsaif mix8.saif
+# Compile of siso_gen_ent.vhd was successful.
+# Compile of siso_gen_calc_arch.vhd was successful.
+# Compile of siso_gen_calc_8_5_flat.vhd was successful.
+# Compile of tb_siso_gen.vhd was successful.
+# Compile of tvc_siso_gen_ent.vhd was successful.
+# Compile of tvc_siso_gen_file_io_arch.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "siso_gen(calc)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(calc)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90

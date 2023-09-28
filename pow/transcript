@@ -1,0 +1,63 @@
+vsim -voptargs=+acc +notimingchecks -noglitch -debugdb work.conf_tb_siso_gen_calc_8_mix
+# vsim -voptargs="+acc" "+notimingchecks" -noglitch -debugdb work.conf_tb_siso_gen_calc_8_mix 
+# Start time: 01:37:58 on Sep 28,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "siso_gen(calc)".
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.conf_tb_siso_gen_calc_8_mix#1
+# Loading work.tb_siso_gen_top(top)#1
+# Loading work.tb_siso_gen(structure)#1
+# Loading work.siso_gen(calc)#1
+# Loading work.tvc_siso_gen(file_io)#1
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_in
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/clk
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/reset
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/req
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/data_out
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/ready
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/cur_state
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/nxt_state
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_reg
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_reg
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/result_reg
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/opcode_reg
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/left_in_nxt
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/right_in_nxt
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/result_nxt
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/opcode_nxt
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/adder_out
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/mult_out
+add wave -position end  sim:/tb_siso_gen_top/tg/duv/ready_nxt
+add schematic \
+sim:/tb_siso_gen_top/tg/duv/data_in \
+sim:/tb_siso_gen_top/tg/duv/clk \
+sim:/tb_siso_gen_top/tg/duv/reset \
+sim:/tb_siso_gen_top/tg/duv/req \
+sim:/tb_siso_gen_top/tg/duv/data_out \
+sim:/tb_siso_gen_top/tg/duv/ready \
+sim:/tb_siso_gen_top/tg/duv/cur_state \
+sim:/tb_siso_gen_top/tg/duv/nxt_state \
+sim:/tb_siso_gen_top/tg/duv/left_in_reg \
+sim:/tb_siso_gen_top/tg/duv/right_in_reg \
+sim:/tb_siso_gen_top/tg/duv/result_reg \
+sim:/tb_siso_gen_top/tg/duv/opcode_reg \
+sim:/tb_siso_gen_top/tg/duv/left_in_nxt \
+sim:/tb_siso_gen_top/tg/duv/right_in_nxt \
+sim:/tb_siso_gen_top/tg/duv/result_nxt \
+sim:/tb_siso_gen_top/tg/duv/opcode_nxt \
+sim:/tb_siso_gen_top/tg/duv/adder_out \
+sim:/tb_siso_gen_top/tg/duv/mult_out \
+sim:/tb_siso_gen_top/tg/duv/ready_nxt 
+run -all
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow/tvc_siso_gen_file_io_arch.vhd
+# Break in Process stimuli at /home/s3310914/Documents/pow/tvc_siso_gen_file_io_arch.vhd line 90
+quit -sim
+# End time: 11:57:31 on Sep 28,2023, Elapsed time: 10:19:33
+# Errors: 1, Warnings: 1

@@ -1,0 +1,100 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+dc_shell> dc_shell> siso_gen_calc_8_5_flat
+dc_shell> mul8.saif
+dc_shell> tb_siso_gen_top/tg/duv
+dc_shell> dc_shell> dc_shell> Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/dw_foundation.sldb'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/standard.sldb'
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+  Loading link library 'umcl18u250t2_typ'
+  Loading link library 'gtech'
+Reading ddc file '/home/s3310914/Documents/pow3/synopsys_out/siso_gen_calc_8_5_flat.ddc'.
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Loaded 1 design.
+Current design is 'siso_gen'.
+siso_gen
+dc_shell> dc_shell> dc_shell> Information: The SAIF name mapping information database is now active. (PWR-602)
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Thu Sep 28 11:14:40 2023
+****************************************
+
+
+Library(s) Used:
+
+    umcl18u250t2_typ (File: /remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db)
+
+
+Operating Conditions: nom_pvt   Library: umcl18u250t2_typ
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   2.1746 mW   (77%)
+  Net Switching Power  = 651.4606 uW   (23%)
+                         ---------
+Total Dynamic Power    =   2.8261 mW  (100%)
+
+Cell Leakage Power     =  32.0938 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           1.2357        4.3895e-02        8.2306e+03            1.2796  (  45.28%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.9389            0.6076        2.3863e+04            1.5465  (  54.72%)
+--------------------------------------------------------------------------------------------------
+Total              2.1746 mW         0.6515 mW     3.2094e+04 pW         2.8261 mW
+1
+dc_shell> 
+Memory usage for this session 139 Mbytes.
+Memory usage for this session including child processes 139 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 4 seconds ( 0.00 hours ).
+
+Thank you...
