@@ -1,0 +1,223 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/s3310914/Documents/ver
+T_opt
+!s110 1696253430
+VQbiJi<S_3onc7^3]Ti6091
+04 27 0 work conf_tb_siso_gen_calc_8_mix 1
+=40-b026282075c9-651ac5f6-33a99-f978
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+Cconf_tb_siso_gen_calc_8_mix
+etb_siso_gen_top
+atop
+Z2 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DEx4 work 12 tvc_siso_gen 0 22 kk0__Cd^mAFcO>SEeEMf21
+Z5 DEx4 work 8 siso_gen 0 22 kgS8IgQTV?`7bDBLOIX_i2
+DAx4 work 11 tb_siso_gen 9 structure 22 NIZWX4Dbe;`W7@IhRk>[Y0
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z8 DEx4 work 11 tb_siso_gen 0 22 EY^U3:F`RcmfCIDczY4@60
+DAx4 work 15 tb_siso_gen_top 3 top 22 =9h7VLmL8S7iB]V@e6YJ81
+Z9 DEx4 work 15 tb_siso_gen_top 0 22 5DL_eIX5HUfi>zOR0d_eJ0
+!i122 323
+w1696197338
+R0
+8/home/s3310914/Documents/ver/conf_tb_siso_gen_calc_8.vhd
+F/home/s3310914/Documents/ver/conf_tb_siso_gen_calc_8.vhd
+l0
+L14 1
+Vc3_^^?6[mPFO?LzPa8[gl0
+!s100 A@JhE[WjP^^o47S4bcWV@0
+Z10 OL;C;2020.4;71
+33
+!s110 1696253421
+!i10b 1
+Z11 !s108 1696253420.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/ver/conf_tb_siso_gen_calc_8.vhd|
+!s107 /home/s3310914/Documents/ver/conf_tb_siso_gen_calc_8.vhd|
+!i113 0
+Z12 o-work work -2008
+R1
+Esiso_gen
+Z13 w1696186776
+R6
+R7
+!i122 320
+R0
+8/home/s3310914/Documents/ver/siso_gen_ent.vhd
+F/home/s3310914/Documents/ver/siso_gen_ent.vhd
+l0
+L19 1
+VkgS8IgQTV?`7bDBLOIX_i2
+!s100 THAS@_d^cXSW_I6[HF0<m0
+R10
+33
+Z14 !s110 1696253420
+!i10b 1
+!s108 1696253419.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/ver/siso_gen_ent.vhd|
+!s107 /home/s3310914/Documents/ver/siso_gen_ent.vhd|
+!i113 0
+R12
+R1
+Acalc
+w1696253413
+R5
+R7
+R6
+R3
+!i122 321
+8/home/s3310914/Documents/ver/siso_gen_calc_arch.vhd
+F/home/s3310914/Documents/ver/siso_gen_calc_arch.vhd
+l49
+L18 135
+V1=IR7BQ94@l]a0CkAnSl`3
+!s100 H9PkPK[D@ARb5`>CLe;H00
+R10
+33
+R14
+!i10b 1
+R11
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/ver/siso_gen_calc_arch.vhd|
+!s107 /home/s3310914/Documents/ver/siso_gen_calc_arch.vhd|
+!i113 0
+R12
+R1
+Etb_siso_gen
+R13
+R6
+R7
+!i122 322
+R0
+Z15 8/home/s3310914/Documents/ver/tb_siso_gen.vhd
+Z16 F/home/s3310914/Documents/ver/tb_siso_gen.vhd
+l0
+L23 1
+VEY^U3:F`RcmfCIDczY4@60
+!s100 Nh2bf8LjQk5BC=Z^aZVnK3
+R10
+33
+R14
+!i10b 1
+R11
+Z17 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/ver/tb_siso_gen.vhd|
+Z18 !s107 /home/s3310914/Documents/ver/tb_siso_gen.vhd|
+!i113 0
+R12
+R1
+Astructure
+R6
+R7
+R8
+!i122 322
+l66
+L27 59
+VNIZWX4Dbe;`W7@IhRk>[Y0
+!s100 LFSUnS8mn;^8NN?STK>Sc1
+R10
+33
+R14
+!i10b 1
+R11
+R17
+R18
+!i113 0
+R12
+R1
+Etb_siso_gen_top
+R13
+!i122 322
+R0
+R15
+R16
+l0
+L91 1
+V5DL_eIX5HUfi>zOR0d_eJ0
+!s100 43FP]bjkWBJWE9H^O:eU=3
+R10
+33
+R14
+!i10b 1
+R11
+R17
+R18
+!i113 0
+R12
+R1
+Atop
+R9
+!i122 322
+l98
+L94 7
+V=9h7VLmL8S7iB]V@e6YJ81
+!s100 1HDNd4`12kDN4zWm2B5^51
+R10
+33
+R14
+!i10b 1
+R11
+R17
+R18
+!i113 0
+R12
+R1
+Etvc_siso_gen
+R13
+R2
+R3
+R6
+R7
+!i122 321
+R0
+8/home/s3310914/Documents/ver/tvc_siso_gen_ent.vhd
+F/home/s3310914/Documents/ver/tvc_siso_gen_ent.vhd
+l0
+L21 1
+Vkk0__Cd^mAFcO>SEeEMf21
+!s100 Y]S2532mILBUab18RUlEi0
+R10
+33
+R14
+!i10b 1
+R11
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/ver/tvc_siso_gen_ent.vhd|
+!s107 /home/s3310914/Documents/ver/tvc_siso_gen_ent.vhd|
+!i113 0
+R12
+R1
+Atester
+w1696250624
+R2
+R3
+R6
+R7
+R4
+!i122 322
+8/home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd
+F/home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd
+l11
+L2 138
+V6kK[GSTQ:b92TY<1?IO2F3
+!s100 NOG4=5Uk:@[DKTd`cjLfN0
+R10
+33
+R14
+!i10b 1
+R11
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd|
+!s107 /home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd|
+!i113 0
+R12
+R1

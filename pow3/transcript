@@ -1298,3 +1298,5 @@ run -all
 #    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd
 # Break in Process stimuli at /home/s3310914/Documents/pow3/tvc_siso_gen_file_io_arch.vhd line 90
 power report -bsaif mix8_gc.saif
+# End time: 14:00:28 on Oct 01,2023, Elapsed time: 74:17:38
+# Errors: 1, Warnings: 1

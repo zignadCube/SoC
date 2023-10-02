@@ -1,0 +1,52 @@
+/home/s3310914/Documents/ver/tvc_siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/ver/tvc_siso_gen_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/ver/siso_gen_ent.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/ver/siso_gen_ent.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity siso_gen
+
+} {} {}} /home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling architecture tester of tvc_siso_gen
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/ver/conf_tb_siso_gen_calc_8.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/ver/conf_tb_siso_gen_calc_8.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling configuration conf_tb_siso_gen_calc_8_mix
+-- Loading entity tb_siso_gen_top
+-- Loading architecture top of tb_siso_gen_top
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading entity tb_siso_gen
+-- Loading architecture structure of tb_siso_gen
+-- Loading entity siso_gen
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity tvc_siso_gen
+
+} {} {}} /home/s3310914/Documents/ver/tb_siso_gen.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/ver/tb_siso_gen.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_siso_gen
+-- Compiling architecture structure of tb_siso_gen
+-- Compiling entity tb_siso_gen_top
+-- Compiling architecture top of tb_siso_gen_top
+
+} {} {}}

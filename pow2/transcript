@@ -369,8 +369,9 @@ run -all
 #    Time: 1507500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
 # Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
 power report -bsaif mul8_gc.saif
-so_gen_file_io_arch.vhd was successful.
-# Compile of conf_tb_siso_gen_calc_8.vhd was successful.
+# End time: 14:01:05 on Oct 01,2023, Elapsed time: 73:53:17
+# Errors: 1, Warnings: 1
+successful.
 # Compile of conf_tb_siso_gen_calc_8_post.vhd was successful.
 # 8 compiles, 1 failed with 3 errors.
 # Compile of siso_gen_ent.vhd was successful.
@@ -576,3 +577,5 @@ run -all
 # ** Failure: OK! Simulation stopped at end of input file.
 #    Time: 60300 ns  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/stimuli File: /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd
 # Break in Process stimuli at /home/s3310914/Documents/pow2/tvc_siso_gen_file_io_arch.vhd line 90
+# End time: 14:00:48 on Oct 01,2023, Elapsed time: 121:39:27
+# Errors: 1, Warnings: 1
