@@ -1,0 +1,2311 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+dc_shell> dc_shell> siso_gen_ent.vhd siso_gen_sec_par_arch.vhd
+dc_shell> siso_gen
+dc_shell> clk
+dc_shell> 16
+dc_shell> 5
+dc_shell> siso_gen_sec_par_16_5
+dc_shell> n
+dc_shell> n
+dc_shell> sec_par_16_5
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Running PRESTO HDLC
+Compiling Entity Declaration SISO_GEN
+Presto compilation completed successfully.
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/dw_foundation.sldb'
+Running PRESTO HDLC
+Compiling Architecture SEC_PAR of SISO_GEN
+Presto compilation completed successfully.
+dc_shell> dc_shell> dc_shell> dc_shell> Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/standard.sldb'
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+  Loading link library 'umcl18u250t2_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine siso_gen_word_length16 line 48 in file
+		'./siso_gen_sec_par_arch.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  coeff_memory_reg   | Flip-flop |  80   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  coeff_counter_reg  | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       z1_reg        | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       z2_reg        | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      ready_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (siso_gen_word_length16)
+Elaborated 1 design.
+Current design is now 'siso_gen_word_length16'.
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> Current design is 'siso_gen_word_length16'.
+Information: Renaming design /home/s3310914/Documents/sec/siso_gen_word_length16.db:siso_gen_word_length16 to /home/s3310914/Documents/sec/siso_gen_word_length16.db:siso_gen. (UIMG-45)
+Current design is 'siso_gen'.
+1
+dc_shell> dc_shell> dc_shell> dc_shell> FALSE
+dc_shell> dc_shell> dc_shell> Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.2 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.2 |     *     |
+============================================================================
+
+
+Information: There are 5 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'siso_gen'
+Information: Added key list 'DesignWare' to design 'siso_gen'. (DDB-72)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width16' (rpl)
+  Processing 'DW01_add_width16'
+  Processing 'siso_gen_DW01_add_0'
+  Mapping 'siso_gen_DW_mult_tc_0'
+  Processing 'siso_gen_DW01_add_1'
+  Mapping 'siso_gen_DW_mult_tc_1'
+  Mapping 'siso_gen_DW_mult_tc_2'
+  Processing 'siso_gen_DW01_add_2'
+  Mapping 'siso_gen_DW_mult_tc_3'
+  Processing 'siso_gen_DW01_add_3'
+  Mapping 'siso_gen_DW_mult_tc_4'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:08  148955.3      2.26      66.4       0.0                          
+    0:00:08  148882.0      2.28      66.8       0.0                          
+    0:00:08  148882.0      2.28      66.8       0.0                          
+    0:00:09  148869.8      2.28      66.8       0.0                          
+    0:00:09  148869.8      2.28      66.8       0.0                          
+    0:00:10  111194.6      2.44      71.0       0.0                          
+    0:00:10  111027.5      2.29      66.8       0.0                          
+    0:00:10  110771.4      2.28      66.4       0.0                          
+    0:00:10  110828.3      2.27      66.4       0.0                          
+    0:00:10  110791.8      2.26      66.0       0.0                          
+    0:00:11  110897.5      2.26      65.9       0.0                          
+    0:00:11  110885.3      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110885.3      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  110893.4      2.26      65.8       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:11  110893.4      2.26      65.8       0.0                          
+    0:00:11  111112.9      2.19      64.1       0.0 z1_reg[12]/D             
+    0:00:11  111267.4      2.18      63.9       0.0 z1_reg[12]/D             
+    0:00:11  111287.7      2.17      63.8       0.0 z1_reg[12]/D             
+    0:00:12  111613.0      2.16      63.2       0.0 z2_reg[15]/D             
+    0:00:12  111893.5      2.14      62.8       0.0 z2_reg[15]/D             
+    0:00:12  112214.7      2.13      62.7       0.0 z2_reg[15]/D             
+    0:00:12  112401.7      2.12      62.5       0.0 z2_reg[15]/D             
+    0:00:12  112568.3      2.11      62.4       0.0 z1_reg[12]/D             
+    0:00:12  112698.4      2.11      62.4       0.0 z2_reg[13]/D             
+    0:00:13  112759.4      2.11      62.2       0.0 z1_reg[12]/D             
+    0:00:13  112881.4      2.10      62.1       0.0 z1_reg[15]/D             
+    0:00:13  113231.0      2.09      62.1       0.0 z1_reg[14]/D             
+    0:00:13  113267.6      2.08      61.9       0.0 z1_reg[12]/D             
+    0:00:13  113430.3      2.08      61.9       0.0 z1_reg[14]/D             
+    0:00:13  113491.3      2.08      61.8       0.0 z2_reg[14]/D             
+    0:00:13  113536.0      2.08      61.8       0.0 z2_reg[11]/D             
+    0:00:13  113556.3      2.07      61.7       0.0 z1_reg[12]/D             
+    0:00:14  113552.3      2.07      61.5       0.0 z2_reg[11]/D             
+    0:00:14  113723.0      2.06      61.4       0.0 z2_reg[11]/D             
+    0:00:14  113926.4      2.06      61.3       0.0 z2_reg[14]/D             
+    0:00:14  113934.5      2.06      61.3       0.0 z2_reg[14]/D             
+    0:00:14  114312.6      2.06      61.0       0.0 z2_reg[15]/D             
+    0:00:14  114556.5      2.05      60.9       0.0 z1_reg[12]/D             
+    0:00:14  114446.8      2.04      60.8       0.0 z1_reg[15]/D             
+    0:00:14  114450.8      2.04      60.7       0.0 z1_reg[14]/D             
+    0:00:14  114446.8      2.04      60.7       0.0 z1_reg[12]/D             
+    0:00:15  114442.7      2.04      60.7       0.0 z2_reg[14]/D             
+    0:00:15  114454.9      2.04      60.6       0.0 z1_reg[12]/D             
+    0:00:15  114678.5      2.03      60.5       0.0 z1_reg[12]/D             
+    0:00:15  114715.0      2.03      60.5       0.0 z1_reg[12]/D             
+    0:00:15  115093.2      2.03      60.2       0.0 z2_reg[14]/D             
+    0:00:15  115137.9      2.02      60.2       0.0 z1_reg[12]/D             
+    0:00:15  115194.8      2.02      60.1       0.0 z1_reg[12]/D             
+    0:00:15  115247.7      2.02      60.0       0.0 z1_reg[12]/D             
+    0:00:16  115337.1      2.01      59.9       0.0 z1_reg[12]/D             
+    0:00:16  115377.7      2.01      59.7       0.0 z1_reg[12]/D             
+    0:00:16  115394.0      2.01      59.7       0.0 z2_reg[15]/D             
+    0:00:16  115576.9      2.01      59.7       0.0 z1_reg[12]/D             
+    0:00:16  115670.4      2.00      59.6       0.0 z1_reg[12]/D             
+    0:00:16  115698.9      2.00      59.6       0.0 z1_reg[12]/D             
+    0:00:16  115739.5      2.00      59.5       0.0 z1_reg[12]/D             
+    0:00:16  115780.2      2.00      59.5       0.0 z1_reg[12]/D             
+    0:00:16  115776.2      2.00      59.5       0.0 z1_reg[12]/D             
+    0:00:16  115772.1      2.00      59.5       0.0 z1_reg[15]/D             
+    0:00:17  115902.2      2.00      59.4       0.0 z1_reg[15]/D             
+    0:00:17  116056.7      1.99      59.3       0.0 z1_reg[15]/D             
+    0:00:17  116101.4      1.99      59.3       0.0 z1_reg[12]/D             
+    0:00:17  116369.7      1.99      59.2       0.0 z1_reg[15]/D             
+    0:00:17  116487.6      1.99      59.1       0.0 z2_reg[15]/D             
+    0:00:17  116548.6      1.99      59.1       0.0 z1_reg[12]/D             
+    0:00:17  116784.5      1.99      59.1       0.0 z1_reg[12]/D             
+    0:00:17  116812.9      1.99      59.1       0.0 z2_reg[11]/D             
+    0:00:17  116833.2      1.99      59.1       0.0 z2_reg[15]/D             
+    0:00:18  116991.8      1.98      59.0       0.0 z1_reg[12]/D             
+    0:00:18  117073.1      1.98      59.0       0.0 z1_reg[12]/D             
+    0:00:18  117081.2      1.98      58.9       0.0 z2_reg[15]/D             
+    0:00:18  117353.6      1.98      58.9       0.0 z2_reg[15]/D             
+    0:00:18  117426.8      1.98      58.8       0.0 z1_reg[15]/D             
+    0:00:18  117235.8      1.97      58.8       0.0 z1_reg[12]/D             
+    0:00:18  117528.5      1.97      58.8       0.0 z1_reg[14]/D             
+    0:00:18  117500.0      1.97      58.7       0.0 z1_reg[14]/D             
+    0:00:18  117512.2      1.97      58.6       0.0 z1_reg[15]/D             
+    0:00:18  117597.6      1.97      58.6       0.0 z1_reg[15]/D             
+    0:00:18  117658.6      1.97      58.6       0.0 z1_reg[14]/D             
+    0:00:18  117679.0      1.97      58.6       0.0 z1_reg[14]/D             
+    0:00:18  117711.5      1.96      58.6       0.0 z1_reg[15]/D             
+    0:00:19  117772.5      1.96      58.6       0.0 z2_reg[15]/D             
+    0:00:19  117817.2      1.96      58.5       0.0 z1_reg[15]/D             
+    0:00:19  117849.7      1.96      58.5       0.0 z2_reg[11]/D             
+    0:00:19  117898.5      1.96      58.5       0.0 z2_reg[15]/D             
+    0:00:19  117894.5      1.96      58.5       0.0 z1_reg[15]/D             
+    0:00:19  118122.1      1.95      58.5       0.0 z2_reg[11]/D             
+    0:00:19  118158.7      1.95      58.4       0.0 z1_reg[15]/D             
+    0:00:19  118333.6      1.95      58.5       0.0 z1_reg[15]/D             
+    0:00:19  118337.6      1.95      58.6       0.0 z2_reg[15]/D             
+    0:00:19  118366.1      1.95      58.6       0.0 z2_reg[15]/D             
+    0:00:19  118390.5      1.95      58.6       0.0 z2_reg[15]/D             
+    0:00:20  118390.5      1.95      58.5       0.0 z2_reg[15]/D             
+    0:00:20  118390.5      1.95      58.5       0.0 z1_reg[15]/D             
+    0:00:20  118394.6      1.95      58.5       0.0 z2_reg[15]/D             
+    0:00:20  118386.5      1.95      58.5       0.0 z2_reg[15]/D             
+    0:00:20  118488.1      1.95      58.4       0.0 z1_reg[15]/D             
+    0:00:20  118549.1      1.95      58.4       0.0 z2_reg[15]/D             
+    0:00:20  118553.2      1.95      58.4       0.0 z1_reg[15]/D             
+    0:00:20  118597.9      1.95      58.4       0.0 z1_reg[15]/D             
+    0:00:20  118866.2      1.95      58.4       0.0 z2_reg[11]/D             
+    0:00:20  118911.0      1.95      58.4       0.0 z2_reg[14]/D             
+    0:00:20  119134.6      1.94      58.3       0.0 z2_reg[14]/D             
+    0:00:20  119159.0      1.94      58.3       0.0 z2_reg[14]/D             
+    0:00:20  119240.3      1.94      58.2       0.0 z2_reg[14]/D             
+    0:00:21  119333.8      1.94      58.2       0.0 z2_reg[14]/D             
+    0:00:21  119333.8      1.94      58.2       0.0 z1_reg[15]/D             
+    0:00:21  119354.1      1.94      58.2       0.0 z2_reg[15]/D             
+    0:00:21  119382.6      1.94      58.2       0.0 z2_reg[15]/D             
+    0:00:21  119382.6      1.94      58.2       0.0 z1_reg[15]/D             
+    0:00:21  119382.6      1.94      58.2       0.0 z1_reg[15]/D             
+    0:00:21  119423.3      1.94      58.1       0.0 z1_reg[15]/D             
+    0:00:21  119423.3      1.94      58.1       0.0 z1_reg[15]/D             
+    0:00:21  119427.3      1.94      58.1       0.0 z1_reg[15]/D             
+    0:00:21  119488.3      1.94      58.1       0.0 z1_reg[15]/D             
+    0:00:21  119504.6      1.94      58.1       0.0 z1_reg[15]/D             
+    0:00:21  119533.1      1.94      58.1       0.0 z1_reg[15]/D             
+    0:00:22  119533.1      1.94      58.1       0.0 z2_reg[15]/D             
+    0:00:22  119565.6      1.94      58.1       0.0 z2_reg[15]/D             
+    0:00:22  119423.3      1.94      58.0       0.0 z2_reg[15]/D             
+    0:00:22  119476.1      1.93      58.0       0.0 z2_reg[15]/D             
+    0:00:22  119496.4      1.93      58.0       0.0 z2_reg[15]/D             
+    0:00:22  119468.0      1.93      58.0       0.0 z2_reg[15]/D             
+    0:00:22  119650.9      1.93      58.0       0.0 z1_reg[8]/D              
+    0:00:22  119679.4      1.93      58.0       0.0 z2_reg[15]/D             
+    0:00:22  119699.7      1.93      58.0       0.0 z2_reg[15]/D             
+    0:00:22  119703.8      1.93      58.0       0.0 z1_reg[15]/D             
+    0:00:22  119964.0      1.93      57.9       0.0 z1_reg[15]/D             
+    0:00:22  119968.0      1.93      57.9       0.0 z2_reg[15]/D             
+    0:00:22  120183.5      1.93      57.8       0.0 z1_reg[15]/D             
+    0:00:23  120248.5      1.93      57.8       0.0 z1_reg[15]/D             
+    0:00:23  120256.7      1.93      57.8       0.0 z1_reg[15]/D             
+    0:00:23  120561.6      1.92      57.7       0.0 z1_reg[15]/D             
+    0:00:23  120573.8      1.92      57.6       0.0 z2_reg[15]/D             
+    0:00:23  120569.7      1.92      57.6       0.0 z2_reg[15]/D             
+    0:00:23  120744.5      1.92      57.5       0.0 z1_reg[15]/D             
+    0:00:23  120789.3      1.91      57.4       0.0 z1_reg[15]/D             
+    0:00:23  120801.5      1.91      57.4       0.0 z2_reg[15]/D             
+    0:00:24  120789.3      1.91      57.4       0.0 z1_reg[15]/D             
+    0:00:24  120805.5      1.91      57.4       0.0 z2_reg[15]/D             
+    0:00:24  120821.8      1.91      57.4       0.0 z2_reg[15]/D             
+    0:00:32  120878.7      1.91      57.4       0.0 z2_reg[15]/D             
+    0:00:32  120915.3      1.91      57.4       0.0 z1_reg[15]/D             
+    0:00:33  120935.6      1.91      57.4       0.0 z2_reg[15]/D             
+    0:00:34  121029.2      1.91      57.3       0.0 z2_reg[15]/D             
+    0:00:34  120927.5      1.91      57.3       0.0 z1_reg[15]/D             
+    0:00:35  121045.4      1.91      57.2       0.0 z1_reg[8]/D              
+    0:00:35  121090.1      1.91      57.2       0.0 z1_reg[15]/D             
+    0:00:35  121317.8      1.90      57.1       0.0 z1_reg[15]/D             
+    0:00:36  121317.8      1.90      57.2       0.0 z1_reg[15]/D             
+    0:00:36  121321.8      1.90      57.2       0.0 z1_reg[15]/D             
+    0:00:39  121334.0      1.90      57.2       0.0                          
+    0:00:40  121317.8      1.90      57.2       0.0                          
+    0:00:40  121317.8      1.90      57.2       0.0 z1_reg[15]/D             
+    0:00:40  121330.0      1.90      57.2       0.0 z2_reg[15]/D             
+    0:00:40  121330.0      1.90      57.2       0.0 z2_reg[15]/D             
+    0:00:40  121354.3      1.90      57.1       0.0 z1_reg[15]/D             
+    0:00:40  121382.8      1.90      57.1       0.0 z1_reg[15]/D             
+    0:00:40  121431.6      1.90      57.1       0.0 z1_reg[15]/D             
+    0:00:40  121447.9      1.90      57.0       0.0 z1_reg[15]/D             
+    0:00:40  121500.7      1.90      57.0       0.0 z1_reg[15]/D             
+    0:00:40  121500.7      1.90      57.0       0.0 z1_reg[15]/D             
+    0:00:41  121500.7      1.90      57.0       0.0 z1_reg[15]/D             
+    0:00:41  121553.6      1.90      57.0       0.0 z1_reg[15]/D             
+    0:00:41  121386.9      1.90      56.9       0.0 z2_reg[15]/D             
+    0:00:41  121395.0      1.90      56.8       0.0 z1_reg[15]/D             
+    0:00:41  121378.7      1.90      56.8       0.0 z1_reg[15]/D             
+    0:00:41  121390.9      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:41  121395.0      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:41  121399.1      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:41  121399.1      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:41  121443.8      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:42  121468.2      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:42  121659.3      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:42  121683.7      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:42  121809.7      1.89      56.8       0.0 z2_reg[15]/D             
+    0:00:42  122074.0      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:42  122159.4      1.89      56.8       0.0 z1_reg[15]/D             
+    0:00:42  122281.4      1.89      56.7       0.0 z1_reg[15]/D             
+    0:00:42  122322.0      1.89      56.7       0.0 z1_reg[15]/D             
+    0:00:42  122370.8      1.89      56.7       0.0 z1_reg[15]/D             
+    0:00:42  122391.2      1.89      56.7       0.0 z1_reg[15]/D             
+    0:00:42  122444.0      1.89      56.7       0.0 z1_reg[15]/D             
+    0:00:42  122444.0      1.89      56.7       0.0 z1_reg[15]/D             
+    0:00:43  122492.8      1.89      56.6       0.0 z1_reg[15]/D             
+    0:00:43  122488.8      1.89      56.6       0.0 z1_reg[15]/D             
+    0:00:43  122655.5      1.88      56.5       0.0 z2_reg[15]/D             
+    0:00:43  122651.4      1.88      56.5       0.0 z1_reg[15]/D             
+    0:00:43  122692.1      1.88      56.5       0.0 z1_reg[15]/D             
+    0:00:43  122704.3      1.88      56.5       0.0 z1_reg[15]/D             
+    0:00:43  122716.5      1.88      56.5       0.0 z1_reg[15]/D             
+    0:00:43  122716.5      1.88      56.5       0.0 z1_reg[15]/D             
+    0:00:44  122732.7      1.88      56.5       0.0 z1_reg[15]/D             
+    0:00:44  122773.4      1.88      56.4       0.0 z1_reg[15]/D             
+    0:00:44  122773.4      1.88      56.4       0.0 z1_reg[15]/D             
+    0:00:44  122740.9      1.88      56.4       0.0 z2_reg[15]/D             
+    0:00:44  122753.1      1.88      56.4       0.0 z2_reg[15]/D             
+    0:00:44  122744.9      1.88      56.4       0.0 z1_reg[15]/D             
+    0:00:44  122789.7      1.88      56.6       0.0 z1_reg[15]/D             
+    0:00:44  122988.9      1.88      56.6       0.0 z1_reg[15]/D             
+    0:00:45  122992.9      1.88      56.5       0.0                          
+    0:00:45  122992.9      1.88      56.5       0.0                          
+    0:00:45  122976.7      1.88      56.5       0.0                          
+    0:00:45  122992.9      1.88      56.5       0.0                          
+    0:00:45  122980.7      1.88      56.5       0.0                          
+    0:00:45  122980.7      1.88      56.5       0.0                          
+    0:00:45  123001.1      1.88      56.5       0.0                          
+    0:00:45  123001.1      1.88      56.5       0.0                          
+    0:00:45  122997.0      1.88      56.5       0.0                          
+    0:00:45  122952.3      1.88      56.2       0.0                          
+    0:00:45  122960.4      1.88      56.2       0.0                          
+    0:00:46  123009.2      1.88      56.1       0.0                          
+    0:00:46  123204.3      1.88      56.0       0.0                          
+    0:00:46  123188.1      1.88      56.0       0.0                          
+    0:00:46  123179.9      1.88      55.9       0.0                          
+    0:00:46  123163.7      1.88      55.9       0.0                          
+    0:00:46  123159.6      1.88      55.6       0.0                          
+    0:00:46  123139.3      1.88      55.5       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:46  123139.3      1.88      55.5       0.0                          
+    0:00:46  123139.3      1.88      55.5       0.0                          
+    0:00:46  122448.1      1.88      55.5       0.0                          
+    0:00:46  121748.9      1.88      55.5       0.0                          
+    0:00:46  121374.9      1.88      55.5       0.0                          
+    0:00:46  121342.3      1.88      55.6       0.0                          
+    0:00:46  121326.1      1.88      55.6       0.0                          
+    0:00:46  121326.1      1.88      55.6       0.0                          
+    0:00:46  121326.1      1.88      55.6       0.0                          
+    0:00:46  119748.6      1.89      55.7       0.0                          
+    0:00:46  119370.5      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.89      55.7       0.0                          
+    0:00:46  119362.4      1.88      55.6       0.0 z1_reg[15]/D             
+    0:00:46  119423.4      1.88      55.6       0.0 z2_reg[12]/D             
+    0:00:47  119740.5      1.88      55.7       0.0 z1_reg[15]/D             
+    0:00:47  119870.6      1.88      55.5       0.0 z1_reg[15]/D             
+    0:00:47  120098.3      1.88      55.5       0.0 z1_reg[15]/D             
+    0:00:47  120114.6      1.88      55.5       0.0 z1_reg[15]/D             
+    0:00:47  120118.6      1.88      55.5       0.0 z2_reg[12]/D             
+    0:00:47  120151.2      1.88      55.5       0.0 z2_reg[12]/D             
+    0:00:47  120155.2      1.88      55.5       0.0 z2_reg[12]/D             
+    0:00:48  120143.0      1.88      55.5       0.0                          
+    0:00:48  120086.1      1.88      55.5       0.0                          
+    0:00:48  120053.5      1.88      55.5       0.0                          
+    0:00:48  119984.4      1.88      55.5       0.0                          
+    0:00:48  119956.0      1.88      55.5       0.0                          
+    0:00:48  119935.6      1.88      55.5       0.0                          
+    0:00:48  119935.6      1.88      55.5       0.0                          
+    0:00:48  119732.4      1.88      55.4       0.0                          
+    0:00:48  119740.5      1.88      55.4       0.0                          
+    0:00:48  119773.0      1.88      55.4       0.0                          
+    0:00:49  119773.0      1.88      55.4       0.0                          
+    0:00:49  119789.3      1.88      55.4       0.0                          
+    0:00:49  119797.4      1.88      55.4       0.0                          
+    0:00:49  119801.5      1.88      55.4       0.0                          
+    0:00:49  119801.5      1.88      55.4       0.0                          
+    0:00:49  119809.6      1.88      55.4       0.0                          
+    0:00:49  119834.0      1.88      55.4       0.0                          
+    0:00:49  119838.0      1.88      55.4       0.0                          
+    0:00:49  119838.0      1.88      55.3       0.0                          
+    0:00:49  119817.7      1.88      55.4       0.0 z1_reg[15]/D             
+    0:00:49  119842.1      1.88      55.3       0.0 z1_reg[15]/D             
+    0:00:49  119878.7      1.88      55.3       0.0 z1_reg[15]/D             
+    0:00:49  119923.4      1.87      55.2       0.0 z1_reg[15]/D             
+    0:00:49  119964.1      1.87      55.2       0.0 z1_reg[15]/D             
+    0:00:50  120012.9      1.87      55.4       0.0 z1_reg[15]/D             
+    0:00:50  120029.2      1.87      55.4       0.0 z1_reg[15]/D             
+    0:00:50  120029.2      1.87      55.4       0.0 z2_reg[12]/D             
+    0:00:50  120065.8      1.87      55.4       0.0 z1_reg[15]/D             
+    0:00:50  120082.0      1.87      55.5       0.0 z1_reg[15]/D             
+    0:00:50  120094.2      1.87      55.5       0.0 z1_reg[15]/D             
+    0:00:51  120106.4      1.87      55.5       0.0 z1_reg[15]/D             
+    0:00:51  120118.6      1.87      55.5       0.0 z1_reg[15]/D             
+    0:00:51  120208.1      1.86      55.5       0.0 z2_reg[12]/D             
+    0:00:51  120187.7      1.86      55.5       0.0 z2_reg[15]/D             
+    0:00:51  120171.5      1.86      55.4       0.0 z2_reg[12]/D             
+    0:00:51  120228.4      1.86      55.4       0.0 z2_reg[12]/D             
+    0:00:51  120260.9      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:51  120281.2      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:51  120293.4      1.86      55.4       0.0 z2_reg[15]/D             
+    0:00:51  120321.9      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:51  120537.3      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:51  120777.2      1.86      55.4       0.0 z2_reg[13]/D             
+    0:00:51  120769.1      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:51  120805.7      1.86      55.4       0.0 z2_reg[15]/D             
+    0:00:51  121013.0      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:51  121086.2      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:52  121086.2      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:52  121293.5      1.86      55.4       0.0 z1_reg[15]/D             
+    0:00:52  121289.5      1.86      55.4       0.0 z2_reg[12]/D             
+    0:00:52  121305.7      1.86      55.4       0.0 z1_reg[15]/D             
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+check_design summary:
+Version:     R-2020.09-SP2
+Date:        Mon Oct  2 22:43:45 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     92
+    Unconnected ports (LINT-28)                                    91
+    Constant outputs (LINT-52)                                      1
+--------------------------------------------------------------------------------
+
+Warning: In design 'siso_gen', port 'scan_in' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen', port 'scan_shift' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen', port 'scan_out' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_8', port 'product[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_7', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_7', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_9', port 'product[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_10', port 'product[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_11', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_11', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_12', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_12', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_13', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW01_add_13', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_17', port 'product[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[31]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[30]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen_DW_mult_tc_18', port 'product[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'siso_gen', output port 'req' is connected directly to 'logic 1'. (LINT-52)
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> NMA-16 VHDL-286 UCN-4
+dc_shell> 1
+dc_shell> 1
+dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> hier_sec_par_16_5
+dc_shell> dc_shell> dc_shell> Writing vhdl file '/home/s3310914/Documents/sec/synopsys_out/siso_gen_sec_par_16_5_hier.vhd'.
+Warning: A dummy net 'n_1000' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1001' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1002' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1003' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1004' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1005' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1006' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1007' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1008' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1009' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1010' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1011' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1012' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1013' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1014' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1015' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1016' is created to connect open pin 'S'. (VHDL-290)
+Warning: A dummy net 'n_1017' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1018' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1019' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1020' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1021' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1022' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1023' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1024' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1025' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1026' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1027' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1028' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1029' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1030' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1031' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1032' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1033' is created to connect open pin 'S'. (VHDL-290)
+Warning: A dummy net 'n_1034' is created to connect open pin 'CI'. (VHDL-290)
+Warning: A dummy net 'n_1035' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1036' is created to connect open pin 'CI'. (VHDL-290)
+Warning: A dummy net 'n_1037' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1038' is created to connect open pin 'CI'. (VHDL-290)
+Warning: A dummy net 'n_1039' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1040' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1041' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1042' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1043' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1044' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1045' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1046' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1047' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1048' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1049' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1050' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1051' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1052' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1053' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1054' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1055' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1056' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1057' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1058' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1059' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1060' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1061' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1062' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1063' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1064' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1065' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1066' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1067' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1068' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1069' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1070' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1071' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1072' is created to connect open pin 'CI'. (VHDL-290)
+Warning: A dummy net 'n_1073' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1074' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1075' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1076' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1077' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1078' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1079' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1080' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1081' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1082' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1083' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1084' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1085' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1086' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1087' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1088' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1089' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1090' is created to connect open pin 'scan_out'. (VHDL-290)
+Warning: A dummy net 'n_1091' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1092' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1093' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1094' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1095' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1096' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1097' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1098' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1099' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1100' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1101' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1102' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1103' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1104' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1105' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1106' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1107' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1108' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1109' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1110' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1111' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1112' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1113' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1114' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1115' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1116' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1117' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1118' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1119' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1120' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1121' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1122' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1123' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1124' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1125' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1126' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1127' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1128' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1129' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1130' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1131' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1132' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1133' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1134' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1135' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1136' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1137' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1138' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1139' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1140' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1141' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1142' is created to connect open pin 'CO'. (VHDL-290)
+Warning: A dummy net 'n_1143' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1144' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1145' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1146' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1147' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1148' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1149' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1150' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1151' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1152' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1153' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1154' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1155' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1156' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1157' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1158' is created to connect open pin 'product(0)'. (VHDL-290)
+Warning: A dummy net 'n_1159' is created to connect open pin 'product(31)'. (VHDL-290)
+Warning: A dummy net 'n_1160' is created to connect open pin 'product(30)'. (VHDL-290)
+Warning: A dummy net 'n_1161' is created to connect open pin 'product(13)'. (VHDL-290)
+Warning: A dummy net 'n_1162' is created to connect open pin 'product(12)'. (VHDL-290)
+Warning: A dummy net 'n_1163' is created to connect open pin 'product(11)'. (VHDL-290)
+Warning: A dummy net 'n_1164' is created to connect open pin 'product(10)'. (VHDL-290)
+Warning: A dummy net 'n_1165' is created to connect open pin 'product(9)'. (VHDL-290)
+Warning: A dummy net 'n_1166' is created to connect open pin 'product(8)'. (VHDL-290)
+Warning: A dummy net 'n_1167' is created to connect open pin 'product(7)'. (VHDL-290)
+Warning: A dummy net 'n_1168' is created to connect open pin 'product(6)'. (VHDL-290)
+Warning: A dummy net 'n_1169' is created to connect open pin 'product(5)'. (VHDL-290)
+Warning: A dummy net 'n_1170' is created to connect open pin 'product(4)'. (VHDL-290)
+Warning: A dummy net 'n_1171' is created to connect open pin 'product(3)'. (VHDL-290)
+Warning: A dummy net 'n_1172' is created to connect open pin 'product(2)'. (VHDL-290)
+Warning: A dummy net 'n_1173' is created to connect open pin 'product(1)'. (VHDL-290)
+Warning: A dummy net 'n_1174' is created to connect open pin 'product(0)'. (VHDL-290)
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : hierarchy
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Mon Oct  2 22:43:46 2023
+****************************************
+
+Attributes:
+    r - licensed design
+
+siso_gen           r
+    AND2D1                         umcl18u250t2_typ
+    BUFD4                          umcl18u250t2_typ
+    BUFD8                          umcl18u250t2_typ
+    BUFDL                          umcl18u250t2_typ
+    DFERPQ1                        umcl18u250t2_typ
+    DFERPQ2                        umcl18u250t2_typ
+    DFERPQ4                        umcl18u250t2_typ
+    DFERPQL                        umcl18u250t2_typ
+    DFFRPQ1                        umcl18u250t2_typ
+    INVBD4                         umcl18u250t2_typ
+    INVD1                          umcl18u250t2_typ
+    INVD4                          umcl18u250t2_typ
+    NAN2D1                         umcl18u250t2_typ
+    NAN2M1D1                       umcl18u250t2_typ
+    NAN3D1                         umcl18u250t2_typ
+    OA21D1                         umcl18u250t2_typ
+    OAI21D1                        umcl18u250t2_typ
+    TIEHI                          umcl18u250t2_typ
+    TIELO                          umcl18u250t2_typ
+    siso_gen_DW01_add_7                      r
+        AND2DL                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        BUFD4                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        OA21M20DL                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW01_add_11                     r
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AO21DL                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        BUFDL                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXNOR2DL                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        INVBD32                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        NOR2M1DL                   umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI21M10DL                 umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW01_add_12                     r
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        BUFDL                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXNOR2DL                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR2DL                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1DL                   umcl18u250t2_typ
+        OA21DL                     umcl18u250t2_typ
+        OA21M20DL                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI21M20DL                 umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW01_add_13                     r
+        AND2D1                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        AOI21M10D1                 umcl18u250t2_typ
+        BUFDL                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXNOR2D2                   umcl18u250t2_typ
+        EXOR2D4                    umcl18u250t2_typ
+        INVBD2                     umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVD2                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1DL                   umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OA21M20DL                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW_mult_tc_8                    r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFD1                   umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AO21M20DL                  umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        BUFD1                      umcl18u250t2_typ
+        BUFD4                      umcl18u250t2_typ
+        BUFD20                     umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21DL                     umcl18u250t2_typ
+        OA21M20DL                  umcl18u250t2_typ
+        OA22D1                     umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI22D1                    umcl18u250t2_typ
+        OAI22DL                    umcl18u250t2_typ
+        OAI22M10D1                 umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW_mult_tc_9                    r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFD1                   umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AO21M20D1                  umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        BUFD1                      umcl18u250t2_typ
+        BUFD4                      umcl18u250t2_typ
+        BUFD20                     umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVD2                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21D1                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OA22D1                     umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI22D1                    umcl18u250t2_typ
+        OAI22DL                    umcl18u250t2_typ
+        OAI22M10D1                 umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW_mult_tc_10                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADFULD2                    umcl18u250t2_typ
+        ADFULDL                    umcl18u250t2_typ
+        ADHALFD1                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AO21D2                     umcl18u250t2_typ
+        AO21M10DL                  umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        BUFDL                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXNOR2D2                   umcl18u250t2_typ
+        EXNOR2D4                   umcl18u250t2_typ
+        EXNOR2DL                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR2D2                    umcl18u250t2_typ
+        EXOR2D4                    umcl18u250t2_typ
+        EXOR2DL                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        EXOR3D2                    umcl18u250t2_typ
+        EXOR3DL                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVD2                      umcl18u250t2_typ
+        INVD4                      umcl18u250t2_typ
+        INVD16                     umcl18u250t2_typ
+        INVD20                     umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1D2                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NAN3D1                     umcl18u250t2_typ
+        NAN3D2                     umcl18u250t2_typ
+        NAN3M1D1                   umcl18u250t2_typ
+        NAN3M1DL                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        NOR2M1DL                   umcl18u250t2_typ
+        OA21DL                     umcl18u250t2_typ
+        OA21M20DL                  umcl18u250t2_typ
+        OA22DL                     umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI21M10DL                 umcl18u250t2_typ
+        OAI21M20D1                 umcl18u250t2_typ
+        OAI21M20D2                 umcl18u250t2_typ
+        OAI22D1                    umcl18u250t2_typ
+        OAI22D2                    umcl18u250t2_typ
+        OAI22DL                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW_mult_tc_17                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADFULD2                    umcl18u250t2_typ
+        ADFULDL                    umcl18u250t2_typ
+        ADHALFD1                   umcl18u250t2_typ
+        ADHALFD2                   umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AO21D2                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        AOI21M10D1                 umcl18u250t2_typ
+        AOI21M10DL                 umcl18u250t2_typ
+        AOI21M20DL                 umcl18u250t2_typ
+        AOI22M10D1                 umcl18u250t2_typ
+        BUFDL                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXNOR2D2                   umcl18u250t2_typ
+        EXNOR2DL                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR2D2                    umcl18u250t2_typ
+        EXOR2D4                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        EXOR3D2                    umcl18u250t2_typ
+        EXOR3DL                    umcl18u250t2_typ
+        INVBD2                     umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVD2                      umcl18u250t2_typ
+        INVD4                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NAN3D1                     umcl18u250t2_typ
+        NAN3D2                     umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        NOR2M1DL                   umcl18u250t2_typ
+        OA21DL                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OA21M20DL                  umcl18u250t2_typ
+        OA22DL                     umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI22D1                    umcl18u250t2_typ
+        OAI22D2                    umcl18u250t2_typ
+        OAI22D4                    umcl18u250t2_typ
+        OAI22DL                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2D2                      umcl18u250t2_typ
+        OR2DL                      umcl18u250t2_typ
+    siso_gen_DW_mult_tc_18                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADFULD2                    umcl18u250t2_typ
+        ADFULDL                    umcl18u250t2_typ
+        ADHALFD1                   umcl18u250t2_typ
+        ADHALFD2                   umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AND2DL                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AO21D2                     umcl18u250t2_typ
+        AO21M20D1                  umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        AOI21DL                    umcl18u250t2_typ
+        AOI21M10D1                 umcl18u250t2_typ
+        AOI21M10DL                 umcl18u250t2_typ
+        BUFD1                      umcl18u250t2_typ
+        BUFD2                      umcl18u250t2_typ
+        BUFD4                      umcl18u250t2_typ
+        BUFDL                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXNOR2D2                   umcl18u250t2_typ
+        EXNOR2DL                   umcl18u250t2_typ
+        EXNOR3D4                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR2D2                    umcl18u250t2_typ
+        EXOR2D4                    umcl18u250t2_typ
+        EXOR2DL                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        EXOR3D2                    umcl18u250t2_typ
+        EXOR3DL                    umcl18u250t2_typ
+        INVBD32                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        INVD2                      umcl18u250t2_typ
+        INVDL                      umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2D2                     umcl18u250t2_typ
+        NAN2DL                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NAN2M1DL                   umcl18u250t2_typ
+        NAN3D1                     umcl18u250t2_typ
+        NAN3D2                     umcl18u250t2_typ
+        NAN3M1D1                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2D2                     umcl18u250t2_typ
+        NOR2DL                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        NOR2M1DL                   umcl18u250t2_typ
+        OA21DL                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OA22DL                     umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OAI21DL                    umcl18u250t2_typ
+        OAI21M10D1                 umcl18u250t2_typ
+        OAI22D1                    umcl18u250t2_typ
+        OAI22D2                    umcl18u250t2_typ
+        OAI22DL                    umcl18u250t2_typ
+        OAI22M10D1                 umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+        OR2D2                      umcl18u250t2_typ
+1
+dc_shell> Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : reference
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Mon Oct  2 22:43:46 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+BUFD4              umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+BUFD8              umcl18u250t2_typ
+                                 48.790001       1     48.790001  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       1     12.200000  
+DFERPQ1            umcl18u250t2_typ
+                                101.639999     106  10773.839935  n
+DFERPQ2            umcl18u250t2_typ
+                                105.709999       2    211.419998  n
+DFERPQ4            umcl18u250t2_typ
+                                113.839996       5    569.199982  n
+DFERPQL            umcl18u250t2_typ
+                                101.639999      15   1524.599991  n
+DFFRPQ1            umcl18u250t2_typ
+                                 81.309998       4    325.239990  n
+INVBD4             umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+INVD1              umcl18u250t2_typ
+                                  8.130000      15    121.950002  
+INVD4              umcl18u250t2_typ
+                                 20.330000       5    101.650000  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000       6     73.199999  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+TIEHI              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+TIELO              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+siso_gen_DW01_add_7            2126.469979       1   2126.469979  h
+siso_gen_DW01_add_11           2390.699989       1   2390.699989  h
+siso_gen_DW01_add_12           2191.489982       1   2191.489982  h
+siso_gen_DW01_add_13           2508.650002       1   2508.650002  h
+siso_gen_DW_mult_tc_8         18250.500040       1  18250.500040  h
+siso_gen_DW_mult_tc_9         18193.570042       1  18193.570042  h
+siso_gen_DW_mult_tc_10        21612.969898       1  21612.969898  h
+siso_gen_DW_mult_tc_17        19189.389979       1  19189.389979  h
+siso_gen_DW_mult_tc_18        20823.779976       1  20823.779976  h
+-----------------------------------------------------------------------------
+Total 28 references                                 121281.339782
+
+****************************************
+Design: siso_gen_DW01_add_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2DL             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      11    223.629999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+BUFD4              umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      12    341.519989  
+INVD1              umcl18u250t2_typ
+                                  8.130000       9     73.170001  
+INVDL              umcl18u250t2_typ
+                                  8.130000      19    154.470002  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      15    182.999997  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      11    134.199998  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       8    130.080002  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      12    146.399998  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       5     60.999999  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 19 references                                  2126.469979
+
+****************************************
+Design: siso_gen_DW01_add_11 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2D1             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+AND2DL             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+AO21DL             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      10    203.299999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       4     81.320000  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       3     36.599999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+EXNOR2DL           umcl18u250t2_typ
+                                 28.459999       7    199.219994  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+INVBD32            umcl18u250t2_typ
+                                199.210007       1    199.210007  
+INVD1              umcl18u250t2_typ
+                                  8.130000       4     32.520000  
+INVDL              umcl18u250t2_typ
+                                  8.130000      15    121.950002  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      14    170.799997  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000       8     97.599998  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       8    130.080002  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000       5     60.999999  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000      13    264.289999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       1     12.200000  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      11    223.629999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+OAI21M10DL         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 27 references                                  2390.699989
+
+****************************************
+Design: siso_gen_DW01_add_12 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2D1             umcl18u250t2_typ
+                                 16.260000       3     48.780001  
+AND2DL             umcl18u250t2_typ
+                                 16.260000       4     65.040001  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000       7    142.309999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       5    101.650000  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+EXNOR2DL           umcl18u250t2_typ
+                                 28.459999       6    170.759995  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+EXOR2DL            umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+INVD1              umcl18u250t2_typ
+                                  8.130000       5     40.650001  
+INVDL              umcl18u250t2_typ
+                                  8.130000      15    121.950002  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      16    195.199997  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000       5     60.999999  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       8    130.080002  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000       8     97.599998  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000      10    203.299999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+OA21DL             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000       9    182.969999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       5    101.650000  
+OAI21M20DL         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 26 references                                  2191.489982
+
+****************************************
+Design: siso_gen_DW01_add_13 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000       4     81.320000  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       6    121.980000  
+AOI21M10D1         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       1     12.200000  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+EXNOR2D2           umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+EXOR2D4            umcl18u250t2_typ
+                                 48.790001      11    536.690010  
+INVBD2             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+INVD1              umcl18u250t2_typ
+                                  8.130000       7     56.910001  
+INVD2              umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+INVDL              umcl18u250t2_typ
+                                  8.130000      20    162.600002  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      12    146.399998  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       5     81.300001  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000       5     60.999999  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000      13    264.289999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       1     12.200000  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000       7    142.309999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 27 references                                  2508.650002
+
+****************************************
+Design: siso_gen_DW_mult_tc_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      90   5854.500275  r
+ADHALFD1           umcl18u250t2_typ
+                                 44.720001       2     89.440002  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000       5    203.299999  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       6     97.560001  
+AND2DL             umcl18u250t2_typ
+                                 16.260000       6     97.560001  
+AO21D1             umcl18u250t2_typ
+                                 28.459999       7    199.219994  
+AO21M20DL          umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      20    406.599998  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       6    121.980000  
+BUFD1              umcl18u250t2_typ
+                                 12.200000      52    634.399990  
+BUFD4              umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+BUFD20             umcl18u250t2_typ
+                                117.900002       3    353.700005  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999     140   3984.399872  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      20    569.199982  
+INVD1              umcl18u250t2_typ
+                                  8.130000      20    162.600002  
+INVDL              umcl18u250t2_typ
+                                  8.130000      28    227.640003  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      22    268.399996  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      10    162.600002  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      16    195.199997  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       8     97.599998  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+OA21DL             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA22D1             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      18    365.939999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999     123   2999.969925  
+OAI22DL            umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+OAI22M10D1         umcl18u250t2_typ
+                                 32.520000       3     97.560001  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       9    146.340002  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       4     65.040001  
+-----------------------------------------------------------------------------
+Total 35 references                                 18250.500040
+
+****************************************
+Design: siso_gen_DW_mult_tc_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      90   5854.500275  r
+ADHALFD1           umcl18u250t2_typ
+                                 44.720001       2     89.440002  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000       5    203.299999  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       4     65.040001  
+AND2DL             umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+AO21D1             umcl18u250t2_typ
+                                 28.459999       7    199.219994  
+AO21M20D1          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      18    365.939999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+BUFD1              umcl18u250t2_typ
+                                 12.200000      51    622.199990  
+BUFD4              umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+BUFD20             umcl18u250t2_typ
+                                117.900002       3    353.700005  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999     139   3955.939873  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      21    597.659981  
+INVD1              umcl18u250t2_typ
+                                  8.130000      21    170.730002  
+INVD2              umcl18u250t2_typ
+                                 12.200000       1     12.200000  
+INVDL              umcl18u250t2_typ
+                                  8.130000      18    146.340002  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      24    292.799995  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      11    134.199998  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      13    211.380003  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       9    146.340002  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      20    243.999996  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA22D1             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      18    365.939999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999     123   2999.969925  
+OAI22DL            umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+OAI22M10D1         umcl18u250t2_typ
+                                 32.520000       3     97.560001  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      12    195.120003  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 36 references                                 18193.570042
+
+****************************************
+Design: siso_gen_DW_mult_tc_10 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      58   3772.900177  r
+ADFULD2            umcl18u250t2_typ
+                                 73.180000       2    146.360001  r
+ADFULDL            umcl18u250t2_typ
+                                 65.050003       2    130.100006  r
+ADHALFD1           umcl18u250t2_typ
+                                 44.720001       5    223.600006  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       8    130.080002  
+AND2DL             umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+AO21D1             umcl18u250t2_typ
+                                 28.459999       7    199.219994  
+AO21D2             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+AO21M10DL          umcl18u250t2_typ
+                                 36.590000       1     36.590000  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      16    325.279999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       9    182.969999  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      91   2589.859917  
+EXNOR2D2           umcl18u250t2_typ
+                                 32.520000      12    390.240005  
+EXNOR2D4           umcl18u250t2_typ
+                                 48.790001       6    292.740005  
+EXNOR2DL           umcl18u250t2_typ
+                                 28.459999      37   1053.019966  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      22    626.119980  
+EXOR2D2            umcl18u250t2_typ
+                                 32.520000       4    130.080002  
+EXOR2D4            umcl18u250t2_typ
+                                 48.790001       1     48.790001  
+EXOR2DL            umcl18u250t2_typ
+                                 28.459999       4    113.839996  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      12    634.199982  
+EXOR3D2            umcl18u250t2_typ
+                                 56.919998       8    455.359985  
+EXOR3DL            umcl18u250t2_typ
+                                 52.849998       1     52.849998  
+INVD1              umcl18u250t2_typ
+                                  8.130000      21    170.730002  
+INVD2              umcl18u250t2_typ
+                                 12.200000      13    158.599998  
+INVD4              umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+INVD16             umcl18u250t2_typ
+                                 69.110001       5    345.550003  
+INVD20             umcl18u250t2_typ
+                                 85.379997       3    256.139992  
+INVDL              umcl18u250t2_typ
+                                  8.130000      48    390.240005  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      92   1122.399982  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000      39    792.869997  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      78    951.599985  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000       9    146.340002  
+NAN2M1D2           umcl18u250t2_typ
+                                 24.389999       3     73.169998  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000      13    211.380003  
+NAN3D2             umcl18u250t2_typ
+                                 28.459999      13    369.979988  
+NAN3M1D1           umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+NAN3M1DL           umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      15    182.999997  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000      13    158.599998  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OA21DL             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OA22DL             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      14    284.619999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       6    121.980000  
+OAI21M10DL         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21M20D1         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+OAI21M20D2         umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999     105   2560.949936  
+OAI22D2            umcl18u250t2_typ
+                                 40.660000       4    162.639999  
+OAI22DL            umcl18u250t2_typ
+                                 24.389999      19    463.409988  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      13    211.380003  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+-----------------------------------------------------------------------------
+Total 57 references                                 21612.969898
+
+****************************************
+Design: siso_gen_DW_mult_tc_17 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      65   4228.250198  r
+ADFULD2            umcl18u250t2_typ
+                                 73.180000       3    219.540001  r
+ADFULDL            umcl18u250t2_typ
+                                 65.050003       1     65.050003  r
+ADHALFD1           umcl18u250t2_typ
+                                 44.720001       1     44.720001  r
+ADHALFD2           umcl18u250t2_typ
+                                 52.849998       3    158.549995  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000       3    121.980000  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       6     97.560001  
+AND2DL             umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+AO21D1             umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+AO21D2             umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       9    182.969999  
+AOI21M10D1         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+AOI21M10DL         umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+AOI21M20DL         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+AOI22M10D1         umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      30    853.799973  
+EXNOR2D2           umcl18u250t2_typ
+                                 32.520000      48   1560.960022  
+EXNOR2DL           umcl18u250t2_typ
+                                 28.459999      72   2049.119934  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      30    853.799973  
+EXOR2D2            umcl18u250t2_typ
+                                 32.520000       3     97.560001  
+EXOR2D4            umcl18u250t2_typ
+                                 48.790001       1     48.790001  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998       6    317.099991  
+EXOR3D2            umcl18u250t2_typ
+                                 56.919998       4    227.679993  
+EXOR3DL            umcl18u250t2_typ
+                                 52.849998       3    158.549995  
+INVBD2             umcl18u250t2_typ
+                                 16.260000       2     32.520000  
+INVD1              umcl18u250t2_typ
+                                  8.130000      18    146.340002  
+INVD2              umcl18u250t2_typ
+                                 12.200000       3     36.599999  
+INVD4              umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+INVDL              umcl18u250t2_typ
+                                  8.130000      30    243.900003  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      49    597.799991  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       5    101.650000  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      56    683.199989  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      10    162.600002  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       3     48.780001  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000      13    211.380003  
+NAN3D2             umcl18u250t2_typ
+                                 28.459999       8    227.679993  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      12    146.399998  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000       7    142.309999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       9    109.799998  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OA21DL             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA22DL             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      13    264.289999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       8    162.639999  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999     102   2487.779938  
+OAI22D2            umcl18u250t2_typ
+                                 40.660000       4    162.639999  
+OAI22D4            umcl18u250t2_typ
+                                 48.790001       1     48.790001  
+OAI22DL            umcl18u250t2_typ
+                                 24.389999      22    536.579987  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      10    162.600002  
+OR2D2              umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+OR2DL              umcl18u250t2_typ
+                                 16.260000       3     48.780001  
+-----------------------------------------------------------------------------
+Total 56 references                                 19189.389979
+
+****************************************
+Design: siso_gen_DW_mult_tc_18 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003      60   3903.000183  r
+ADFULD2            umcl18u250t2_typ
+                                 73.180000       1     73.180000  r
+ADFULDL            umcl18u250t2_typ
+                                 65.050003       1     65.050003  r
+ADHALFD1           umcl18u250t2_typ
+                                 44.720001       3    134.160004  r
+ADHALFD2           umcl18u250t2_typ
+                                 52.849998       3    158.549995  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000       1     40.660000  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+AND2DL             umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+AO21D1             umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+AO21D2             umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+AO21M20D1          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      13    264.289999  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000       9    182.969999  
+AOI21M10D1         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+AOI21M10DL         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+BUFD1              umcl18u250t2_typ
+                                 12.200000       2     24.400000  
+BUFD2              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+BUFD4              umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+BUFDL              umcl18u250t2_typ
+                                 12.200000       7     85.399999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      30    853.799973  
+EXNOR2D2           umcl18u250t2_typ
+                                 32.520000      56   1821.120026  
+EXNOR2DL           umcl18u250t2_typ
+                                 28.459999      65   1849.899940  
+EXNOR3D4           umcl18u250t2_typ
+                                 73.180000       1     73.180000  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      33    939.179970  
+EXOR2D2            umcl18u250t2_typ
+                                 32.520000       3     97.560001  
+EXOR2D4            umcl18u250t2_typ
+                                 48.790001       4    195.160004  
+EXOR2DL            umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      11    581.349983  
+EXOR3D2            umcl18u250t2_typ
+                                 56.919998       6    341.519989  
+EXOR3DL            umcl18u250t2_typ
+                                 52.849998       3    158.549995  
+INVBD32            umcl18u250t2_typ
+                                199.210007       4    796.840027  
+INVD1              umcl18u250t2_typ
+                                  8.130000      24    195.120003  
+INVD2              umcl18u250t2_typ
+                                 12.200000       6     73.199999  
+INVDL              umcl18u250t2_typ
+                                  8.130000      31    252.030004  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      58    707.599989  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000      66    805.199987  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      10    162.600002  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000       4     65.040001  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000      15    243.900003  
+NAN3D2             umcl18u250t2_typ
+                                 28.459999      12    341.519989  
+NAN3M1D1           umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      15    182.999997  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000      10    203.299999  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000       9    109.799998  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       7    113.820002  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+OA21DL             umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OA22DL             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      14    284.619999  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000       6    121.980000  
+OAI21M10D1         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999     116   2829.239929  
+OAI22D2            umcl18u250t2_typ
+                                 40.660000       3    121.980000  
+OAI22DL            umcl18u250t2_typ
+                                 24.389999      12    292.679993  
+OAI22M10D1         umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+OR2D1              umcl18u250t2_typ
+                                 16.260000       6     97.560001  
+OR2D2              umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+-----------------------------------------------------------------------------
+Total 59 references                                 20823.779976
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : resources
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Mon Oct  2 22:43:46 2023
+****************************************
+
+Resource Sharing Report for design siso_gen in file
+        ./siso_gen_sec_par_arch.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r411     | DW_cmp       | width=3    |               | lt_66                |
+| r413     | DW01_inc     | width=3    |               | add_68               |
+| r1151    | DW_mult_tc   | a_width=16 |               | mult_28_C92          |
+|          |              | b_width=16 |               |                      |
+| r1153    | DW01_add     | width=16   |               | add_102              |
+| r1878    | DW_mult_tc   | a_width=16 |               | mult_28_C94          |
+|          |              | b_width=16 |               |                      |
+| r1880    | DW_mult_tc   | a_width=16 |               | mult_28_C96          |
+|          |              | b_width=16 |               |                      |
+| r1882    | DW01_add     | width=16   |               | add_99               |
+| r2614    | DW_mult_tc   | a_width=16 |               | mult_28_C93          |
+|          |              | b_width=16 |               |                      |
+| r2616    | DW01_add     | width=16   |               | add_1_root_add_0_root_add_101 |
+| r2618    | DW_mult_tc   | a_width=16 |               | mult_28_C95          |
+|          |              | b_width=16 |               |                      |
+| r2620    | DW01_add     | width=16   |               | add_0_root_add_0_root_add_101 |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_28_C96        | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4              |
+| mult_28_C95        | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4              |
+| add_99             | DW01_add         | pparch (area,speed)                 |
+| add_0_root_add_0_root_add_101         |                    |                |
+|                    | DW01_add         | pparch (area,speed)                 |
+| add_102            | DW01_add         | pparch (area,speed)                 |
+| mult_28_C92        | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4              |
+| add_1_root_add_0_root_add_101         |                    |                |
+|                    | DW01_add         | pparch (speed)     |                |
+| mult_28_C93        | DW_mult_tc       | pparch (speed)     |                |
+|                    |                  | mult_arch: benc_radix4              |
+| mult_28_C94        | DW_mult_tc       | pparch (speed)     |                |
+|                    |                  | mult_arch: benc_radix4              |
+===============================================================================
+
+1
+dc_shell> dc_shell> dc_shell> TRUE
+dc_shell> 1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : reference
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Mon Oct  2 22:43:46 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003     363  23613.151108  r
+ADFULD2            umcl18u250t2_typ
+                                 73.180000       6    439.080002  r
+ADFULDL            umcl18u250t2_typ
+                                 65.050003       4    260.200012  r
+ADHALFD1           umcl18u250t2_typ
+                                 44.720001      13    581.360016  r
+ADHALFD2           umcl18u250t2_typ
+                                 52.849998       6    317.099991  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000      14    569.239998  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000      38    617.880009  
+AND2DL             umcl18u250t2_typ
+                                 16.260000      49    796.740011  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      31    882.259972  
+AO21D2             umcl18u250t2_typ
+                                 32.520000       5    162.600002  
+AO21DL             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+AO21M10DL          umcl18u250t2_typ
+                                 36.590000       1     36.590000  
+AO21M20D1          umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+AO21M20DL          umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000     111   2256.629992  
+AOI21DL            umcl18u250t2_typ
+                                 20.330000      58   1179.139996  
+AOI21M10D1         umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+AOI21M10DL         umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+AOI21M20DL         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+AOI22M10D1         umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+BUFD1              umcl18u250t2_typ
+                                 12.200000     105   1280.999980  
+BUFD2              umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+BUFD4              umcl18u250t2_typ
+                                 28.459999       6    170.759995  
+BUFD8              umcl18u250t2_typ
+                                 48.790001       1     48.790001  
+BUFD20             umcl18u250t2_typ
+                                117.900002       6    707.400009  
+BUFDL              umcl18u250t2_typ
+                                 12.200000      24    292.799995  
+DFERPQ1            umcl18u250t2_typ
+                                101.639999     106  10773.839935  n
+DFERPQ2            umcl18u250t2_typ
+                                105.709999       2    211.419998  n
+DFERPQ4            umcl18u250t2_typ
+                                113.839996       5    569.199982  n
+DFERPQL            umcl18u250t2_typ
+                                101.639999      15   1524.599991  n
+DFFRPQ1            umcl18u250t2_typ
+                                 81.309998       4    325.239990  n
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999     438  12465.479599  
+EXNOR2D2           umcl18u250t2_typ
+                                 32.520000     118   3837.360054  
+EXNOR2D4           umcl18u250t2_typ
+                                 48.790001       6    292.740005  
+EXNOR2DL           umcl18u250t2_typ
+                                 28.459999     187   5322.019829  
+EXNOR3D4           umcl18u250t2_typ
+                                 73.180000       1     73.180000  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999     148   4212.079865  
+EXOR2D2            umcl18u250t2_typ
+                                 32.520000      10    325.200005  
+EXOR2D4            umcl18u250t2_typ
+                                 48.790001      17    829.430016  
+EXOR2DL            umcl18u250t2_typ
+                                 28.459999       6    170.759995  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      29   1532.649956  
+EXOR3D2            umcl18u250t2_typ
+                                 56.919998      18   1024.559967  
+EXOR3DL            umcl18u250t2_typ
+                                 52.849998       7    369.949989  
+INVBD2             umcl18u250t2_typ
+                                 16.260000       4     65.040001  
+INVBD4             umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+INVBD32            umcl18u250t2_typ
+                                199.210007       5    996.050034  
+INVD1              umcl18u250t2_typ
+                                  8.130000     144   1170.720016  
+INVD2              umcl18u250t2_typ
+                                 12.200000      27    329.399995  
+INVD4              umcl18u250t2_typ
+                                 20.330000       9    182.969999  
+INVD16             umcl18u250t2_typ
+                                 69.110001       5    345.550003  
+INVD20             umcl18u250t2_typ
+                                 85.379997       3    256.139992  
+INVDL              umcl18u250t2_typ
+                                  8.130000     224   1821.120026  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000     314   3830.799940  
+NAN2D2             umcl18u250t2_typ
+                                 20.330000      61   1240.129995  
+NAN2DL             umcl18u250t2_typ
+                                 12.200000     265   3232.999949  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      56    910.560013  
+NAN2M1D2           umcl18u250t2_typ
+                                 24.389999       3     73.169998  
+NAN2M1DL           umcl18u250t2_typ
+                                 16.260000      53    861.780012  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000      43    699.180010  
+NAN3D2             umcl18u250t2_typ
+                                 28.459999      33    939.179970  
+NAN3M1D1           umcl18u250t2_typ
+                                 20.330000       3     60.990000  
+NAN3M1DL           umcl18u250t2_typ
+                                 20.330000       1     20.330000  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000     108   1317.599979  
+NOR2D2             umcl18u250t2_typ
+                                 20.330000      85   1728.049994  
+NOR2DL             umcl18u250t2_typ
+                                 12.200000      54    658.799990  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      36    585.360008  
+NOR2M1DL           umcl18u250t2_typ
+                                 16.260000       8    130.080002  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OA21DL             umcl18u250t2_typ
+                                 28.459999       6    170.759995  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       8    227.679993  
+OA21M20DL          umcl18u250t2_typ
+                                 28.459999       7    199.219994  
+OA22D1             umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+OA22DL             umcl18u250t2_typ
+                                 32.520000       3     97.560001  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000     118   2398.939991  
+OAI21DL            umcl18u250t2_typ
+                                 20.330000      36    731.879997  
+OAI21M10D1         umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21M10DL         umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OAI21M20D1         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+OAI21M20D2         umcl18u250t2_typ
+                                 32.520000       2     65.040001  
+OAI21M20DL         umcl18u250t2_typ
+                                 24.389999       1     24.389999  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999     569  13877.909653  
+OAI22D2            umcl18u250t2_typ
+                                 40.660000      11    447.259998  
+OAI22D4            umcl18u250t2_typ
+                                 48.790001       1     48.790001  
+OAI22DL            umcl18u250t2_typ
+                                 24.389999      55   1341.449966  
+OAI22M10D1         umcl18u250t2_typ
+                                 32.520000       8    260.160004  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      56    910.560013  
+OR2D2              umcl18u250t2_typ
+                                 20.330000       4     81.320000  
+OR2DL              umcl18u250t2_typ
+                                 16.260000      13    211.380003  
+TIEHI              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+TIELO              umcl18u250t2_typ
+                                  8.130000       1      8.130000  
+-----------------------------------------------------------------------------
+Total 90 references                                 121281.339782
+1
+dc_shell> dc_shell> Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : siso_gen
+Version: R-2020.09-SP2
+Date   : Mon Oct  2 22:43:46 2023
+****************************************
+
+Operating Conditions: nom_pvt   Library: umcl18u250t2_typ
+Wire Load Model Mode: top
+
+  Startpoint: data_in(2) (input port clocked by clk)
+  Endpoint: z1_reg_15_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.50       2.50 r
+  data_in(2) (in)                          0.00       2.50 r
+  mult_28_C92/U1180/Z (EXOR2D1)            0.14       2.64 f
+  mult_28_C92/U860/Z (OAI22D1)             0.10       2.74 r
+  mult_28_C92/U1256/Z (EXOR2D4)            0.15       2.89 f
+  mult_28_C92/U415/S (ADFULD1)             0.26       3.15 r
+  mult_28_C92/U787/Z (EXOR3D2)             0.27       3.42 f
+  mult_28_C92/U242/Z (NOR2D2)              0.05       3.47 r
+  mult_28_C92/U991/Z (INVD2)               0.03       3.50 f
+  mult_28_C92/U237/Z (AOI21D1)             0.07       3.57 r
+  mult_28_C92/U1073/Z (OAI21D1)            0.05       3.63 f
+  mult_28_C92/U967/Z (INVD1)               0.06       3.68 r
+  mult_28_C92/U966/Z (OAI21M20D2)          0.05       3.73 f
+  mult_28_C92/U1025/Z (OAI21M20D2)         0.15       3.88 f
+  mult_28_C92/U1050/Z (AOI21D1)            0.10       3.98 r
+  mult_28_C92/U1048/Z (EXOR2D2)            0.18       4.16 f
+  add_102/U183/Z (NAN2D1)                  0.05       4.21 r
+  add_102/U86/Z (OAI21D1)                  0.06       4.27 f
+  add_102/U186/Z (INVDL)                   0.07       4.35 r
+  add_102/U187/Z (INVDL)                   0.02       4.37 f
+  add_102/U177/Z (AOI21DL)                 0.08       4.45 r
+  add_102/U262/Z (EXOR2D4)                 0.22       4.67 r
+  mult_28_C96/U788/Z (EXNOR2D1)            0.11       4.78 f
+  mult_28_C96/U551/Z (OAI22D1)             0.14       4.92 r
+  mult_28_C96/U379/S (ADFULD1)             0.22       5.14 f
+  mult_28_C96/U1126/Z (NAN2D1)             0.07       5.21 r
+  mult_28_C96/U1127/Z (NAN3D2)             0.06       5.26 f
+  mult_28_C96/U1011/Z (NAN2DL)             0.09       5.36 r
+  mult_28_C96/U1012/Z (NAN3D2)             0.09       5.44 f
+  mult_28_C96/U363/S (ADFULD1)             0.26       5.70 r
+  mult_28_C96/U183/Z (NOR2D2)              0.04       5.74 f
+  mult_28_C96/U961/Z (OAI21D1)             0.09       5.83 r
+  mult_28_C96/U178/Z (AOI21D1)             0.04       5.87 f
+  mult_28_C96/U1086/Z (OAI21D1)            0.07       5.94 r
+  mult_28_C96/U1084/Z (BUFD4)              0.09       6.02 r
+  mult_28_C96/U1062/Z (AOI21D1)            0.05       6.08 f
+  mult_28_C96/U1190/Z (EXNOR2D2)           0.16       6.24 r
+  add_99/U185/Z (NOR2D1)                   0.03       6.27 f
+  add_99/U189/Z (NOR2D1)                   0.09       6.36 r
+  add_99/U194/Z (NAN2D1)                   0.06       6.42 f
+  add_99/U240/Z (OAI21D1)                  0.11       6.53 r
+  add_99/U233/Z (AOI21DL)                  0.07       6.60 f
+  add_99/U245/Z (EXNOR2D1)                 0.14       6.74 r
+  z1_reg_15_/D (DFERPQ1)                   0.00       6.74 r
+  data arrival time                                   6.74
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  z1_reg_15_/CK (DFERPQ1)                  0.00       5.00 r
+  library setup time                      -0.12       4.88
+  data required time                                  4.88
+  -----------------------------------------------------------
+  data required time                                  4.88
+  data arrival time                                  -6.74
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.86
+
+
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> flat_sec_par_16_5
+dc_shell> dc_shell> dc_shell> Writing vhdl file '/home/s3310914/Documents/sec/synopsys_out/siso_gen_sec_par_16_5_flat.vhd'.
+1
+dc_shell> dc_shell> dc_shell> Writing ddc file 'synopsys_out/siso_gen_sec_par_16_5_flat.ddc'.
+1
+dc_shell> dc_shell> dc_shell> dc_shell> Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/s3310914/Documents/sec/synopsys_out/siso_gen_sec_par_16_5_flat.sdf'. (WT-3)
+1
+dc_shell> 
+Memory usage for this session 161 Mbytes.
+Memory usage for this session including child processes 161 Mbytes.
+CPU usage for this session 59 seconds ( 0.02 hours ).
+Elapsed time for this session 61 seconds ( 0.02 hours ).
+
+Thank you...

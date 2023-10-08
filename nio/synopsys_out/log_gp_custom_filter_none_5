@@ -1,0 +1,1529 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP2 for linux64 - Dec 03, 2020 
+
+                    Copyright (c) 1988 - 2020 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+dc_shell> dc_shell> gp_custom_ent.vhd gp_custom_filter.vhd
+dc_shell> gp_custom
+dc_shell> clk
+dc_shell> none
+dc_shell> 5
+dc_shell> gp_custom_filter_none_5
+dc_shell> n
+dc_shell> n
+dc_shell> filter_none_5
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> Running PRESTO HDLC
+Compiling Entity Declaration GP_CUSTOM
+Presto compilation completed successfully.
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/dw_foundation.sldb'
+Running PRESTO HDLC
+Compiling Architecture FILTER of GP_CUSTOM
+Warning:  ./gp_custom_filter.vhd:14: The architecture filter has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+dc_shell> dc_shell> dc_shell> dc_shell> Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/gtech.db'
+Loading db file '/remote/labware/packages/synopsys/syn/R-2020.09-SP2/libraries/syn/standard.sldb'
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+Warning: The library named umcl18u250t2_typ specifies a very small trip-point value (0). (TIM-163)
+  Loading link library 'umcl18u250t2_typ'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ./gp_custom_filter.vhd:27: The port default value in entity declaration for port 'clk' is not supported. Presto ignores it. (ELAB-802)
+Warning:  ./gp_custom_filter.vhd:29: The port default value in entity declaration for port 'resetn' is not supported. Presto ignores it. (ELAB-802)
+Warning:  ./gp_custom_filter.vhd:31: The port default value in entity declaration for port 'avs_addr' is not supported. Presto ignores it. (ELAB-802)
+Warning:  ./gp_custom_filter.vhd:33: The port default value in entity declaration for port 'avs_read' is not supported. Presto ignores it. (ELAB-802)
+Warning:  ./gp_custom_filter.vhd:37: The port default value in entity declaration for port 'avs_write' is not supported. Presto ignores it. (ELAB-802)
+Warning:  ./gp_custom_filter.vhd:39: The port default value in entity declaration for port 'avs_writedata' is not supported. Presto ignores it. (ELAB-802)
+Warning:  ./gp_custom_filter.vhd:45: The port default value in entity declaration for port 'siso_data_in' is not supported. Presto ignores it. (ELAB-802)
+
+Statistics for case statements in always block at line 36 in file
+	'./gp_custom_filter.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            59            |    auto/auto     |
+|            92            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine gp_custom line 36 in file
+		'./gp_custom_filter.vhd'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|   operand_regs_reg   | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+|     out_buf_reg      | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   coeff_memory_reg   | Flip-flop |  160  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    in_trigger_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   out_trigger_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    coeff_load_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   operand_load_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  read_comp_res_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| filt_mult_inputs_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     stop_sim_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   avs_readdata_reg   | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   avs_readdata_reg   | Flip-flop |  16   |  Y  | N  | N  | Y  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine gp_custom line 117 in file
+		'./gp_custom_filter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     in_buf_reg      | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+|     in_busy_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    siso_req_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   in_counter_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       odd_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine gp_custom line 160 in file
+		'./gp_custom_filter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      odd_reg2       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  siso_data_out_reg  | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    out_busy_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   siso_ready_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   out_counter_reg   | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine gp_custom line 203 in file
+		'./gp_custom_filter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    comp_res_reg     | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   gp_custom/96   |   8    |   64    |      3       |
+|  gp_custom/177   |   8    |   32    |      3       |
+======================================================
+Presto compilation completed successfully. (gp_custom)
+Elaborated 1 design.
+Current design is now 'gp_custom'.
+1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> Current design is 'gp_custom'.
+Error: Cannot rename design /home/s3310914/Documents/nio/gp_custom.db:gp_custom over existing design /home/s3310914/Documents/nio/gp_custom.db:gp_custom. (UIMG-43)
+0
+dc_shell> dc_shell> dc_shell> dc_shell> FALSE
+dc_shell> dc_shell> dc_shell> Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.2 |     *     |
+| Licensed DW Building Blocks        | R-2020.09-DWBB_202009.2 |     *     |
+============================================================================
+
+
+Information: There are 5 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'gp_custom'
+Information: The register 'comp_res_reg[5][31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[5][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[6][0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'comp_res_reg[7][0]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'gp_custom_DW_cmp_0'
+  Mapping 'gp_custom_DW_mult_tc_0'
+  Mapping 'gp_custom_DW_mult_tc_1'
+  Mapping 'gp_custom_DW_mult_tc_2'
+  Mapping 'gp_custom_DW_mult_tc_3'
+  Mapping 'gp_custom_DW_mult_tc_4'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'gp_custom'. (DDB-72)
+Information: compile falsified 1 infeasible paths. (OPT-1720)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:12  422195.8      0.00       0.0       0.0                          
+    0:00:12  422195.8      0.00       0.0       0.0                          
+    0:00:12  422195.8      0.00       0.0       0.0                          
+    0:00:13  422195.8      0.00       0.0       0.0                          
+    0:00:13  422195.8      0.00       0.0       0.0                          
+    0:00:15  301705.6      0.00       0.0       0.0                          
+    0:00:15  301705.6      0.00       0.0       0.0                          
+    0:00:15  301705.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  301701.6      0.00       0.0       0.0                          
+    0:00:15  300656.8      0.00       0.0       0.0                          
+    0:00:15  299929.2      0.00       0.0       0.0                          
+    0:00:16  299112.2      0.00       0.0       0.0                          
+    0:00:16  298803.2      0.00       0.0       0.0                          
+    0:00:16  298543.1      0.00       0.0       0.0                          
+    0:00:16  298543.1      0.00       0.0       0.0                          
+    0:00:16  298543.1      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+    0:00:16  298522.8      0.00       0.0       0.0                          
+Loading db file '/remote/labware/technology/UMC/UMCL18U250D2_2.4/design_compiler/umcl18u250t2_typ.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'gp_custom' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'resetn': 1155 load(s), 1 driver(s)
+     Net 'clk_out': 1156 load(s), 1 driver(s)
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+check_design summary:
+Version:     R-2020.09-SP2
+Date:        Sun Oct  8 18:42:09 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    161
+    Unconnected ports (LINT-28)                                   160
+    Feedthrough (LINT-29)                                           1
+--------------------------------------------------------------------------------
+
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[60]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[59]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[58]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[57]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[55]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[54]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[53]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[46]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[45]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[44]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_5', port 'product[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[60]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[59]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[58]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[57]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[55]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[54]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[53]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[46]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[45]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[44]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_6', port 'product[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[60]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[59]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[58]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[57]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[55]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[54]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[53]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[46]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[45]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[44]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_7', port 'product[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[60]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[59]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[58]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[57]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[55]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[54]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[53]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[46]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[45]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[44]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_8', port 'product[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[63]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[62]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[61]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[60]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[59]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[58]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[57]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[56]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[55]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[54]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[53]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[52]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[51]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[50]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[49]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[48]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[47]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[46]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[45]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[44]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[43]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[42]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[41]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[40]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[39]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[38]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[37]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[36]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[35]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[34]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[33]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom_DW_mult_tc_9', port 'product[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'gp_custom', input port 'clk' is connected directly to output port 'clk_out'. (LINT-29)
+1
+dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> dc_shell> NMA-16 VHDL-286 UCN-4
+dc_shell> 1
+dc_shell> Warning: In the design gp_custom, net 'clk_out' is connecting multiple ports. (UCN-1)
+1
+dc_shell> dc_shell> 1
+dc_shell> dc_shell> dc_shell> hier_filter_none_5
+dc_shell> dc_shell> dc_shell> Writing vhdl file '/home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_hier.vhd'.
+Warning: A dummy net 'n_1000' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1001' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1002' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1003' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1004' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1005' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1006' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1007' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1008' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1009' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1010' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1011' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1012' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1013' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1014' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1015' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1016' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1017' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1018' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1019' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1020' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1021' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1022' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1023' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1024' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1025' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1026' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1027' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1028' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1029' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1030' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1031' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1032' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1033' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1034' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1035' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1036' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1037' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1038' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1039' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1040' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1041' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1042' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1043' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1044' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1045' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1046' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1047' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1048' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1049' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1050' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1051' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1052' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1053' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1054' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1055' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1056' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1057' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1058' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1059' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1060' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1061' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1062' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1063' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1064' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1065' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1066' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1067' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1068' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1069' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1070' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1071' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1072' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1073' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1074' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1075' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1076' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1077' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1078' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1079' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1080' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1081' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1082' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1083' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1084' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1085' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1086' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1087' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1088' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1089' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1090' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1091' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1092' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1093' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1094' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1095' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1096' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1097' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1098' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1099' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1100' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1101' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1102' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1103' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1104' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1105' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1106' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1107' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1108' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1109' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1110' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1111' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1112' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1113' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1114' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1115' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1116' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1117' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1118' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1119' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1120' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1121' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1122' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1123' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1124' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1125' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1126' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1127' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1128' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1129' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1130' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1131' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1132' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1133' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1134' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1135' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1136' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1137' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1138' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1139' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1140' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1141' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1142' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1143' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1144' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1145' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1146' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1147' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1148' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1149' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1150' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1151' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1152' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1153' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1154' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1155' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1156' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1157' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1158' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1159' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1160' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1161' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1162' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1163' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1164' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1165' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1166' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1167' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1168' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1169' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1170' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1171' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1172' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1173' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1174' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1175' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1176' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1177' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1178' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1179' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1180' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1181' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1182' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1183' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1184' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1185' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1186' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1187' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1188' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1189' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1190' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1191' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1192' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1193' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1194' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1195' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1196' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1197' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1198' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1199' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1200' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1201' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1202' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1203' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1204' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1205' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1206' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1207' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1208' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1209' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1210' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1211' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1212' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1213' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1214' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1215' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1216' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1217' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1218' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1219' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1220' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1221' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1222' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1223' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1224' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1225' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1226' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1227' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1228' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1229' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1230' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1231' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1232' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1233' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1234' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1235' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1236' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1237' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1238' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1239' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1240' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1241' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1242' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1243' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1244' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1245' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1246' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1247' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1248' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1249' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1250' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1251' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1252' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1253' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1254' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1255' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1256' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1257' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1258' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1259' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1260' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1261' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1262' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1263' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1264' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1265' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1266' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1267' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1268' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1269' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1270' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1271' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1272' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1273' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1274' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1275' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1276' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1277' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1278' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1279' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1280' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1281' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1282' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1283' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1284' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1285' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1286' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1287' is created to connect open pin 'product(32)'. (VHDL-290)
+Warning: A dummy net 'n_1288' is created to connect open pin 'product(63)'. (VHDL-290)
+Warning: A dummy net 'n_1289' is created to connect open pin 'product(62)'. (VHDL-290)
+Warning: A dummy net 'n_1290' is created to connect open pin 'product(61)'. (VHDL-290)
+Warning: A dummy net 'n_1291' is created to connect open pin 'product(60)'. (VHDL-290)
+Warning: A dummy net 'n_1292' is created to connect open pin 'product(59)'. (VHDL-290)
+Warning: A dummy net 'n_1293' is created to connect open pin 'product(58)'. (VHDL-290)
+Warning: A dummy net 'n_1294' is created to connect open pin 'product(57)'. (VHDL-290)
+Warning: A dummy net 'n_1295' is created to connect open pin 'product(56)'. (VHDL-290)
+Warning: A dummy net 'n_1296' is created to connect open pin 'product(55)'. (VHDL-290)
+Warning: A dummy net 'n_1297' is created to connect open pin 'product(54)'. (VHDL-290)
+Warning: A dummy net 'n_1298' is created to connect open pin 'product(53)'. (VHDL-290)
+Warning: A dummy net 'n_1299' is created to connect open pin 'product(52)'. (VHDL-290)
+Warning: A dummy net 'n_1300' is created to connect open pin 'product(51)'. (VHDL-290)
+Warning: A dummy net 'n_1301' is created to connect open pin 'product(50)'. (VHDL-290)
+Warning: A dummy net 'n_1302' is created to connect open pin 'product(49)'. (VHDL-290)
+Warning: A dummy net 'n_1303' is created to connect open pin 'product(48)'. (VHDL-290)
+Warning: A dummy net 'n_1304' is created to connect open pin 'product(47)'. (VHDL-290)
+Warning: A dummy net 'n_1305' is created to connect open pin 'product(46)'. (VHDL-290)
+Warning: A dummy net 'n_1306' is created to connect open pin 'product(45)'. (VHDL-290)
+Warning: A dummy net 'n_1307' is created to connect open pin 'product(44)'. (VHDL-290)
+Warning: A dummy net 'n_1308' is created to connect open pin 'product(43)'. (VHDL-290)
+Warning: A dummy net 'n_1309' is created to connect open pin 'product(42)'. (VHDL-290)
+Warning: A dummy net 'n_1310' is created to connect open pin 'product(41)'. (VHDL-290)
+Warning: A dummy net 'n_1311' is created to connect open pin 'product(40)'. (VHDL-290)
+Warning: A dummy net 'n_1312' is created to connect open pin 'product(39)'. (VHDL-290)
+Warning: A dummy net 'n_1313' is created to connect open pin 'product(38)'. (VHDL-290)
+Warning: A dummy net 'n_1314' is created to connect open pin 'product(37)'. (VHDL-290)
+Warning: A dummy net 'n_1315' is created to connect open pin 'product(36)'. (VHDL-290)
+Warning: A dummy net 'n_1316' is created to connect open pin 'product(35)'. (VHDL-290)
+Warning: A dummy net 'n_1317' is created to connect open pin 'product(34)'. (VHDL-290)
+Warning: A dummy net 'n_1318' is created to connect open pin 'product(33)'. (VHDL-290)
+Warning: A dummy net 'n_1319' is created to connect open pin 'product(32)'. (VHDL-290)
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : hierarchy
+Design : gp_custom
+Version: R-2020.09-SP2
+Date   : Sun Oct  8 18:42:09 2023
+****************************************
+
+Attributes:
+    r - licensed design
+
+gp_custom          r
+    AND2D1                         umcl18u250t2_typ
+    AND3D1                         umcl18u250t2_typ
+    AO22D1                         umcl18u250t2_typ
+    AO31D1                         umcl18u250t2_typ
+    AOI21D1                        umcl18u250t2_typ
+    AOI22D1                        umcl18u250t2_typ
+    AOI22M10D1                     umcl18u250t2_typ
+    BUFD1                          umcl18u250t2_typ
+    DFERPQ1                        umcl18u250t2_typ
+    DFFRPQ1                        umcl18u250t2_typ
+    DFFSPQ1                        umcl18u250t2_typ
+    EXNOR2D1                       umcl18u250t2_typ
+    INVD1                          umcl18u250t2_typ
+    MUX2D1                         umcl18u250t2_typ
+    MUX2DL                         umcl18u250t2_typ
+    NAN2D1                         umcl18u250t2_typ
+    NAN2M1D1                       umcl18u250t2_typ
+    NAN3D1                         umcl18u250t2_typ
+    NAN4D1                         umcl18u250t2_typ
+    NOR2D1                         umcl18u250t2_typ
+    NOR2M1D1                       umcl18u250t2_typ
+    NOR3D1                         umcl18u250t2_typ
+    NOR3M1D1                       umcl18u250t2_typ
+    OA21M20D1                      umcl18u250t2_typ
+    OAI21D1                        umcl18u250t2_typ
+    OAI21M20D1                     umcl18u250t2_typ
+    OAI22D1                        umcl18u250t2_typ
+    OAI32D1                        umcl18u250t2_typ
+    OAI211D1                       umcl18u250t2_typ
+    gp_custom_DW_mult_tc_5                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        BUFD1                      umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        MUXB2DL                    umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21D1                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+    gp_custom_DW_mult_tc_6                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        MUXB2DL                    umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21D1                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+    gp_custom_DW_mult_tc_7                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        MUXB2DL                    umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21D1                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+    gp_custom_DW_mult_tc_8                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        MUXB2DL                    umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21D1                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+    gp_custom_DW_mult_tc_9                   r
+        ADFULD1                    umcl18u250t2_typ
+        ADHALFDL                   umcl18u250t2_typ
+        AND2D1                     umcl18u250t2_typ
+        AO21D1                     umcl18u250t2_typ
+        AOI21D1                    umcl18u250t2_typ
+        EXNOR2D1                   umcl18u250t2_typ
+        EXOR2D1                    umcl18u250t2_typ
+        EXOR3D1                    umcl18u250t2_typ
+        INVD1                      umcl18u250t2_typ
+        MUXB2DL                    umcl18u250t2_typ
+        NAN2D1                     umcl18u250t2_typ
+        NAN2M1D1                   umcl18u250t2_typ
+        NOR2D1                     umcl18u250t2_typ
+        NOR2M1D1                   umcl18u250t2_typ
+        OA21D1                     umcl18u250t2_typ
+        OA21M20D1                  umcl18u250t2_typ
+        OAI21D1                    umcl18u250t2_typ
+        OR2D1                      umcl18u250t2_typ
+1
+dc_shell> Information: Updating graph... (UID-83)
+Warning: Design 'gp_custom' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : reference
+Design : gp_custom
+Version: R-2020.09-SP2
+Date   : Sun Oct  8 18:42:10 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2D1             umcl18u250t2_typ
+                                 16.260000      16    260.160004  
+AND3D1             umcl18u250t2_typ
+                                 20.330000       7    142.309999  
+AO22D1             umcl18u250t2_typ
+                                 32.520000      16    520.320007  
+AO31D1             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+AOI22D1            umcl18u250t2_typ
+                                 24.389999     356   8682.839783  
+AOI22M10D1         umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+BUFD1              umcl18u250t2_typ
+                                 12.200000       1     12.200000  
+DFERPQ1            umcl18u250t2_typ
+                                101.639999     950  96557.999420  n
+DFFRPQ1            umcl18u250t2_typ
+                                 81.309998     189  15367.589539  n
+DFFSPQ1            umcl18u250t2_typ
+                                 77.250000      16   1236.000000  n
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999       4    113.839996  
+INVD1              umcl18u250t2_typ
+                                  8.130000      98    796.740011  
+MUX2D1             umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+MUX2DL             umcl18u250t2_typ
+                                 24.389999     190   4634.099884  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000     121   1476.199977  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000      53    861.780012  
+NAN4D1             umcl18u250t2_typ
+                                 20.330000      65   1321.449995  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      20    243.999996  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000       8    130.080002  
+NOR3D1             umcl18u250t2_typ
+                                 16.260000       3     48.780001  
+NOR3M1D1           umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      33    670.889997  
+OAI21M20D1         umcl18u250t2_typ
+                                 24.389999      81   1975.589951  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999       4     97.559998  
+OAI32D1            umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OAI211D1           umcl18u250t2_typ
+                                 24.389999       2     48.779999  
+gp_custom_DW_mult_tc_5        32600.490219       1  32600.490219  h
+gp_custom_DW_mult_tc_6        32563.890220       1  32563.890220  h
+gp_custom_DW_mult_tc_7        32547.630219       1  32547.630219  h
+gp_custom_DW_mult_tc_8        32653.320221       1  32653.320221  h
+gp_custom_DW_mult_tc_9        32653.320221       1  32653.320221  h
+-----------------------------------------------------------------------------
+Total 34 references                                 298522.779667
+
+****************************************
+Design: gp_custom_DW_mult_tc_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003     204  13270.200623  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000      29   1179.139996  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      16    455.359985  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+BUFD1              umcl18u250t2_typ
+                                 12.200000       3     36.599999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      21    597.659981  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      19    540.739983  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      14    739.899979  
+INVD1              umcl18u250t2_typ
+                                  8.130000      54    439.020006  
+MUXB2DL            umcl18u250t2_typ
+                                 24.389999     528  12877.919678  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      49    597.799991  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      16    260.160004  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      15    243.900003  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      29    589.569998  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+-----------------------------------------------------------------------------
+Total 19 references                                 32600.490219
+
+****************************************
+Design: gp_custom_DW_mult_tc_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003     204  13270.200623  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000      29   1179.139996  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      16    455.359985  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      21    597.659981  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      19    540.739983  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      14    739.899979  
+INVD1              umcl18u250t2_typ
+                                  8.130000      54    439.020006  
+MUXB2DL            umcl18u250t2_typ
+                                 24.389999     528  12877.919678  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      49    597.799991  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      16    260.160004  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      15    243.900003  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      29    589.569998  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+-----------------------------------------------------------------------------
+Total 18 references                                 32563.890220
+
+****************************************
+Design: gp_custom_DW_mult_tc_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003     204  13270.200623  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000      29   1179.139996  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      16    455.359985  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      21    597.659981  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      19    540.739983  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      14    739.899979  
+INVD1              umcl18u250t2_typ
+                                  8.130000      52    422.760006  
+MUXB2DL            umcl18u250t2_typ
+                                 24.389999     528  12877.919678  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      49    597.799991  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      16    260.160004  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      15    243.900003  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      29    589.569998  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+-----------------------------------------------------------------------------
+Total 18 references                                 32547.630219
+
+****************************************
+Design: gp_custom_DW_mult_tc_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003     204  13270.200623  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000      29   1179.139996  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      16    455.359985  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      21    597.659981  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      19    540.739983  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      14    739.899979  
+INVD1              umcl18u250t2_typ
+                                  8.130000      65    528.450007  
+MUXB2DL            umcl18u250t2_typ
+                                 24.389999     528  12877.919678  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      49    597.799991  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      16    260.160004  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      15    243.900003  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      29    589.569998  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+-----------------------------------------------------------------------------
+Total 18 references                                 32653.320221
+
+****************************************
+Design: gp_custom_DW_mult_tc_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003     204  13270.200623  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000      29   1179.139996  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000       1     16.260000  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      16    455.359985  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      12    243.959999  
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999      23    654.579979  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      17    483.819984  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      14    739.899979  
+INVD1              umcl18u250t2_typ
+                                  8.130000      65    528.450007  
+MUXB2DL            umcl18u250t2_typ
+                                 24.389999     528  12877.919678  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000      49    597.799991  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      16    260.160004  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000      18    219.599997  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      15    243.900003  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       1     28.459999  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999       3     85.379997  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000      29    589.569998  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      11    178.860003  
+-----------------------------------------------------------------------------
+Total 18 references                                 32653.320221
+1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : resources
+Design : gp_custom
+Version: R-2020.09-SP2
+Date   : Sun Oct  8 18:42:10 2023
+****************************************
+
+Resource Sharing Report for design gp_custom in file ./gp_custom_filter.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r422     | DW_cmp       | width=6    |               | lte_59 lte_92        |
+| r438     | DW01_inc     | width=3    |               | add_147              |
+| r440     | DW01_inc     | width=3    |               | add_188              |
+| r1166    | DW_mult_tc   | a_width=32 |               | mult_21_C249         |
+|          |              | b_width=32 |               |                      |
+| r1882    | DW_mult_tc   | a_width=32 |               | mult_21_C247         |
+|          |              | b_width=32 |               |                      |
+| r2598    | DW_mult_tc   | a_width=32 |               | mult_21_C241         |
+|          |              | b_width=32 |               |                      |
+| r3314    | DW_mult_tc   | a_width=32 |               | mult_21_C243         |
+|          |              | b_width=32 |               |                      |
+| r4030    | DW_mult_tc   | a_width=32 |               | mult_21_C245         |
+|          |              | b_width=32 |               |                      |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| mult_21_C249       | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4_mux          |
+| mult_21_C247       | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4_mux          |
+| mult_21_C245       | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4_mux          |
+| mult_21_C243       | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4_mux          |
+| mult_21_C241       | DW_mult_tc       | pparch (area,speed)                 |
+|                    |                  | mult_arch: benc_radix4_mux          |
+===============================================================================
+
+1
+dc_shell> dc_shell> dc_shell> TRUE
+dc_shell> 1
+dc_shell> dc_shell> dc_shell>  
+****************************************
+Report : reference
+Design : gp_custom
+Version: R-2020.09-SP2
+Date   : Sun Oct  8 18:42:10 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADFULD1            umcl18u250t2_typ
+                                 65.050003    1020  66351.003113  r
+ADHALFDL           umcl18u250t2_typ
+                                 40.660000     145   5895.699978  r
+AND2D1             umcl18u250t2_typ
+                                 16.260000      21    341.460005  
+AND3D1             umcl18u250t2_typ
+                                 20.330000       7    142.309999  
+AO21D1             umcl18u250t2_typ
+                                 28.459999      80   2276.799927  
+AO22D1             umcl18u250t2_typ
+                                 32.520000      16    520.320007  
+AO31D1             umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+AOI21D1            umcl18u250t2_typ
+                                 20.330000      62   1260.459995  
+AOI22D1            umcl18u250t2_typ
+                                 24.389999     356   8682.839783  
+AOI22M10D1         umcl18u250t2_typ
+                                 32.520000       1     32.520000  
+BUFD1              umcl18u250t2_typ
+                                 12.200000       4     48.799999  
+DFERPQ1            umcl18u250t2_typ
+                                101.639999     950  96557.999420  n
+DFFRPQ1            umcl18u250t2_typ
+                                 81.309998     189  15367.589539  n
+DFFSPQ1            umcl18u250t2_typ
+                                 77.250000      16   1236.000000  n
+EXNOR2D1           umcl18u250t2_typ
+                                 28.459999     111   3159.059898  
+EXOR2D1            umcl18u250t2_typ
+                                 28.459999      93   2646.779915  
+EXOR3D1            umcl18u250t2_typ
+                                 52.849998      70   3699.499893  
+INVD1              umcl18u250t2_typ
+                                  8.130000     388   3154.440044  
+MUX2D1             umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+MUX2DL             umcl18u250t2_typ
+                                 24.389999     190   4634.099884  
+MUXB2DL            umcl18u250t2_typ
+                                 24.389999    2640  64389.598389  
+NAN2D1             umcl18u250t2_typ
+                                 12.200000     366   4465.199930  
+NAN2M1D1           umcl18u250t2_typ
+                                 16.260000      81   1317.060019  
+NAN3D1             umcl18u250t2_typ
+                                 16.260000      53    861.780012  
+NAN4D1             umcl18u250t2_typ
+                                 20.330000      65   1321.449995  
+NOR2D1             umcl18u250t2_typ
+                                 12.200000     110   1341.999979  
+NOR2M1D1           umcl18u250t2_typ
+                                 16.260000      83   1349.580019  
+NOR3D1             umcl18u250t2_typ
+                                 16.260000       3     48.780001  
+NOR3M1D1           umcl18u250t2_typ
+                                 20.330000       2     40.660000  
+OA21D1             umcl18u250t2_typ
+                                 28.459999       5    142.299995  
+OA21M20D1          umcl18u250t2_typ
+                                 28.459999      16    455.359985  
+OAI21D1            umcl18u250t2_typ
+                                 20.330000     178   3618.739986  
+OAI21M20D1         umcl18u250t2_typ
+                                 24.389999      81   1975.589951  
+OAI22D1            umcl18u250t2_typ
+                                 24.389999       4     97.559998  
+OAI32D1            umcl18u250t2_typ
+                                 28.459999       2     56.919998  
+OAI211D1           umcl18u250t2_typ
+                                 24.389999       2     48.779999  
+OR2D1              umcl18u250t2_typ
+                                 16.260000      55    894.300013  
+-----------------------------------------------------------------------------
+Total 37 references                                 298522.779667
+1
+dc_shell> dc_shell> Information: Updating design information... (UID-85)
+Warning: Design 'gp_custom' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : gp_custom
+Version: R-2020.09-SP2
+Date   : Sun Oct  8 18:42:10 2023
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: nom_pvt   Library: umcl18u250t2_typ
+Wire Load Model Mode: top
+
+  Startpoint: filt_mult_inputs_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: comp_res_reg_4__31_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  filt_mult_inputs_reg/CK (DFERPQ1)        0.00 #     0.00 r
+  filt_mult_inputs_reg/Q (DFERPQ1)         0.20       0.20 f
+  U758/Z (INVD1)                           0.04       0.24 r
+  U757/Z (INVD1)                           0.05       0.28 f
+  U710/Z (INVD1)                           0.06       0.34 r
+  U690/Z (INVD1)                           0.11       0.45 f
+  U794/Z (MUX2DL)                          1.02       1.48 r
+  mult_21_C249/U1344/Z (INVD1)             0.01       1.49 f
+  mult_21_C249/U1313/Z (INVD1)             0.23       1.72 r
+  mult_21_C249/U776/Z (MUXB2DL)            0.06       1.78 f
+  mult_21_C249/U775/Z (MUXB2DL)            0.15       1.93 f
+  mult_21_C249/U478/CO (ADFULD1)           0.22       2.16 f
+  mult_21_C249/U465/CO (ADFULD1)           0.21       2.36 f
+  mult_21_C249/U453/CO (ADFULD1)           0.19       2.55 f
+  mult_21_C249/U441/S (ADFULD1)            0.24       2.79 r
+  mult_21_C249/U440/S (ADFULD1)            0.20       2.99 f
+  mult_21_C249/U1216/Z (OR2D1)             0.12       3.11 f
+  mult_21_C249/U1217/Z (NAN2D1)            0.07       3.17 r
+  mult_21_C249/U1212/Z (NOR2D1)            0.03       3.21 f
+  mult_21_C249/U1193/Z (AO21D1)            0.16       3.37 f
+  mult_21_C249/U132/CO (ADFULD1)           0.16       3.52 f
+  mult_21_C249/U131/CO (ADFULD1)           0.16       3.69 f
+  mult_21_C249/U130/CO (ADFULD1)           0.16       3.85 f
+  mult_21_C249/U129/CO (ADFULD1)           0.16       4.01 f
+  mult_21_C249/U128/CO (ADFULD1)           0.16       4.17 f
+  mult_21_C249/U127/CO (ADFULD1)           0.16       4.33 f
+  mult_21_C249/U126/CO (ADFULD1)           0.16       4.49 f
+  mult_21_C249/U125/CO (ADFULD1)           0.15       4.65 f
+  mult_21_C249/U1288/Z (EXOR2D1)           0.11       4.76 r
+  comp_res_reg_4__31_/D (DFFRPQ1)          0.00       4.76 r
+  data arrival time                                   4.76
+
+  clock clk (rise edge)                    5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  comp_res_reg_4__31_/CK (DFFRPQ1)         0.00       5.00 r
+  library setup time                      -0.06       4.94
+  data required time                                  4.94
+  -----------------------------------------------------------
+  data required time                                  4.94
+  data arrival time                                  -4.76
+  -----------------------------------------------------------
+  slack (MET)                                         0.19
+
+
+1
+dc_shell> dc_shell> dc_shell> Warning: In the design gp_custom, net 'clk_out' is connecting multiple ports. (UCN-1)
+1
+dc_shell> dc_shell> dc_shell> flat_filter_none_5
+dc_shell> dc_shell> dc_shell> Writing vhdl file '/home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_flat.vhd'.
+1
+dc_shell> dc_shell> dc_shell> Writing ddc file 'synopsys_out/gp_custom_filter_none_5_flat.ddc'.
+1
+dc_shell> dc_shell> dc_shell> dc_shell> Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_flat.sdf'. (WT-3)
+1
+dc_shell> 
+Memory usage for this session 210 Mbytes.
+Memory usage for this session including child processes 210 Mbytes.
+CPU usage for this session 36 seconds ( 0.01 hours ).
+Elapsed time for this session 38 seconds ( 0.01 hours ).
+
+Thank you...

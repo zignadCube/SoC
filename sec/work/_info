@@ -1,0 +1,232 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/s3310914/Documents/sec
+T_opt
+!s110 1696280355
+V]CnBCDDW3:D31HO@ZebD_3
+Z1 04 24 0 work conf_tb_siso_gen_sec_par 1
+=1-b026282075c9-651b2f22-a7ce4-3e2cb
+o-quiet -auto_acc_if_foreign -work work -debugdb +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1696328325
+Vao>klUEFf?EzNKmk8i_SG2
+R1
+=1-b026282075c9-651bea85-7a034-2d764
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+Cconf_tb_siso_gen_sec_par
+etb_siso_gen_top
+atop
+Z4 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z5 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z6 DEx4 work 12 tvc_siso_gen 0 22 9bPPAm_78^98R4aPmFZF=3
+Z7 DEx4 work 8 siso_gen 0 22 66_W1cnn]X0[iBVNQoY>J1
+DAx4 work 11 tb_siso_gen 9 structure 22 ka@ol`:G[ziL4=T8[NVO_1
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DEx4 work 11 tb_siso_gen 0 22 EY^U3:F`RcmfCIDczY4@60
+DAx4 work 15 tb_siso_gen_top 3 top 22 Pe<Dn9AHzMn?7fX1Df4=N0
+Z11 DEx4 work 15 tb_siso_gen_top 0 22 C<B:gzcnf=XX`e`3XH<X[2
+!i122 3
+Z12 w1696278041
+R0
+8/home/s3310914/Documents/sec/conf_tb_siso_sec_par.vhd
+F/home/s3310914/Documents/sec/conf_tb_siso_sec_par.vhd
+l0
+L13 1
+VTUZ8=b6WPg^I[M4Uh0B2W3
+!s100 `Y;E;SjM;dD<YboCbFlHJ0
+Z13 OL;C;2020.4;71
+33
+!s110 1696280339
+!i10b 1
+!s108 1696280339.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/sec/conf_tb_siso_sec_par.vhd|
+!s107 /home/s3310914/Documents/sec/conf_tb_siso_sec_par.vhd|
+!i113 0
+Z14 o-work work -2008
+R2
+Esiso_gen
+Z15 w1696278021
+R8
+R9
+!i122 0
+R0
+8/home/s3310914/Documents/sec/siso_gen_ent.vhd
+F/home/s3310914/Documents/sec/siso_gen_ent.vhd
+l0
+L18 1
+V66_W1cnn]X0[iBVNQoY>J1
+!s100 dZ7;mBT4UeBBC1AcNXA7Z0
+R13
+33
+Z16 !s110 1696280338
+!i10b 1
+!s108 1696280337.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/sec/siso_gen_ent.vhd|
+!s107 /home/s3310914/Documents/sec/siso_gen_ent.vhd|
+!i113 0
+R14
+R2
+Asec_par
+R12
+R7
+R9
+R8
+R5
+!i122 1
+8/home/s3310914/Documents/sec/siso_gen_sec_par_arch.vhd
+F/home/s3310914/Documents/sec/siso_gen_sec_par_arch.vhd
+l46
+L19 85
+VaRD]3LedAAa0AgSla_4P]0
+!s100 Hc8XKTZo5zUaPB<5<n[Q20
+R13
+33
+R16
+!i10b 1
+Z17 !s108 1696280338.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/sec/siso_gen_sec_par_arch.vhd|
+!s107 /home/s3310914/Documents/sec/siso_gen_sec_par_arch.vhd|
+!i113 0
+R14
+R2
+Etb_siso_gen
+R15
+R8
+R9
+!i122 1
+R0
+Z18 8/home/s3310914/Documents/sec/tb_siso_gen.vhd
+Z19 F/home/s3310914/Documents/sec/tb_siso_gen.vhd
+l0
+L23 1
+VEY^U3:F`RcmfCIDczY4@60
+!s100 Nh2bf8LjQk5BC=Z^aZVnK3
+R13
+33
+R16
+!i10b 1
+R17
+Z20 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/sec/tb_siso_gen.vhd|
+Z21 !s107 /home/s3310914/Documents/sec/tb_siso_gen.vhd|
+!i113 0
+R14
+R2
+Astructure
+R8
+R9
+R10
+!i122 1
+l63
+L27 52
+Vka@ol`:G[ziL4=T8[NVO_1
+!s100 <3a_>J=W:_GLPNc7DSn5z3
+R13
+33
+R16
+!i10b 1
+R17
+R20
+R21
+!i113 0
+R14
+R2
+Etb_siso_gen_top
+R15
+!i122 1
+R0
+R18
+R19
+l0
+L84 1
+VC<B:gzcnf=XX`e`3XH<X[2
+!s100 =FdFI@R6fd=ZGEA<z709@0
+R13
+33
+R16
+!i10b 1
+R17
+R20
+R21
+!i113 0
+R14
+R2
+Atop
+R11
+!i122 1
+l91
+L87 7
+VPe<Dn9AHzMn?7fX1Df4=N0
+!s100 c5]?0`]Y@h@GJcZTSeZP;3
+R13
+33
+R16
+!i10b 1
+R17
+R20
+R21
+!i113 0
+R14
+R2
+Etvc_siso_gen
+R15
+R4
+R5
+R8
+R9
+!i122 2
+R0
+8/home/s3310914/Documents/sec/tvc_siso_gen_ent.vhd
+F/home/s3310914/Documents/sec/tvc_siso_gen_ent.vhd
+l0
+L22 1
+V9bPPAm_78^98R4aPmFZF=3
+!s100 ieiN7Gff]kK<Bh=S><NJN3
+R13
+33
+R16
+!i10b 1
+R17
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/sec/tvc_siso_gen_ent.vhd|
+!s107 /home/s3310914/Documents/sec/tvc_siso_gen_ent.vhd|
+!i113 0
+R14
+R2
+Afile_io
+R4
+R5
+R8
+R9
+R6
+!i122 3
+8/home/s3310914/Documents/sec/tvc_siso_gen_file_io_arch.vhd
+F/home/s3310914/Documents/sec/tvc_siso_gen_file_io_arch.vhd
+l32
+L21 91
+V[QCml[_>2K19MAACffP^b2
+!s100 :]1WlQ=FUTG<C?4i_R7KP0
+R13
+33
+R16
+!i10b 1
+R17
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/sec/tvc_siso_gen_file_io_arch.vhd|
+!s107 /home/s3310914/Documents/sec/tvc_siso_gen_file_io_arch.vhd|
+!i113 0
+R14
+R2

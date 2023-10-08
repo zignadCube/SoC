@@ -1,0 +1,81 @@
+#!/bin/bash
+# the line below is a qsub pseudo-comment; do not touch!
+#$ -S /bin/sh -cwd
+# -----------------------------------------------------------------------------
+# File: generate-design
+# Description: batch script for synthesizing gate-level circuits from RTL VHDL
+# Author: Sabih Gerez, University of Twente
+# Creation date: Sat Aug  7 16:42:01 CEST 2004
+# -----------------------------------------------------------------------------
+# $Rev: 3$
+# $Author: gerezsh$
+# $Date: Thu Aug 25 21:47:56 CEST 2022$
+# $Log$
+# -----------------------------------------------------------------------------
+
+# List all source files necessary for the synthesis here.
+# Use a backslash ('\') as the last character to end a line and continue 
+# on the next.
+
+# SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_copy_arch.vhd"
+
+# comment the line above and uncomment those below for the synthesis
+# of the other designs.
+
+SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_sec_par_arch.vhd"
+# SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_copy_arch.vhd"
+# SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_gcd_arch.vhd"
+# SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_swap_arch.vhd"
+# SOURCE_FILE_LIST="siso_gen_ent.vhd siso_gen_dpctrl_arch.vhd\
+#                   cmp_add_dp.vhd \
+#                   cmp_add_ctrl_ent.vhd \
+#                   cmp_add_ctrl_gcd_arch.vhd"
+
+# Declare here the top-level entity. This name should correspond to the
+# real entity.
+
+TOP_ENTITY="siso_gen"
+
+# Declare the top-level architecture. This does not need to correspond
+# to a read VHDL architecture name and is only used to give the
+# synthesized result a unique name.
+
+TOP_ARCH="sec_par"
+# TOP_ARCH="copy"
+# TOP_ARCH="gcd"
+# TOP_ARCH="swap"
+# TOP_ARCH="sec"
+# TOP_ARCH="clever"
+# TOP_ARCH="dpctrl_gcd"
+
+# Declare here the name of the clock signal
+
+CLOCK="clk"
+# CLOCK="clock"
+
+# List here the word lengths for which the design should be
+# synthesized. Synthesis will be repeated for each value in the list.
+
+WORD_LENGTHS="16"
+# WORD_LENGTHS="16 32"
+# WORD_LENGTHS="10"
+# WORD_LENGTHS="2"
+
+# set WORD_LENGTHS to "none" if the design does not have generic
+# "word_length"
+# WORD_LENGTHS="none"
+
+# List here the clock period in nanoseconds for which the design
+# should be synthesized. Use a list of values if you want to
+# repetititvely synthesize your design for each value in the list.
+
+CLOCK_PERIODS="5"
+# CLOCK_PERIODS="5 4 3.5 3 2.5 2 1.5"
+
+# indicate whether you want a scan chain "n" -> No; "y" -> Yes
+INSERT_SCAN="n"
+# INSERT_SCAN="y"
+
+# *** DO NOT EDIT BELOW THIS LINE ********************************************
+
+. $SOC_ROOT/scripts/generate-design-core04

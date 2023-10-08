@@ -1243,3 +1243,5 @@ run -all
 # ** Failure: OK! Simulation stopped at end of input file.
 #    Time: 142500 ps  Iteration: 1  Process: /tb_siso_gen_top/tg/tvc/send_input File: /home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd
 # Break in Process send_input at /home/s3310914/Documents/ver/tvc_siso_gen_tester_arch.vhd line 66
+# End time: 21:40:05 on Oct 02,2023, Elapsed time: 24:14:17
+# Errors: 0, Warnings: 1

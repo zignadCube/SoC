@@ -1,0 +1,237 @@
+# Compile of altera_avalon_clock_source.vhd was successful.
+# Compile of altera_avalon_reset_source.vhd was successful.
+# Compile of gp_custom_ent.vhd was successful.
+# Compile of gp_custom_filter.vhd was successful.
+# Compile of nios_siso.vhd was successful.
+# Compile of tb_nios_siso.vhd was successful.
+# Compile of tvc_nios_siso.vhd was successful.
+# Compile of conf_tb_nios_siso_sec_filter.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of altera_avalon_clock_source.vhd was successful.
+# Compile of altera_avalon_reset_source.vhd was successful.
+# Compile of gp_custom_ent.vhd was successful.
+# Compile of gp_custom_filter.vhd was successful.
+# Compile of gp_custom_filter_none_5_flat.vhd was successful.
+# Compile of nios_siso.vhd was successful.
+# Compile of tb_nios_siso.vhd was successful.
+# Compile of tvc_nios_siso.vhd was successful.
+# Compile of conf_tb_nios_siso_sec_filter.vhd was successful.
+# Compile of conf_tb_nios_siso_sec_filter_post.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+start_sim_post conf_tb_nios_siso_sec_filter_post
+# wrong # args: should be "start_sim_post design sdf_file"
+start_sim_post conf_tb_nios_siso_sec_filter_post gp_custom_filter_none_5_flat.sdf
+# vsim "+notimingchecks" -noglitch -sdftyp "/nios_system/gp_custom_0=synopsys_out/gp_custom_filter_none_5_flat.sdf" -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L on_chip_ra -L nios2_gen2 -L jtag_uart_0 work.conf_tb_nios_siso_sec_filter_post 
+# Start time: 18:44:27 on Oct 08,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera.altera_europa_support_lib(body)
+# Loading altera_mf.altera_mf_components
+# Loading ieee.std_logic_textio(body)
+# Loading verilog.vl_types(body)
+# Loading work.conf_tb_nios_siso_sec_filter_post#1
+# Loading work.tb_nios_siso(structural)#1
+# Loading work.altera_avalon_clock_source(behavioral)#1
+# Loading work.altera_avalon_reset_source(behavioral)#1
+# Loading work.nios_siso(rtl)#1
+# Loading ieee.vital_timing(body)
+# Loading umcl18u250t2.umcl18u250t2_vcomponents
+# Loading work.conv_pack_gp_custom
+# Loading work.gp_custom(flat_filter_none_5)#1
+# Loading ieee.vital_primitives(body)
+# Loading umcl18u250t2.oai22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exnor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai32d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai211d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffrpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dferpq1(level1pintopindelay)#2
+# Loading umcl18u250t2.dffspq1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.and3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.mux2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.mux2dl(level1pintopindelay)#2
+# Loading umcl18u250t2.invd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor3d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor3m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan4d1(level1pintopindelay)#2
+# Loading umcl18u250t2.nan2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.oai21m20d1(level1pintopindelay)#2
+# Loading umcl18u250t2.aoi22m10d1(level1pintopindelay)#1
+# Loading umcl18u250t2.ao31d1(level1pintopindelay)#1
+# Loading umcl18u250t2.ao22d1(level1pintopindelay)#2
+# Loading umcl18u250t2.bufd1(level1pintopindelay)#2
+# Loading umcl18u250t2.nor2m1d1(level1pintopindelay)#2
+# Loading umcl18u250t2.ao21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.adhalfdl(level1pintopindelay)#2
+# Loading umcl18u250t2.oa21d1(level1pintopindelay)#2
+# Loading umcl18u250t2.or2d1(level1pintopindelay)#2
+# Loading umcl18u250t2.muxb2dl(level1pintopindelay)#2
+# Loading umcl18u250t2.adfuld1(level1pintopindelay)#2
+# Loading umcl18u250t2.exor3d1(level1pintopindelay)#2
+# Loading jtag_uart_0.nios_siso_jtag_uart_0(europa)#1
+# Loading jtag_uart_0.nios_siso_jtag_uart_0_scfifo_w(europa)#1
+# Loading jtag_uart_0.nios_siso_jtag_uart_0_sim_scfifo_w(europa)#1
+# Loading jtag_uart_0.nios_siso_jtag_uart_0_scfifo_r(europa)#1
+# Loading jtag_uart_0.nios_siso_jtag_uart_0_sim_scfifo_r(europa)#1
+# Loading nios2_gen2.nios_siso_nios2_gen2(rtl)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_test_bench(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_register_bank_a_module(europa)#1
+# Loading altera_mf.altera_common_conversion(body)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.altsyncram(translated)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_register_bank_b_module(europa)#1
+# Loading altera_mf.altsyncram(translated)#2
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_debug(europa)#1
+# Loading altera_mf.altera_std_synchronizer(behavioral)#3
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_break(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_xbrk(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_dbrk(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_itrace(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_dtrace(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_td_mode(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_fifo(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_compute_input_tm_cnt(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_fifo_wrptr_inc(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_fifo_cnt_inc(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_pib(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_oci_im(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_avalon_reg(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_nios2_ocimem(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_ociram_sp_ram_module(europa)#1
+# Loading altera_mf.altsyncram(translated)#3
+# Loading cpu.nios_siso_nios2_gen2_cpu_debug_slave_wrapper(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_debug_slave_tck(europa)#1
+# Loading cpu.nios_siso_nios2_gen2_cpu_debug_slave_sysclk(europa)#1
+# Loading on_chip_ra.nios_siso_on_chip_ra(europa)#1
+# Loading altera_mf.altsyncram(translated)#4
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0(rtl)#1
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0_nios2_gen2_data_master_translator(rtl)#1
+# Loading sv_std.std
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0_nios2_gen2_instruction_master_translator(rtl)#1
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_translator(rtl)#1
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0_gp_custom_0_avalon_slave_translator(rtl)#1
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0_nios2_gen2_debug_mem_slave_translator(rtl)#1
+# Loading mm_interconnect_0.nios_siso_mm_interconnect_0_on_chip_ra_s1_translator(rtl)#1
+# Loading jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo.nios_siso_mm_interconnect_0_jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo(rtl)#1
+# Loading router.nios_siso_mm_interconnect_0_router(rtl)#1
+# Loading router_001.nios_siso_mm_interconnect_0_router_001(rtl)#1
+# Loading router_002.nios_siso_mm_interconnect_0_router_002(rtl)#1
+# Loading router_004.nios_siso_mm_interconnect_0_router_004(rtl)#1
+# Loading cmd_demux.nios_siso_mm_interconnect_0_cmd_demux(rtl)#1
+# Loading cmd_demux_001.nios_siso_mm_interconnect_0_cmd_demux_001(rtl)#1
+# Loading cmd_mux.nios_siso_mm_interconnect_0_cmd_mux(rtl)#1
+# Loading sgate.sgate_pack(body)
+# Loading cmd_mux_002.nios_siso_mm_interconnect_0_cmd_mux_002(rtl)#1
+# Loading ieee.std_logic_signed(body)
+# Loading sgate.oper_add(sim_arch)#1
+# Loading rsp_demux.nios_siso_mm_interconnect_0_rsp_demux(rtl)#1
+# Loading rsp_mux.nios_siso_mm_interconnect_0_rsp_mux(rtl)#1
+# Loading rsp_mux_001.nios_siso_mm_interconnect_0_rsp_mux_001(rtl)#1
+# Loading avalon_st_adapter.nios_siso_mm_interconnect_0_avalon_st_adapter(rtl)#1
+# Loading error_adapter_0.nios_siso_mm_interconnect_0_avalon_st_adapter_error_adapter_0(rtl)#1
+# Loading irq_mapper.nios_siso_irq_mapper(rtl)#1
+# Loading work.tvc_nios_siso(file_io)#1
+# Loading instances from synopsys_out/gp_custom_filter_none_5_flat.sdf
+# Loading timing data from synopsys_out/gp_custom_filter_none_5_flat.sdf
+# ** Warning: (vsim-8683) Uninitialized out port /tb_nios_siso/nios_system/nios2_gen2/cpu/the_nios_siso_nios2_gen2_cpu_nios2_oci/the_nios_siso_nios2_gen2_cpu_nios2_oci_im/tracemem_on has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_nios_siso/nios_system/nios2_gen2/cpu/the_nios_siso_nios2_gen2_cpu_nios2_oci/the_nios_siso_nios2_gen2_cpu_nios2_oci_im/tracemem_tw has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_nios_siso File: /home/s3310914/Documents/nio/tb_nios_siso.vhd
+# do simulate.tcl
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/clk
+# Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
+# Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
+# Cannot lock WLF file: "vsim.wlf"
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: s3310914  Hostname: xoc2.ewi.utwente.nl  ProcessID: 53616
+#           Attempting to use alternate WLF file "./wlftxnwB8c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxnwB8c
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/resetn
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/siso_req
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/siso_ready
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/stop_sim
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/siso_data_in
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/siso_data_out
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_31_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_30_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_29_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_28_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_27_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_26_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_25_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_24_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_23_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_22_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_21_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_20_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_19_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_18_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_17_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_16_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_15_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_14_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_13_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_12_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_11_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_10_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_9_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_8_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_7_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_6_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_5_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_4_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_3_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_2_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_1_port
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata_0_port
+add wave -position 10  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_read
+add wave -position 10  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_addr
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_readdata
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_write
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/avs_writedata
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/in_trigger
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/out_trigger
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/operand_load
+add wave -position 19  sim:/tb_nios_siso/nios_system/gp_custom_0/coeff_load
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/read_comp_res
+add wave -position end  sim:/tb_nios_siso/nios_system/gp_custom_0/filt_mult_inputs
+# Compile of altera_avalon_clock_source.vhd was successful.
+# Compile of altera_avalon_reset_source.vhd was successful.
+# Compile of gp_custom_ent.vhd was successful.
+# Compile of gp_custom_filter.vhd was successful.
+# Compile of gp_custom_filter_none_5_flat.vhd was successful.
+# Compile of nios_siso.vhd was successful.
+# Compile of tb_nios_siso.vhd was successful.
+# Compile of tvc_nios_siso.vhd was successful.
+# Compile of conf_tb_nios_siso_sec_filter.vhd was successful.
+# Compile of conf_tb_nios_siso_sec_filter_post.vhd was successful.
+# 10 compiles, 0 failed with no errors.
+run -all
+# --> Start of sec_soft <--
+# Block nr. = 1
+# Block nr. = 2
+# Block nr. = 3
+# Block nr. = 4
+# ** Failure: OK! Simulation stopped at end of input file.
+#    Time: 3028940 ns  Iteration: 2  Process: /tb_nios_siso/tvc/stimuli File: /home/s3310914/Documents/nio/tvc_nios_siso.vhd
+# Break in Process stimuli at /home/s3310914/Documents/nio/tvc_nios_siso.vhd line 84

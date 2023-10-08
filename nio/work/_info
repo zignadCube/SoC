@@ -1,0 +1,439 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/s3310914/Documents/nio
+T_opt
+!s110 1696782436
+VRC[XiWfFT75MG5X2mz]m>2
+04 28 0 work conf_tb_nios_siso_sec_filter 1
+=47-b026282075c9-6522d863-4bb46-d170
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L on_chip_ra -L nios2_gen2 -L jtag_uart_0
+Z1 tCvgOpt 0
+n@_opt
+Z2 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1696783469
+VkcflO>@f@iUdZRjO93lgE2
+04 33 0 work conf_tb_nios_siso_sec_filter_post 1
+=1-b026282075c9-6522dc6b-5d931-15942
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L error_adapter_0 -L avalon_st_adapter -L rsp_mux_001 -L rsp_mux -L rsp_demux -L cmd_mux_002 -L cmd_mux -L cmd_demux_001 -L cmd_demux -L router_004 -L router_002 -L router_001 -L router -L jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo -L jtag_uart_0_avalon_jtag_slave_agent -L nios2_gen2_data_master_agent -L jtag_uart_0_avalon_jtag_slave_translator -L nios2_gen2_data_master_translator -L cpu -L rst_controller -L irq_mapper -L mm_interconnect_0 -L on_chip_ra -L nios2_gen2 -L jtag_uart_0 -sdftyp /nios_system/gp_custom_0=synopsys_out/gp_custom_filter_none_5_flat.sdf -suppress 1948
+R1
+n@_opt1
+R2
+R0
+Ealtera_avalon_clock_source
+Z3 w1696716064
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 450
+R0
+Z6 8/home/s3310914/Documents/nio/altera_avalon_clock_source.vhd
+Z7 F/home/s3310914/Documents/nio/altera_avalon_clock_source.vhd
+l0
+Z8 L28 1
+VQ>kHd]emkjXo[o_c9dUJJ2
+!s100 QEV9i[k4=>SgP:[c57KXl0
+Z9 OL;C;2020.4;71
+33
+Z10 !s110 1696785559
+!i10b 1
+Z11 !s108 1696785559.000000
+Z12 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/altera_avalon_clock_source.vhd|
+Z13 !s107 /home/s3310914/Documents/nio/altera_avalon_clock_source.vhd|
+!i113 0
+Z14 o-work work -2008
+R1
+Abehavioral
+R4
+R5
+Z15 DEx4 work 26 altera_avalon_clock_source 0 22 Q>kHd]emkjXo[o_c9dUJJ2
+!i122 450
+l42
+L35 15
+VAADfXQlCJNLKkU:2OWGFZ0
+!s100 n`7df>UdB84Mi3?iNLe083
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 0
+R14
+R1
+Ealtera_avalon_reset_source
+R3
+R4
+R5
+!i122 451
+R0
+Z16 8/home/s3310914/Documents/nio/altera_avalon_reset_source.vhd
+Z17 F/home/s3310914/Documents/nio/altera_avalon_reset_source.vhd
+l0
+R8
+VCfQfJidaaLS16V:ZTTTT41
+!s100 iFOE0XbNZCaL?[Lo<N30T1
+R9
+33
+R10
+!i10b 1
+R11
+Z18 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/altera_avalon_reset_source.vhd|
+Z19 !s107 /home/s3310914/Documents/nio/altera_avalon_reset_source.vhd|
+!i113 0
+R14
+R1
+Abehavioral
+R4
+R5
+Z20 DEx4 work 26 altera_avalon_reset_source 0 22 CfQfJidaaLS16V:ZTTTT41
+!i122 451
+l42
+L37 19
+VOk2J>iLE1a9SHnjG;Fo=o0
+!s100 NlOTeNGH=EDi0;9CSkT6G0
+R9
+33
+R10
+!i10b 1
+R11
+R18
+R19
+!i113 0
+R14
+R1
+Cconf_tb_nios_siso_sec_filter
+Z21 etb_nios_siso
+Z22 astructural
+R20
+R15
+Z23 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+Z24 DEx4 work 13 tvc_nios_siso 0 22 Z6naOzfbaoU3<6M58AmoJ2
+Z25 DPx9 altera_mf 20 altera_mf_components 0 22 o9@3eVbD?Q:Q2_O>cSQIE1
+Z26 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z27 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z28 DPx6 altera 25 altera_europa_support_lib 0 22 07[oMD[zS=LR9UlYXNfW60
+Z29 DEx10 on_chip_ra 20 nios_siso_on_chip_ra 0 22 ?n]jM5Pa6dHUfXl:]b7h@1
+Z30 DEx4 work 9 gp_custom 0 22 bGWMT6>PT4GDC567HHViT2
+Z31 DAx4 work 9 nios_siso 3 rtl 22 MF[;13667>BHzYcM2M5ll2
+Z32 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z33 DEx4 work 9 nios_siso 0 22 VVeVUdR;l?B_3A][Z[S6i1
+Z34 DAx4 work 12 tb_nios_siso 10 structural 22 @][[N73VloYfi:V>VljK`2
+R4
+R5
+Z35 DEx4 work 12 tb_nios_siso 0 22 DzED0T1lg:zRej^3Z7AJ@3
+!i122 457
+w1696718137
+R0
+8/home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter.vhd
+F/home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter.vhd
+l0
+Z36 L15 1
+V=lWR?WQfLoIi_j22[9a522
+!s100 jVbRTg3;94Y:81ZO^`eeY0
+R9
+33
+Z37 !s110 1696785561
+!i10b 1
+Z38 !s108 1696785561.000000
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter.vhd|
+!s107 /home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter.vhd|
+!i113 0
+R14
+R1
+Cconf_tb_nios_siso_sec_filter_post
+R21
+R22
+R20
+R15
+R23
+R24
+R25
+R26
+R27
+R28
+R29
+R30
+R31
+R32
+R33
+R34
+R4
+R5
+R35
+!i122 458
+w1696779253
+R0
+8/home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter_post.vhd
+F/home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter_post.vhd
+l0
+R36
+V=T4Pnh<j<A34`cN9caC3P1
+!s100 kj@bQz[_eTSkYcd`fjaaY0
+R9
+33
+R37
+!i10b 1
+R38
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter_post.vhd|
+!s107 /home/s3310914/Documents/nio/conf_tb_nios_siso_sec_filter_post.vhd|
+!i113 0
+R14
+R1
+Pconv_pack_gp_custom
+Z39 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z40 DPx12 umcl18u250t2 24 umcl18u250t2_vcomponents 0 22 Cd7]=4S_<O3<ofVJOVXg<3
+R4
+R5
+!i122 453
+Z41 w1696783344
+R0
+Z42 8/home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_flat.vhd
+Z43 F/home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_flat.vhd
+l0
+L7 1
+VVzOnU9CZTl`>FDbDDbDCj3
+!s100 d4AXkz0jY?QL7SAK@DR?D1
+R9
+33
+Z44 !s110 1696785560
+!i10b 1
+Z45 !s108 1696785560.000000
+Z46 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_flat.vhd|
+Z47 !s107 /home/s3310914/Documents/nio/synopsys_out/gp_custom_filter_none_5_flat.vhd|
+!i113 0
+R14
+R1
+Egp_custom
+R3
+R32
+R4
+R5
+!i122 452
+R0
+8/home/s3310914/Documents/nio/gp_custom_ent.vhd
+F/home/s3310914/Documents/nio/gp_custom_ent.vhd
+l0
+L25 1
+VbGWMT6>PT4GDC567HHViT2
+!s100 F^`Y2KKCV1J5JCL7]]GAS2
+R9
+33
+R10
+!i10b 1
+R11
+!s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/gp_custom_ent.vhd|
+!s107 /home/s3310914/Documents/nio/gp_custom_ent.vhd|
+!i113 0
+R14
+R1
+Aflat_filter_none_5
+R41
+R32
+R30
+DPx4 work 19 conv_pack_gp_custom 0 22 VzOnU9CZTl`>FDbDDbDCj3
+R39
+R40
+R4
+R5
+!i122 453
+R42
+R43
+l2682
+L21 20322
+VLIHQji]fbnW;F>WHm:7[81
+!s100 Lh4n17`6GK2cGod]lh?ie2
+R9
+33
+R44
+!i10b 1
+R45
+R46
+R47
+!i113 0
+R14
+R1
+Afilter
+w1696782423
+R32
+R4
+R5
+R30
+!i122 453
+Z48 8/home/s3310914/Documents/nio/gp_custom_filter.vhd
+Z49 F/home/s3310914/Documents/nio/gp_custom_filter.vhd
+l31
+L14 248
+VgKAe2UD6a^MGD5Y5HeHAQ1
+!s100 7MQW@lm5EhdCGI3b5@@C92
+R9
+33
+R44
+!i10b 1
+R45
+Z50 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/gp_custom_filter.vhd|
+Z51 !s107 /home/s3310914/Documents/nio/gp_custom_filter.vhd|
+!i113 0
+R14
+R1
+Asimple
+w1696750955
+R32
+R4
+R5
+R30
+!i122 206
+R48
+R49
+l23
+L14 158
+VOSZMWn27AFMAXfGK^A_lA2
+!s100 V=0:K6;7[>M;3lkn[S=Hl1
+R9
+33
+!s110 1696750962
+!i10b 1
+!s108 1696750962.000000
+R50
+R51
+!i113 0
+R14
+R1
+Enios_siso
+Z52 w1696716065
+R32
+R4
+R5
+!i122 454
+R0
+Z53 8/home/s3310914/Documents/nio/nios_siso.vhd
+Z54 F/home/s3310914/Documents/nio/nios_siso.vhd
+l0
+L21 1
+VVVeVUdR;l?B_3A][Z[S6i1
+!s100 ]b?WGF;AG>^0_dZoPCnWX0
+R9
+33
+R44
+!i10b 1
+R45
+Z55 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/nios_siso.vhd|
+Z56 !s107 /home/s3310914/Documents/nio/nios_siso.vhd|
+!i113 0
+R14
+R1
+Artl
+R32
+R4
+R5
+R33
+!i122 454
+l283
+L34 453
+VMF[;13667>BHzYcM2M5ll2
+!s100 OJNDQA<ceX`[Aia^XC9iQ1
+R9
+33
+R44
+!i10b 1
+R45
+R55
+R56
+!i113 0
+R14
+R1
+Etb_nios_siso
+R52
+R4
+R5
+!i122 455
+R0
+Z57 8/home/s3310914/Documents/nio/tb_nios_siso.vhd
+Z58 F/home/s3310914/Documents/nio/tb_nios_siso.vhd
+l0
+L16 1
+VDzED0T1lg:zRej^3Z7AJ@3
+!s100 LAGUR<WESig84P[a[G8a^1
+R9
+33
+R37
+!i10b 1
+R45
+Z59 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/tb_nios_siso.vhd|
+Z60 !s107 /home/s3310914/Documents/nio/tb_nios_siso.vhd|
+!i113 0
+R14
+R1
+Astructural
+R4
+R5
+R35
+!i122 455
+l76
+L19 99
+V@][[N73VloYfi:V>VljK`2
+!s100 >AVOe2OiPM9jjVX9ENA7G2
+R9
+33
+R37
+!i10b 1
+R45
+R59
+R60
+!i113 0
+R14
+R1
+Etvc_nios_siso
+R52
+R23
+R32
+R4
+R5
+!i122 456
+R0
+Z61 8/home/s3310914/Documents/nio/tvc_nios_siso.vhd
+Z62 F/home/s3310914/Documents/nio/tvc_nios_siso.vhd
+l0
+L27 1
+VZ6naOzfbaoU3<6M58AmoJ2
+!s100 581D^iWe1<K][GekF2il[1
+R9
+33
+R37
+!i10b 1
+R38
+Z63 !s90 -reportprogress|300|-work|work|-2008|-vopt|-stats=none|/home/s3310914/Documents/nio/tvc_nios_siso.vhd|
+Z64 !s107 /home/s3310914/Documents/nio/tvc_nios_siso.vhd|
+!i113 0
+R14
+R1
+Afile_io
+R23
+R32
+R4
+R5
+R24
+!i122 456
+l51
+L46 69
+VWL3^K^IgAonnQDAcLJgag3
+!s100 E1o9772NNJIV=M?16jjWM1
+R9
+33
+R37
+!i10b 1
+R38
+R63
+R64
+!i113 0
+R14
+R1
