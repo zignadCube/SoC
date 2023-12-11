@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct 25 02:30:19 2023
+# Process ID: 25631
+# Current directory: /home/s3310914/Documents/eca1
+# Command line: vivado
+# Log file: /home/s3310914/Documents/eca1/vivado.log
+# Journal file: /home/s3310914/Documents/eca1/vivado.jou
+# Running On: xoc2.ewi.utwente.nl, OS: Linux, CPU Frequency: 2600.000 MHz, CPU Physical cores: 24, Host memory: 269882 MB
+#-----------------------------------------------------------
+start_gui
+create_project test_project /home/s3310914/Documents/eca1/test_project -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {2 644 -340} [get_bd_cells axi_dma_0]
+set_property CONFIG.c_sg_include_stscntrl_strm {0} [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+startgroup
+set_property location {3 1158 127} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 1128 -133} [get_bd_cells axi_dma_0]
+endgroup
+set_property location {1 690 -85} [get_bd_cells ps8_0_axi_periph]
+set_property location {0.5 309 -156} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {1 304 -108} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {1 320 -94} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {1 320 -101} [get_bd_cells zynq_ultra_ps_e_0]
+set_property location {3 1223 -37} [get_bd_cells axi_dma_0]
+set_property location {3 1170 -147} [get_bd_cells axi_dma_0]
+set_property location {3 1204 -37} [get_bd_cells axi_dma_0]
+set_property location {3 1193 -55} [get_bd_cells axi_dma_0]
+set_property location {3 1189 -72} [get_bd_cells axi_dma_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+open_bd_design {/home/s3310914/Documents/eca1/test_project/test_project.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/s3310914/Documents/eca1/test_project/test_project.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xfft:9.1 xfft_0
+endgroup
+delete_bd_objs [get_bd_cells xfft_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0
+endgroup
+set_property location {3 1165 -268} [get_bd_cells axis_data_fifo_0]
+connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/S_AXIS] [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S]
+connect_bd_net [get_bd_pins axis_data_fifo_0/s_axis_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axis_data_fifo_0/s_axis_aresetn] [get_bd_pins rst_ps8_0_99M/peripheral_aresetn]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {1 334 56} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_dma_0/mm2s_introut] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_dma_0/s2mm_introut] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins zynq_ultra_ps_e_0/pl_ps_irq0]
+save_bd_design
+validate_bd_design
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_sg_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_mm2s_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+connect_bd_net [get_bd_pins axi_dma_0/m_axi_s2mm_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+validate_bd_design
+make_wrapper -files [get_files /home/s3310914/Documents/eca1/test_project/test_project.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/s3310914/Documents/eca1/test_project/test_project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/s3310914/Documents/eca1/test_project/test_project.srcs/sources_1/bd/design_1/design_1.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+open_bd_design {/home/s3310914/Documents/eca1/test_project/test_project.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_run impl_1
+open_bd_design {/home/s3310914/Documents/eca1/test_project/test_project.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+delete_bd_objs [get_bd_intf_nets axis_data_fifo_0_M_AXIS]
+group_bd_cells fifo_hier [get_bd_cells axis_data_fifo_0] [get_bd_cells axi_dma_0]
+connect_bd_intf_net [get_bd_intf_pins fifo_hier/axis_data_fifo_0/S_AXIS] [get_bd_intf_pins fifo_hier/axi_dma_0/M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins fifo_hier/axis_data_fifo_0/M_AXIS] [get_bd_intf_pins fifo_hier/axi_dma_0/S_AXIS_S2MM]
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+set_property location {3 1243 -50} [get_bd_cells fifo_hier]

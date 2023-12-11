@@ -6,6 +6,15 @@ QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Compiling entity altera_avalon_clock_source
 -- Compiling architecture behavioral of altera_avalon_clock_source
 
+} {} {}} /home/s3310914/Documents/nio/gp_custom_filter.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/nio/gp_custom_filter.vhd
+QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+-- Loading package STANDARD
+-- Compiling architecture filter of gp_custom
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading entity gp_custom
+
 } {} {}} /home/s3310914/Documents/nio/tvc_nios_siso.vhd {1 {vcom -work work -2008 -vopt -stats=none /home/s3310914/Documents/nio/tvc_nios_siso.vhd
 QuestaSim-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
 -- Loading package STANDARD

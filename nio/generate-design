@@ -49,7 +49,7 @@ WORD_LENGTHS="none"
 # synthesized. Note: clock periods that make sense normally depend on
 # the word length.
 
-CLOCK_PERIODS="5"
+CLOCK_PERIODS="20"
 # CLOCK_PERIODS="5 4 3 2"
 
 # give INSERT_SCAN a value of "y" if you want a scan chain

@@ -1,6 +1,6 @@
 #@ # 
 #@ # Running dc_shell Version R-2020.09-SP2 for linux64 -- Dec 03, 2020
-#@ # Date:   Sun Oct  8 18:41:49 2023
+#@ # Date:   Sun Oct  8 19:59:25 2023
 #@ # Run by: s3310914@xoc1.ewi.utwente.nl
 #@ 
 
@@ -6729,11 +6729,11 @@ set source_file_list "gp_custom_ent.vhd gp_custom_filter.vhd"
 set top_entity gp_custom
 set clock clk
 set word_length none
-set clock_period 5
-set instance gp_custom_filter_none_5
+set clock_period 20
+set instance gp_custom_filter_none_20
 set insert_scan n
 set gate_clock n
-set arch_instance filter_none_5
+set arch_instance filter_none_20
 # set hdlin_enable_presto_for_vhdl true
 # read all VHDL files
 foreach vhdl_file $source_file_list {

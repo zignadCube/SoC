@@ -1,0 +1,9 @@
+vhdl xil_defaultlib  \
+"../../../bd/Main/ip/Main_rst_ps8_0_96M_0/sim/Main_rst_ps8_0_96M_0.vhd" \
+"../../../bd/Main/ip/Main_axi_dma_0_0/sim/Main_axi_dma_0_0.vhd" \
+"../../../bd/Main/ip/Main_smartconnect_0_1/bd_0/ip/ip_1/sim/bd_d575_psr_aclk_0.vhd" \
+"../../../bd/Main/ipshared/f64d/src/inverter.vhd" \
+"../../../bd/Main/ip/Main_convoluter_0_1/sim/Main_convoluter_0_1.vhd" \
+
+# Do not sort compile order
+nosort

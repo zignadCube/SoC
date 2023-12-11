@@ -1,0 +1,135 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Oct 25 11:54:49 2023
+# Process ID: 239249
+# Current directory: /home/s3305023
+# Command line: vivado
+# Log file: /home/s3305023/vivado.log
+# Journal file: /home/s3305023/vivado.jou
+# Running On: xoc2.ewi.utwente.nl, OS: Linux, CPU Frequency: 2600.000 MHz, CPU Physical cores: 24, Host memory: 269882 MB
+#-----------------------------------------------------------
+start_gui
+create_project Hardware_acceleration /home/s3305023/Hardware_acceleration -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
+create_bd_design "MPSoC_ext_platform" -mode batch
+instantiate_example_design -template xilinx.com:design:MPSoC_ext_platform:1.0 -design MPSoC_ext_platform -options { Include_DDR.VALUE false}
+update_compile_order -fileset sources_1
+set_property location {2 418 -7} [get_bd_cells proc_sys_reset_0]
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+close_project
+create_project DMA /home/s3305023/DMA -part xck26-sfvc784-2LV-c
+set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
+set_property platform.extensible true [current_project]
+create_bd_design "Main"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0
+endgroup
+set_property CONFIG.PSU__USE__M_AXI_GP0 {1} [get_bd_cells zynq_ultra_ps_e_0]
+set_property -dict [list \
+  CONFIG.PSU__USE__M_AXI_GP0 {0} \
+  CONFIG.PSU__USE__S_AXI_ACP {1} \
+] [get_bd_cells zynq_ultra_ps_e_0]
+undo
+undo
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+undo
+set_property CONFIG.PSU__USE__S_AXI_GP0 {1} [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+set_property location {2.5 1090 -122} [get_bd_cells smartconnect_0]
+delete_bd_objs [get_bd_cells smartconnect_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+set_property location {2.5 1210 197} [get_bd_cells axi_interconnect_0]
+set_property location {2 1222 97} [get_bd_cells axi_interconnect_0]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_interconnect_0/S00_ACLK]
+endgroup
+startgroup
+set_property CONFIG.NUM_MI {1} [get_bd_cells axi_interconnect_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:zynq_ultra_ps_e -config {apply_board_preset "1" }  [get_bd_cells zynq_ultra_ps_e_0]
+connect_bd_intf_net [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+endgroup
+set_property location {2 528 -397} [get_bd_cells axi_dma_0]
+set_property location {2.5 1668 108} [get_bd_cells axi_dma_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {Auto} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins axi_dma_0/S_AXI_LITE]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/axi_dma_0/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HPC0_FPD]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXI_MM2S] [get_bd_intf_nets axi_smc_M00_AXI] [get_bd_cells axi_smc]
+startgroup
+set_property -dict [list \
+  CONFIG.c_include_mm2s {1} \
+  CONFIG.c_include_s2mm {1} \
+  CONFIG.c_sg_include_stscntrl_strm {0} \
+] [get_bd_cells axi_dma_0]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:2.0 axis_data_fifo_0
+endgroup
+set_property location {3.5 1551 63} [get_bd_cells axis_data_fifo_0]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/axi_dma_0/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {New AXI SmartConnect} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HPC0_FPD]
+endgroup
+undo
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+set_property location {1 353 272} [get_bd_cells smartconnect_0]
+set_property location {1 342 396} [get_bd_cells smartconnect_0]
+set_property location {1 260 288} [get_bd_cells smartconnect_0]
+set_property location {3 1200 372} [get_bd_cells axis_data_fifo_0]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins axis_data_fifo_0/S_AXIS]
+connect_bd_intf_net [get_bd_intf_pins axis_data_fifo_0/M_AXIS] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_0/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_0/S01_AXI]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_dma_0/m_axi_s2mm_aclk]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM1_FPD} Slave {/axi_dma_0/S_AXI_LITE} ddr_seg {Auto} intc_ip {/axi_interconnect_0} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM1_FPD]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/axi_dma_0/M_AXI_MM2S} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/smartconnect_0} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HPC0_FPD]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (99 MHz)} Master {/axi_dma_0/M_AXI_SG} Slave {/zynq_ultra_ps_e_0/S_AXI_HPC0_FPD} ddr_seg {Auto} intc_ip {/smartconnect_0} master_apm {0}}  [get_bd_intf_pins axi_dma_0/M_AXI_SG]
+undo
+startgroup
+set_property CONFIG.c_include_sg {0} [get_bd_cells axi_dma_0]
+endgroup
+make_wrapper -files [get_files /home/s3305023/DMA/DMA.srcs/sources_1/bd/Main/Main.bd] -top
+add_files -norecurse /home/s3305023/DMA/DMA.gen/sources_1/bd/Main/hdl/Main_wrapper.v
+launch_runs synth_1 -jobs 24
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 24
+wait_on_run impl_1
+open_run impl_1
+close_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:convolution:9.0 convolution_0
+endgroup
+delete_bd_objs [get_bd_cells convolution_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:v_warp_filter:1.1 v_warp_filter_0
+endgroup
+delete_bd_objs [get_bd_cells v_warp_filter_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xfft:9.1 xfft_0
+endgroup
+set_property location {1 -115 -223} [get_bd_cells xfft_0]
+delete_bd_objs [get_bd_cells xfft_0]
+save_bd_design
+archive_project /home/s3305023/Desktop/DMA.xpr.zip -force -include_local_ip_cache -include_config_settings

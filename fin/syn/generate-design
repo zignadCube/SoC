@@ -1,0 +1,59 @@
+#!/bin/sh
+
+# -----------------------------------------------------------------------------
+# File         : generate-design
+# Description  : batch script for synthesis, version for fpga_audio project
+# Author       : Sabih Gerez, University of Twente
+# Creation date: December 4, 2019
+# -----------------------------------------------------------------------------
+# $Rev: 1$
+# $Author: gerezsh$
+# $Date: Mon Dec  5 23:28:31 CET 2022$
+# $Log$
+# -----------------------------------------------------------------------------
+
+# List all source files necessary for the synthesis here.
+# Use a backslash ('\') as the last character to end a line and continue 
+# on the next.
+
+SOURCE_FILE_LIST="../vhd/asic_core_ent.vhd \
+                  ../vhd/asic_core_sine_arch.vhd \
+                  ../vhd/arx_numeric.vhd \
+                  ../vhd/cordic_sine16_gen.vhd"
+
+# Declare here the top-level entity. This name should correspond to the
+# real entity.
+
+TOP_ENTITY="asic_core"
+
+# Declare the top-level architecture. This does not need to correspond
+# to a read VHDL architecture name and is only used to give the
+# synthesized result a unique name.
+
+TOP_ARCH="sine"
+
+# Declare here the name of the clock signal
+
+CLOCK="clk50m_c"
+
+# add automatic clock gating y(es) or n(o); no is default
+GATE_CLOCK="n"
+# GATE_CLOCK="y"
+
+# List here the word lengths for which the design should be
+# synthesized. Synthesis will be repeated for each value in the list.
+# set WORD_LENGTHS to "none" if the design does not have generic
+# "word_length"
+WORD_LENGTHS="none"
+
+# List here the clock period in nanoseconds for which the design
+# should be synthesized. Use a list of values if you want to
+# repetititvely synthesize your design for each value in the list.
+
+CLOCK_PERIODS="5"
+# CLOCK_PERIODS="10"
+# CLOCK_PERIODS="5 4 3.5 3 2.5 2 1.5"
+
+# *** DO NOT EDIT BELOW THIS LINE ********************************************
+
+. $SOC_ROOT/scripts/generate-design-core04

@@ -1,0 +1,4 @@
+Running: xsim.dir/convoluter_behav/xsimk -simmode gui -wdb convoluter_behav.wdb -simrunnum 0 -socket 35400
+Design successfully loaded
+Design Loading Memory Usage: 33460 KB (Peak: 33460 KB)
+Design Loading CPU Usage: 140 ms

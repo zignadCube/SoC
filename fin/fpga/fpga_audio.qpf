@@ -1,0 +1,19 @@
+# -----------------------------------------------------------------------------
+# File         : fpga_audio.qpf
+# Description  : Quartus project file for FPGA audio system
+# Author       : Sabih Gerez, University of Twente
+# Creation date: December 2, 2019
+# -----------------------------------------------------------------------------
+# $Rev: 1$
+# $Author: gerezsh$
+# $Date: Mon Dec 12 19:57:45 CET 2022$
+# $Log$
+# -----------------------------------------------------------------------------
+
+
+DATE = "18:33:08 November 28, 2019"
+QUARTUS_VERSION = "14.0"
+
+# Revisions
+
+PROJECT_REVISION = "fpga_audio"

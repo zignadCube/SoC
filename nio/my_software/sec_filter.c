@@ -25,103 +25,21 @@ volatile unsigned int *IO_CUSTOM=(unsigned int *)GP_CUSTOM_0_BASE;
 #define IN_BUSY 10
 #define OUT_BUSY 11
 #define STOP_SIM 12
-#define MODE 13
-#define MULT_MODE 14
 
-static inline int coeff_load(int a, int b, int c, int d,int e,int f,int g,int h)
+// auxiliary function for fixed-point multiply (2 integer, 8
+// fractional bits)
+
+// inline int fxmult_2_8(int left, int right) 
+static inline int fxmult_2_8(int left, int right) 
 {
-	// start loading of coeff_memory 
-	IO_CUSTOM[MODE] = 1;
-	
-	IO_CUSTOM[0] = a;
-	IO_CUSTOM[1] = b;
-	IO_CUSTOM[2] = c;
-	IO_CUSTOM[3] = d;
-	IO_CUSTOM[4] = e;
-	IO_CUSTOM[5] = f;
-	IO_CUSTOM[6] = g;
-	IO_CUSTOM[7] = h;
-	 
-    // end loading of coeff_memory
-	IO_CUSTOM[MODE] = 0;
-
-	return 0;
-}
-
-static inline void mult3(int left1, int right1, int left2, int right2, int left3, int right3, int * res1, int * res2, int * res3)
-{
-  	IO_CUSTOM[MODE] = 2;
-	
-	IO_CUSTOM[0] = left1;
-	IO_CUSTOM[1] = right1;
-	IO_CUSTOM[2] = left2;
-	IO_CUSTOM[3] = right2;
-	IO_CUSTOM[4] = left3;
-	IO_CUSTOM[5] = right3;
-	 
-    // end loading of coeff_memory
-	IO_CUSTOM[MODE] = 4;
-	
-	int temp1 = IO_CUSTOM[0];
-	int temp2 = IO_CUSTOM[1];
-	int temp3 = IO_CUSTOM[2];
-	
-	IO_CUSTOM[MODE] = 0;
-	
-	*res1 = (temp1 >> 8);
-	*res2 = (temp2 >> 8);
-	*res3 = (temp3 >> 8);
-}
-
-static inline void filter_mul_inputs_bx(int x, int * res1, int * res2, int * res3)
-{
-  	IO_CUSTOM[MODE] = 2;
-  	IO_CUSTOM[MULT_MODE] = 1;
-	
-	IO_CUSTOM[0] = x;
-	 
-    // end loading of coeff_memory
-	IO_CUSTOM[MODE] = 4;
-	
-	int temp1 = IO_CUSTOM[0];
-	int temp2 = IO_CUSTOM[1];
-	int temp3 = IO_CUSTOM[2];
-	
-	IO_CUSTOM[MODE] = 0;
-	
-	*res1 = (temp1 >> 8);
-	*res2 = (temp2 >> 8);
-	*res3 = (temp3 >> 8);
-	IO_CUSTOM[MULT_MODE] = 0;
-}
-
-static inline void filter_mul_inputs_ay(int y, int * res1, int * res2)
-{
-  	IO_CUSTOM[MODE] = 2;
-  	IO_CUSTOM[MULT_MODE] = 1;
-	
-	IO_CUSTOM[1] = y;
-	 
-    // end loading of coeff_memory
-	IO_CUSTOM[MODE] = 4;
-	
-	int temp1 = IO_CUSTOM[3];
-	int temp2 = IO_CUSTOM[4];
-	
-	IO_CUSTOM[MODE] = 0;
-	
-	*res1 = (temp1 >> 8);
-	*res2 = (temp2 >> 8);
-	IO_CUSTOM[MULT_MODE] = 0;
+  int tmp = left * right;
+  return (tmp >> 8);
 }
 
 
 // top-level function name is always called "main"
 int main()
 {
-  // print to UART
-  alt_putstr("--> Start of sec_soft <--\n");
-  
   // state variables
   int z1 = 0;
   int z2 = 0;
@@ -132,12 +50,13 @@ int main()
   const int b2 = 140;
   const int a1 = 225;
   const int a2 = -80;
-  coeff_load(b0,b1,b2,a1,a2,0,0,0);
 
   // temporary variables
   int m1, m2, m3, m4, m5;
   int z1_next, z2_temp, z2_next, y;
 
+  // print to UART
+  alt_putstr("--> Start of sec_soft <--\n");
 
   // repeat until end of input file is reached
   int block_count = 0;
@@ -168,14 +87,15 @@ int main()
 
       // process both samples
 
+
       for (j=0; j <= 1; j++) {
         // multiplications and additions
-        filter_mul_inputs_bx(in_pair[j], &m1, &m2, &m4);
-   
+        m1 = fxmult_2_8(b0, in_pair[j]);
+        m2 = fxmult_2_8(b1, in_pair[j]);
+        m4 = fxmult_2_8(b2, in_pair[j]);
         y  = z2 + m1;
-        
-        filter_mul_inputs_ay(y, &m3, &m5);
-        
+        m3 = fxmult_2_8(a1, y);
+        m5 = fxmult_2_8(a2, y);
         z1_next = m4 + m5;
         z2_temp = z1 + m2;
         z2_next = z2_temp + m3;
